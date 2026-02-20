@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Routes, Route, Link, useParams, useNavigate, u
 import { Play, Code, Monitor, ChevronLeft, Square, Search, Filter, Github, Linkedin, Mail, Youtube } from 'lucide-react';
 import io from 'socket.io-client';
 
+const API_BASE =
+  process.env.REACT_APP_API_URL || "http://localhost:3001";
 // ScrollToTop Component
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -445,7 +447,7 @@ const VideoDetail = () => {
   }, [id]);
 
   useEffect(() => {
-    socketRef.current = io('http://localhost:3001');
+    socketRef.current = io(API_BASE);
 
     socketRef.current.on('output', (data) => {
       setVideo(v => {
