@@ -1,4 +1,3 @@
-import { SandpackProvider, SandpackCodeEditor, SandpackPreview } from "@codesandbox/sandpack-react";
 import { dracula as draculaTheme } from "@codesandbox/sandpack-themes";
 import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useParams, useNavigate, useLocation } from 'react-router-dom';
