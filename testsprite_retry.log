@@ -1,0 +1,35 @@
+﻿≡ƒÜÇ Starting test execution...
+Error occurred. Cleaning up tunnel...
+HTTP Proxy has been closed.
+Tunnel has been closed.
+node.exe : Γ¥î Test execution failed: Error: Failed to generate and execute tests: Error: Failed to read test plan file at 
+c:\Users\satch\OneDrive\Documents\GitHub\Resume_Projects\minicodehub-showcase\testsprite_tests\testsprite_backend_test_plan
+.json: ENOENT: no such file or directory, open 'c:\Users\satch\OneDrive\Documents\GitHub\Resume_Projects\minicodehub-showca
+se\testsprite_tests\testsprite_backend_test_plan.json'
+At C:\Program Files\nodejs\npx.ps1:29 char:3
++   & $NODE_EXE $NPX_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Γ¥î Test execut...test_plan.json':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+    at _generateCodeAndExecute (file:///C:/Users/satch/AppData/Local/npm-cache/_npx/8ddf6bea01b2519d/node_modules/@testspri
+te/testsprite-mcp/dist/index.js:136180:19)
+    at async file:///C:/Users/satch/AppData/Local/npm-cache/_npx/8ddf6bea01b2519d/node_modules/@testsprite/testsprite-mcp/d
+ist/index.js:134133:24
+    at async Command.<anonymous> (file:///C:/Users/satch/AppData/Local/npm-cache/_npx/8ddf6bea01b2519d/node_modules/@testsp
+rite/testsprite-mcp/dist/index.js:141005:9)
+    at async Command.parseAsync (file:///C:/Users/satch/AppData/Local/npm-cache/_npx/8ddf6bea01b2519d/node_modules/@testspr
+ite/testsprite-mcp/dist/index.js:139274:6)
+    at async main (file:///C:/Users/satch/AppData/Local/npm-cache/_npx/8ddf6bea01b2519d/node_modules/@testsprite/testsprite
+-mcp/dist/index.js:141230:9)
+    at _generateCodeAndExecute (file:///C:/Users/satch/AppData/Local/npm-cache/_npx/8ddf6bea01b2519d/node_modules/@testspri
+te/testsprite-mcp/dist/index.js:136471:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async file:///C:/Users/satch/AppData/Local/npm-cache/_npx/8ddf6bea01b2519d/node_modules/@testsprite/testsprite-mcp/d
+ist/index.js:134133:24
+    at async Command.<anonymous> (file:///C:/Users/satch/AppData/Local/npm-cache/_npx/8ddf6bea01b2519d/node_modules/@testsp
+rite/testsprite-mcp/dist/index.js:141005:9)
+    at async Command.parseAsync (file:///C:/Users/satch/AppData/Local/npm-cache/_npx/8ddf6bea01b2519d/node_modules/@testspr
+ite/testsprite-mcp/dist/index.js:139274:6)
+    at async main (file:///C:/Users/satch/AppData/Local/npm-cache/_npx/8ddf6bea01b2519d/node_modules/@testsprite/testsprite
+-mcp/dist/index.js:141230:9)

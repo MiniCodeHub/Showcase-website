@@ -1,0 +1,56 @@
+﻿≡ƒÜÇ Starting test execution...
+node.exe : readConfig 
+error: Error: ENOENT: 
+no such file or 
+directory, open 'C:\Use
+rs\satch\OneDrive\Docum
+ents\GitHub\Resume_Proj
+ects\minicodehub-showca
+se\testsprite_tests\tmp
+\config.json'
+At C:\Program Files\nod
+ejs\npx.ps1:29 char:3
++   & $NODE_EXE 
+$NPX_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (readConfig er   
+ ro...mp\config.jso    
+n':String) [], Rem    
+oteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+Γ¥î Test execution 
+failed: Error: 
+Execution arguments 
+are not found in 
+config. Please run `tes
+tsprite_generate_code_a
+nd_execute` first.
+    at 
+Command.<anonymous> (fi
+le:///C:/Users/satch/Ap
+pData/Local/npm-cache/_
+npx/8ddf6bea01b2519d/no
+de_modules/@testsprite/
+testsprite-mcp/dist/ind
+ex.js:140998:19)
+    at async 
+Command.parseAsync (fil
+e:///C:/Users/satch/App
+Data/Local/npm-cache/_n
+px/8ddf6bea01b2519d/nod
+e_modules/@testsprite/t
+estsprite-mcp/dist/inde
+x.js:139274:6)
+    at async main (file
+:///C:/Users/satch/AppD
+ata/Local/npm-cache/_np
+x/8ddf6bea01b2519d/node
+_modules/@testsprite/te
+stsprite-mcp/dist/index
+.js:141230:9)
