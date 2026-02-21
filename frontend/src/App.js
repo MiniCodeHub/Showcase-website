@@ -1,4 +1,4 @@
-import {SandpackProvider, SandpackCodeEditor, SandpackPreview} from '@codesandbox/sandpack-react';
+import { SandpackProvider, SandpackCodeEditor, SandpackPreview } from '@codesandbox/sandpack-react';
 import { dracula as draculaTheme } from "@codesandbox/sandpack-themes";
 import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useParams, useNavigate, useLocation } from 'react-router-dom';
@@ -626,7 +626,7 @@ const VideoDetail = () => {
                     <SandpackCodeEditor
                       showTabs
                       showLineNumbers
-                      wrapContent
+                      wrapContent={false}
                       readOnly={true}
                       style={{ height: '1400px' }}
                     />
@@ -666,7 +666,7 @@ const VideoDetail = () => {
                       showTabs
                       showLineNumbers
                       showInlineErrors
-                      wrapContent
+                      wrapContent={false}
                       closableTabs
                       readOnly={true}
                       style={{ height: '100vh' }}
