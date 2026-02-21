@@ -96,6 +96,48 @@ io.on('connection', (socket) => {
     });
 });
 
+async function fetchVideosFromYouTube() {
+    console.log('📡 Fetching FRESH videos from YouTube...');
+    let allVideos = [];
+    let nextPageToken = '';
+
+    do {
+        const response = await axios.get('https://www.googleapis.com/youtube/v3/playlistItems', {
+            params: {
+                part: 'snippet,contentDetails',
+                playlistId: UPLOADS_PLAYLIST_ID,
+                maxResults: 50,
+                pageToken: nextPageToken,
+                key: YOUTUBE_API_KEY
+            }
+        });
+
+        const videos = response.data.items.map(item => ({
+            id: item.contentDetails.videoId,
+            title: item.snippet.title,
+            thumbnail: item.snippet.thumbnails.high?.url || item.snippet.thumbnails.medium?.url,
+            codeLang: getLangFromTitle(item.snippet.title),
+            videoId: item.contentDetails.videoId,
+            videoUrl: `https://youtube.com/watch?v=${item.contentDetails.videoId}`,
+            publishedAt: item.snippet.publishedAt,
+            description: item.snippet.description,
+            codeData: {
+                code: generateCodeSnippet(getLangFromTitle(item.snippet.title)),
+                language: getLangFromTitle(item.snippet.title)
+            }
+        }));
+
+        allVideos = allVideos.concat(videos);
+        nextPageToken = response.data.nextPageToken;
+    } while (nextPageToken);
+
+    videoCache = allVideos;
+    videoCacheTime = Date.now();
+
+    console.log(`✅ Fetched ${allVideos.length} total videos`);
+    return allVideos;
+}
+
 // ✅ FIXED: Server-side pagination + filtering
 app.get('/api/videos', async (req, res) => {
     const { search = '', lang = 'all', filter = 'all', page = '1', limit = '20' } = req.query;
@@ -115,46 +157,8 @@ app.get('/api/videos', async (req, res) => {
 
     // Fetch fresh from YouTube
     try {
-        console.log('📡 Fetching FRESH videos from YouTube...');
-        let allVideos = [];
-        let nextPageToken = '';
-
-        do {
-            const response = await axios.get('https://www.googleapis.com/youtube/v3/playlistItems', {
-                params: {
-                    part: 'snippet,contentDetails',
-                    playlistId: UPLOADS_PLAYLIST_ID,
-                    maxResults: 50,
-                    pageToken: nextPageToken,
-                    key: YOUTUBE_API_KEY
-                }
-            });
-
-            const videos = response.data.items.map(item => ({
-                id: item.contentDetails.videoId,
-                title: item.snippet.title,
-                thumbnail: item.snippet.thumbnails.high?.url || item.snippet.thumbnails.medium?.url,
-                codeLang: getLangFromTitle(item.snippet.title),
-                videoId: item.contentDetails.videoId,
-                videoUrl: `https://youtube.com/watch?v=${item.contentDetails.videoId}`,
-                publishedAt: item.snippet.publishedAt,
-                description: item.snippet.description,
-                codeData: {
-                    code: generateCodeSnippet(getLangFromTitle(item.snippet.title)),
-                    language: getLangFromTitle(item.snippet.title)
-                }
-            }));
-
-            allVideos = allVideos.concat(videos);
-            nextPageToken = response.data.nextPageToken;
-        } while (nextPageToken);
-
-        videoCache = allVideos;
-        videoCacheTime = Date.now();
-
-        console.log(`✅ Fetched ${allVideos.length} total videos`);
+        const allVideos = await fetchVideosFromYouTube();
         sendPaginatedVideos(allVideos, search, actualLang, startIndex, limitNum, res);
-
     } catch (error) {
         console.error('❌ YouTube API Error:', error.message);
         if (videoCache) {
@@ -213,7 +217,14 @@ app.get('/api/stats', (req, res) => {
 });
 
 app.get('/api/video/:id', async (req, res) => {
-    if (!videoCache) return res.status(404).json({ error: "Cache not loaded" });
+    if (!videoCache) {
+        console.log('⚠️ Cache not loaded for direct hit, fetching...');
+        try {
+            await fetchVideosFromYouTube();
+        } catch (error) {
+            return res.status(500).json({ error: "Failed to load cache" });
+        }
+    }
 
     const video = videoCache.find(v => v.videoId === req.params.id);
     if (!video) return res.status(404).json({ error: "Video not found" });

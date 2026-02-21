@@ -6,7 +6,7 @@ import { Play, Code, Monitor, ChevronLeft, Square, Search, Filter, Github, Linke
 import io from 'socket.io-client';
 
 const API_BASE =
-  process.env.REACT_APP_API_URL || "http://localhost:3001";
+  process.env.REACT_APP_API_URL || (process.env.NODE_ENV === "production" ? "https://showcase-website-opee.onrender.com" : "http://localhost:3001");
 // ScrollToTop Component
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -429,10 +429,12 @@ const VideoDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [video, setVideo] = useState(null);
+  const [error, setError] = useState(null);
   const socketRef = useRef(null);
   const terminalEndRef = useRef(null);
 
   useEffect(() => {
+    setError(null);
     fetch(`${API_BASE}/api/video/${id}`)
       .then(res => {
         if (!res.ok) throw new Error(`Server returned ${res.status}`);
@@ -443,6 +445,7 @@ const VideoDetail = () => {
       })
       .catch((err) => {
         console.error("Video Fetch Error:", err);
+        setError(err.message || "Failed to fetch video details.");
       });
   }, [id]);
 
@@ -542,10 +545,26 @@ const VideoDetail = () => {
     return {};
   }, [video, isReact, isHtml]);
 
+  if (error) {
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-slate-900 to-purple-900 pt-40 px-6 text-center">
+        <div className="text-red-500 text-6xl mb-4">⚠️</div>
+        <h2 className="text-3xl justify-center font-bold text-white mb-2">Oops! Something went wrong</h2>
+        <p className="text-gray-400 text-xl max-w-lg mb-8">{error}</p>
+        <button
+          onClick={() => navigate('/')}
+          className="px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold rounded-2xl hover:scale-105 transition-all shadow-lg"
+        >
+          Return Home
+        </button>
+      </div>
+    );
+  }
+
   if (!video) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 to-purple-900 pt-40">
-        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-purple-500"></div>
+        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-transparent border-t-purple-500"></div>
       </div>
     );
   }
