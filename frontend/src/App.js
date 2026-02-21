@@ -157,7 +157,7 @@ function Home() {
       console.log('🔄 Fetching:', params.toString()); // DEBUG
 
       const [videosRes, statsRes] = await Promise.all([
-        fetch(`/api/videos?${params}`),
+        fetch(`${API_BASE}/api/videos?${params}`),
         fetch('/api/stats')
       ]);
 
