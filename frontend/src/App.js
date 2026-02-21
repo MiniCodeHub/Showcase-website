@@ -433,7 +433,7 @@ const VideoDetail = () => {
   const terminalEndRef = useRef(null);
 
   useEffect(() => {
-    fetch(`$${API_BASE}/api/video/${id}`)
+    fetch(`${API_BASE}/api/video/${id}`)
       .then(res => {
         if (!res.ok) throw new Error(`Server returned ${res.status}`);
         return res.json();
