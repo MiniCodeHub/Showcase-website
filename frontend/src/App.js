@@ -159,7 +159,7 @@ function Home() {
 
       const [videosRes, statsRes] = await Promise.all([
         fetch(`${API_BASE}/api/videos?${params}`),
-        fetch('/api/stats')
+        fetch(`${API_BASE}/api/stats`)
       ]);
 
       if (!videosRes.ok || !statsRes.ok) {
