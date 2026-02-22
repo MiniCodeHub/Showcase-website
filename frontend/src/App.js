@@ -27,7 +27,7 @@ function Navbar({ filter, setFilter, search, setSearch, stats, scrollDirection, 
         ? 'py-3 md:py-2 shadow-2xl bg-black/90 border-b border-purple-500/70 h-auto md:h-16'
         : 'py-4 bg-black/50 h-auto md:h-20'
       }
-      ${scrollDirection === 'down' && isScrolled ? '-translate-y-full' : 'translate-y-0'}
+      translate-y-0
     `}>
       <div className="max-w-7xl mx-auto px-4 h-full flex flex-col md:flex-row items-center justify-between gap-4 md:gap-8">
         {/* Brand */}
@@ -46,7 +46,7 @@ function Navbar({ filter, setFilter, search, setSearch, stats, scrollDirection, 
             <input
               type="text"
               placeholder={isScrolled ? "Search..." : "Search HTML, React, C++..."}
-              className={`w-full pl-10 pr-4 py-2 md:py-${isScrolled ? '1.5' : '3'} bg-white/10 backdrop-blur-md border border-white/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500/50 transition-all text-base shadow-lg`}
+              className={`w-full pl-10 pr-4 py-2 ${isScrolled ? 'md:py-1.5' : 'md:py-3'} bg-white/10 backdrop-blur-md border border-white/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500/50 transition-all text-base shadow-lg`}
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />
@@ -54,17 +54,17 @@ function Navbar({ filter, setFilter, search, setSearch, stats, scrollDirection, 
         </div>
 
         {/* Filters */}
-        <div className={`flex bg-white/10 backdrop-blur-xl rounded-2xl p-1 md:p-${isScrolled ? '1' : '2'} border border-white/30 shadow-xl transition-all overflow-x-auto hide-scrollbar w-full md:w-auto ${isScrolled ? 'md:h-12' : 'md:h-16'} order-3 md:order-none justify-between md:justify-start gap-1`}>
-          <button onClick={() => setFilter('all')} className={`flex-1 md:flex-none px-3 md:px-${isScrolled ? '3' : '5'} py-2 md:py-${isScrolled ? '1' : '3'} rounded-xl font-bold text-[10px] md:text-xs transition-all flex items-center justify-center gap-1 shadow-sm whitespace-nowrap ${filter === 'all' ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-purple-500/50' : 'text-purple-200 hover:text-white hover:bg-white/30 hover:shadow-md'}`}>
+        <div className={`flex bg-white/10 backdrop-blur-xl rounded-2xl p-1 ${isScrolled ? 'md:p-1' : 'md:p-2'} border border-white/30 shadow-xl transition-all overflow-x-auto hide-scrollbar w-full md:w-auto ${isScrolled ? 'md:h-12' : 'md:h-16'} order-3 md:order-none justify-between md:justify-start gap-1`}>
+          <button onClick={() => setFilter('all')} className={`flex-1 md:flex-none px-3 ${isScrolled ? 'md:px-3 md:py-1' : 'md:px-5 md:py-3'} py-2 rounded-xl font-bold text-[10px] md:text-xs transition-all flex items-center justify-center gap-1 shadow-sm whitespace-nowrap ${filter === 'all' ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-purple-500/50' : 'text-purple-200 hover:text-white hover:bg-white/30 hover:shadow-md'}`}>
             ALL <span className="text-[9px] md:text-xs bg-black/50 px-1 py-0.5 rounded min-w-[1.5rem] font-bold">{stats.total}</span>
           </button>
-          <button onClick={() => setFilter('html')} className={`flex-1 md:flex-none px-2 md:px-${isScrolled ? '2' : '4'} py-2 md:py-${isScrolled ? '1' : '3'} rounded-xl font-bold text-[10px] md:text-xs flex items-center justify-center gap-1 transition-all whitespace-nowrap ${filter === 'html' ? 'bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-orange-500/50' : 'text-orange-300 hover:text-orange-100 hover:bg-orange-500/20 hover:shadow-md'}`}>
+          <button onClick={() => setFilter('html')} className={`flex-1 md:flex-none px-2 ${isScrolled ? 'md:px-2 md:py-1' : 'md:px-4 md:py-3'} py-2 rounded-xl font-bold text-[10px] md:text-xs flex items-center justify-center gap-1 transition-all whitespace-nowrap ${filter === 'html' ? 'bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-orange-500/50' : 'text-orange-300 hover:text-orange-100 hover:bg-orange-500/20 hover:shadow-md'}`}>
             HTML <span className="text-[9px] md:text-xs bg-black/50 px-1 py-0.5 rounded min-w-[1.5rem] font-bold">{stats.html}</span>
           </button>
-          <button onClick={() => setFilter('reactjs')} className={`flex-1 md:flex-none px-2 md:px-${isScrolled ? '2' : '4'} py-2 md:py-${isScrolled ? '1' : '3'} rounded-xl font-bold text-[10px] md:text-xs flex items-center justify-center gap-1 transition-all whitespace-nowrap ${filter === 'reactjs' ? 'bg-gradient-to-r from-emerald-500 to-teal-600 text-white shadow-emerald-500/50' : 'text-emerald-300 hover:text-emerald-100 hover:bg-emerald-500/20 hover:shadow-md'}`}>
+          <button onClick={() => setFilter('reactjs')} className={`flex-1 md:flex-none px-2 ${isScrolled ? 'md:px-2 md:py-1' : 'md:px-4 md:py-3'} py-2 rounded-xl font-bold text-[10px] md:text-xs flex items-center justify-center gap-1 transition-all whitespace-nowrap ${filter === 'reactjs' ? 'bg-gradient-to-r from-emerald-500 to-teal-600 text-white shadow-emerald-500/50' : 'text-emerald-300 hover:text-emerald-100 hover:bg-emerald-500/20 hover:shadow-md'}`}>
             React <span className="text-[9px] md:text-xs bg-black/50 px-1 py-0.5 rounded min-w-[1.5rem] font-bold">{stats.react}</span>
           </button>
-          <button onClick={() => setFilter('cpp')} className={`flex-1 md:flex-none px-2 md:px-${isScrolled ? '2' : '4'} py-2 md:py-${isScrolled ? '1' : '3'} rounded-xl font-bold text-[10px] md:text-xs flex items-center justify-center gap-1 transition-all whitespace-nowrap ${filter === 'cpp' ? 'bg-gradient-to-r from-blue-500 to-indigo-600 text-white shadow-blue-500/50' : 'text-blue-300 hover:text-blue-100 hover:bg-blue-500/20 hover:shadow-md'}`}>
+          <button onClick={() => setFilter('cpp')} className={`flex-1 md:flex-none px-2 ${isScrolled ? 'md:px-2 md:py-1' : 'md:px-4 md:py-3'} py-2 rounded-xl font-bold text-[10px] md:text-xs flex items-center justify-center gap-1 transition-all whitespace-nowrap ${filter === 'cpp' ? 'bg-gradient-to-r from-blue-500 to-indigo-600 text-white shadow-blue-500/50' : 'text-blue-300 hover:text-blue-100 hover:bg-blue-500/20 hover:shadow-md'}`}>
             C++ <span className="text-[9px] md:text-xs bg-black/50 px-1 py-0.5 rounded min-w-[1.5rem] font-bold">{stats.cpp}</span>
           </button>
         </div>
@@ -142,6 +142,8 @@ function Home() {
   const [totalPages, setTotalPages] = useState(1);
   const [scrollY, setScrollY] = useState(0);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [scrollX, setScrollX] = useState(0);
+  const [lastScrollX, setLastScrollX] = useState(0);
   const [scrollDirection, setScrollDirection] = useState('up');
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -196,13 +198,17 @@ function Home() {
     let ticking = false;
     const updateScroll = () => {
       const newScrollY = window.scrollY;
+      const newScrollX = window.scrollX;
       setScrollY(newScrollY);
-      setIsScrolled(newScrollY > 50);
-
+      setScrollX(newScrollX);
+      setIsScrolled(newScrollY > 50 || newScrollX > 50);
       if (!ticking) {
         requestAnimationFrame(() => {
-          setScrollDirection(newScrollY > lastScrollY ? 'down' : 'up');
+          if (newScrollY !== lastScrollY) {
+            setScrollDirection(newScrollY > lastScrollY ? 'down' : 'up');
+          }
           setLastScrollY(newScrollY);
+          setLastScrollX(newScrollX);
           ticking = false;
         });
         ticking = true;
@@ -211,7 +217,7 @@ function Home() {
 
     window.addEventListener('scroll', updateScroll, { passive: true });
     return () => window.removeEventListener('scroll', updateScroll);
-  }, [lastScrollY]);
+  }, [lastScrollY, lastScrollX]);
 
   useEffect(() => {
     console.log('📄 Page changed to:', currentPage, 'Filter:', filter); // DEBUG
@@ -514,6 +520,15 @@ const VideoDetail = () => {
     if (!video?.codeData) return {};
     const code = video.codeData.fetchedCode || video.codeData.code;
 
+    const scrollbarStyle = `
+      html, body { color-scheme: dark; }
+      body { overflow-y: auto; overflow-x: hidden; margin: 0; }
+      ::-webkit-scrollbar { width: 10px; height: 10px; }
+      ::-webkit-scrollbar-track { background: #1e1e1e; border-radius: 4px; }
+      ::-webkit-scrollbar-thumb { background: #4a4a4a; border-radius: 4px; border: 2px solid #1e1e1e; }
+      ::-webkit-scrollbar-thumb:hover { background: #6b7280; }
+    `;
+
     if (isReact) {
       return {
         "App.tsx": code,
@@ -524,11 +539,15 @@ const VideoDetail = () => {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minicodehub Showcase</title>
     <style>
-      html, body, #root {
-        height: 100%;
+      html, body {
         margin: 0;
         padding: 0;
+        min-height: 100vh;
       }
+      #root {
+        min-height: 100vh;
+      }
+${scrollbarStyle}
     </style>
   </head>
   <body>
@@ -539,7 +558,7 @@ const VideoDetail = () => {
     }
     if (isHtml) {
       return {
-        "index.html": code
+        "index.html": `<style>${scrollbarStyle}</style>\n` + code
       };
     }
     return {};
