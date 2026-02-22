@@ -539,13 +539,10 @@ const VideoDetail = () => {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minicodehub Showcase</title>
     <style>
-      html, body {
+      html, body, #root {
+        height: 100%;
         margin: 0;
         padding: 0;
-        min-height: 100vh;
-      }
-      #root {
-        min-height: 100vh;
       }
 ${scrollbarStyle}
     </style>
