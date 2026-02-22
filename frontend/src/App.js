@@ -522,7 +522,6 @@ const VideoDetail = () => {
 
     const scrollbarStyle = `
       html, body { color-scheme: dark; }
-      body { overflow-y: auto; overflow-x: hidden; margin: 0; }
       ::-webkit-scrollbar { width: 10px; height: 10px; }
       ::-webkit-scrollbar-track { background: #1e1e1e; border-radius: 4px; }
       ::-webkit-scrollbar-thumb { background: #4a4a4a; border-radius: 4px; border: 2px solid #1e1e1e; }
