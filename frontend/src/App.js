@@ -31,8 +31,8 @@ function Navbar({ filter, setFilter, search, setSearch, stats, scrollDirection, 
     `}>
       <div className="max-w-7xl mx-auto px-4 h-full flex flex-col md:flex-row items-center justify-between gap-4 md:gap-8">
         {/* Brand */}
-        <div className={`transition-all duration-300 w-full md:w-auto flex justify-center md:justify-start ${isScrolled ? 'md:scale-90 md:opacity-90' : 'md:scale-100 md:opacity-100'}`}>
-          <h1 className={`font-black bg-gradient-to-r from-purple-400 via-pink-400 to-purple-500 bg-clip-text text-transparent drop-shadow-2xl transition-all text-2xl md:text-3xl lg:text-4xl leading-tight`}>
+        <div className={`transition-all duration-300 w-full md:w-auto flex justify-center items-center md:justify-start gap-4 ${isScrolled ? 'md:scale-90 md:opacity-90' : 'md:scale-100 md:opacity-100'}`}>
+          <h1 className={`font-black bg-gradient-to-r from-purple-400 via-pink-400 to-purple-500 bg-clip-text text-transparent drop-shadow-2xl transition-all text-2xl md:text-3xl lg:text-4xl leading-tight hidden sm:block`}>
             MiniCodeHub
           </h1>
         </div>
@@ -348,7 +348,7 @@ function Home() {
                         </span>
                       </div>
                       <div className="p-6 flex-1 flex flex-col justify-between">
-                        <h3 className="font-bold text-lg mb-4 line-clamp-2 group-hover:text-purple-300 transition-colors leading-tight">
+                        <h3 className="font-bold text-lg mb-4 text-wrap break-words group-hover:text-purple-300 transition-colors leading-tight">
                           {video.title}
                         </h3>
                         <div className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600/90 to-pink-600/90 backdrop-blur-sm text-white font-semibold px-6 py-3 rounded-2xl transition-all group-hover:from-purple-700 group-hover:to-pink-700 w-full justify-center">
@@ -521,11 +521,11 @@ const VideoDetail = () => {
     const code = video.codeData.fetchedCode || video.codeData.code;
 
     const scrollbarStyle = `
-      html, body { color-scheme: dark; }
-      ::-webkit-scrollbar { width: 10px; height: 10px; }
-      ::-webkit-scrollbar-track { background: #1e1e1e; border-radius: 4px; }
-      ::-webkit-scrollbar-thumb { background: #4a4a4a; border-radius: 4px; border: 2px solid #1e1e1e; }
-      ::-webkit-scrollbar-thumb:hover { background: #6b7280; }
+      #root, #root > div { color-scheme: dark; }
+      #root::-webkit-scrollbar, #root > div::-webkit-scrollbar { width: 10px; height: 10px; }
+      #root::-webkit-scrollbar-track, #root > div::-webkit-scrollbar-track { background: #1e1e1e; border-radius: 4px; }
+      #root::-webkit-scrollbar-thumb, #root > div::-webkit-scrollbar-thumb { background: #4a4a4a; border-radius: 4px; border: 2px solid #1e1e1e; }
+      #root::-webkit-scrollbar-thumb:hover, #root > div::-webkit-scrollbar-thumb:hover { background: #6b7280; }
     `;
 
     if (isReact) {
@@ -538,10 +538,15 @@ const VideoDetail = () => {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minicodehub Showcase</title>
     <style>
-      html, body, #root {
+      html, body {
         height: 100%;
         margin: 0;
         padding: 0;
+        overflow: hidden; /* Hide default native scrollbars on body */
+      }
+      #root {
+        height: 100%;
+        overflow-y: auto; /* Root acts as the scroll container */
       }
 ${scrollbarStyle}
     </style>
@@ -598,8 +603,8 @@ ${scrollbarStyle}
       <div className="max-w-[1920px] mx-auto mb-8 flex flex-col items-center">
         {/* Info */}
         <div className="w-full flex justify-between items-end mb-6">
-          <div className="shrink-0">
-            <h1 className="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400 mb-2 truncate">
+          <div className="w-full">
+            <h1 className="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400 mb-2 text-wrap break-words">
               {video.title}
             </h1>
             <div className="flex gap-4 items-center">
@@ -637,19 +642,19 @@ ${scrollbarStyle}
                 files={sandpackFiles}
               >
                 <div className="flex flex-col lg:flex-row h-fit w-full gap-6 md:gap-8">
-                  <div className="flex-1 h-1/2 lg:h-full overflow-hidden order-2 lg:order-1 rounded-3xl border border-white/10 shadow-xl bg-[#1e1e1e]">
+                  <div className="flex-1 w-full h-1/2 lg:h-full overflow-hidden order-2 lg:order-1 rounded-3xl border border-white/10 shadow-xl bg-[#1e1e1e]">
                     <SandpackCodeEditor
                       showTabs
                       showLineNumbers
                       wrapContent={false}
                       readOnly={true}
-                      style={{ height: '1400px' }}
+                      style={{ height: '1400px', width: '100%' }}
                     />
                   </div>
-                  <div className="flex-1 h-full lg:h-full order-1 lg:order-2 rounded-3xl border border-white/10 shadow-xl bg-[#1e1e1e] overflow-hidden">
+                  <div className="flex-1 w-full h-full lg:h-full order-1 lg:order-2 rounded-3xl border border-white/10 shadow-xl bg-[#1e1e1e] overflow-hidden">
                     <SandpackPreview
                       showNavigator={true}
-                      style={{ height: '1400px' }}
+                      style={{ height: '1400px', width: '100%' }}
                     />
                   </div>
                 </div>

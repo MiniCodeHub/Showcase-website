@@ -50,3 +50,40 @@ code {
   scrollbar-width: none;
   /* Firefox */
 }
+
+/* Custom Sandpack Scrollbar */
+.sp-preview-iframe {
+  height: 100% !important;
+}
+
+.sp-layout {
+  border-radius: 1.5rem !important;
+  overflow: hidden !important;
+}
+
+.sp-preview-container::-webkit-scrollbar,
+.sp-editor::-webkit-scrollbar,
+.sp-cm::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.sp-preview-container::-webkit-scrollbar-track,
+.sp-editor::-webkit-scrollbar-track,
+.sp-cm::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+.sp-preview-container::-webkit-scrollbar-thumb,
+.sp-editor::-webkit-scrollbar-thumb,
+.sp-cm::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.sp-preview-container::-webkit-scrollbar-thumb:hover,
+.sp-editor::-webkit-scrollbar-thumb:hover,
+.sp-cm::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}

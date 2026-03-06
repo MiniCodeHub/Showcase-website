@@ -2,6 +2,29 @@
 <html>
 
 <head>
+  <link rel="icon" id="favicon" href="/logo.jpg" type="image/jpg" />
+  <script>
+    // Dynamically crop the favicon into a circle
+    (function () {
+      const img = new Image();
+      img.src = '/logo.jpg';
+      img.onload = () => {
+        const canvas = document.createElement('canvas');
+        canvas.width = img.width;
+        canvas.height = img.height;
+        const ctx = canvas.getContext('2d');
+        ctx.beginPath();
+        ctx.arc(img.width / 2, img.height / 2, Math.min(img.width, img.height) / 2, 0, Math.PI * 2);
+        ctx.clip();
+        ctx.drawImage(img, 0, 0);
+        const link = document.getElementById('favicon');
+        if (link) {
+          link.type = 'image/png';
+          link.href = canvas.toDataURL('image/png');
+        }
+      };
+    })();
+  </script>
   <title>MiniCodeHub</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
