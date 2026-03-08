@@ -288,11 +288,13 @@ function Home() {
                     </button>
 
                     {Array.from({ length: Math.min(7, totalPages) }, (_, i) => {
-                      const pageNum = currentPage <= 4
+                      const pageNum = totalPages <= 7
                         ? i + 1
-                        : currentPage >= totalPages - 3
-                          ? totalPages - 6 + i
-                          : currentPage - 3 + i;
+                        : currentPage <= 4
+                          ? i + 1
+                          : currentPage >= totalPages - 3
+                            ? totalPages - 6 + i
+                            : currentPage - 3 + i;
 
                       if (pageNum < 1 || pageNum > totalPages) return null;
 
@@ -382,11 +384,13 @@ function Home() {
                     </button>
 
                     {Array.from({ length: Math.min(7, totalPages) }, (_, i) => {
-                      const pageNum = currentPage <= 4
+                      const pageNum = totalPages <= 7
                         ? i + 1
-                        : currentPage >= totalPages - 3
-                          ? totalPages - 6 + i
-                          : currentPage - 3 + i;
+                        : currentPage <= 4
+                          ? i + 1
+                          : currentPage >= totalPages - 3
+                            ? totalPages - 6 + i
+                            : currentPage - 3 + i;
 
                       if (pageNum < 1 || pageNum > totalPages) return null;
 
