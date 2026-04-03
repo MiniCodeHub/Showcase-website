@@ -287,33 +287,69 @@ function Home() {
                       Previous
                     </button>
 
-                    {Array.from({ length: Math.min(7, totalPages) }, (_, i) => {
-                      const pageNum = totalPages <= 7
-                        ? i + 1
-                        : currentPage <= 4
-                          ? i + 1
-                          : currentPage >= totalPages - 3
-                            ? totalPages - 6 + i
-                            : currentPage - 3 + i;
+                    {(() => {
+                      if (totalPages <= 7) {
+                        return Array.from({ length: totalPages }, (_, i) => i + 1).map(pageNum => (
+                          <button
+                            key={pageNum}
+                            onClick={() => setCurrentPage(pageNum)}
+                            disabled={loading}
+                            className={`hidden sm:flex w-14 h-14 rounded-2xl font-bold text-lg transition-all shadow-lg items-center justify-center ${currentPage === pageNum
+                              ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-purple-500/50 scale-110 ring-4 ring-purple-500/30'
+                              : loading
+                                ? 'bg-gray-700/50 text-gray-400 cursor-not-allowed'
+                                : 'bg-white/10 hover:bg-white/20 text-purple-200 hover:text-white hover:shadow-xl hover:scale-105'
+                              }`}
+                          >
+                            {pageNum}
+                          </button>
+                        ));
+                      }
 
-                      if (pageNum < 1 || pageNum > totalPages) return null;
+                      const pages = [];
+                      if (currentPage <= 4) {
+                        for (let i = 1; i <= 5; i++) pages.push(i);
+                        pages.push('...');
+                        pages.push(totalPages);
+                      } else if (currentPage >= totalPages - 3) {
+                        pages.push(1);
+                        pages.push('...');
+                        for (let i = totalPages - 4; i <= totalPages; i++) pages.push(i);
+                      } else {
+                        pages.push(1);
+                        pages.push('...');
+                        pages.push(currentPage - 1);
+                        pages.push(currentPage);
+                        pages.push(currentPage + 1);
+                        pages.push('...');
+                        pages.push(totalPages);
+                      }
 
-                      return (
-                        <button
-                          key={pageNum}
-                          onClick={() => setCurrentPage(pageNum)}
-                          disabled={loading}
-                          className={`hidden sm:flex w-14 h-14 rounded-2xl font-bold text-lg transition-all shadow-lg items-center justify-center ${currentPage === pageNum
-                            ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-purple-500/50 scale-110 ring-4 ring-purple-500/30'
-                            : loading
-                              ? 'bg-gray-700/50 text-gray-400 cursor-not-allowed'
-                              : 'bg-white/10 hover:bg-white/20 text-purple-200 hover:text-white hover:shadow-xl hover:scale-105'
-                            }`}
-                        >
-                          {pageNum}
-                        </button>
-                      );
-                    })}
+                      return pages.map((item, index) => {
+                        if (item === '...') {
+                          return (
+                            <span key={`ellipsis-${index}`} className="hidden sm:flex w-14 h-14 items-center justify-center font-bold text-gray-400 text-2xl">
+                              ...
+                            </span>
+                          );
+                        }
+                        return (
+                          <button
+                            key={item}
+                            onClick={() => setCurrentPage(item)}
+                            disabled={loading}
+                            className={`hidden sm:flex w-14 h-14 rounded-2xl font-bold text-lg transition-all shadow-lg items-center justify-center ${currentPage === item
+                              ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-purple-500/50 scale-110 ring-4 ring-purple-500/30'
+                              : loading
+                                ? 'bg-gray-700/50 text-gray-400 cursor-not-allowed'
+                                : 'bg-white/10 hover:bg-white/20 text-purple-200 hover:text-white hover:shadow-xl hover:scale-105'
+                              }`}
+                          >
+                            {item}
+                          </button>
+                        );
+                      });
+                    })()}
 
                     <button
                       onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
@@ -383,33 +419,69 @@ function Home() {
                       Previous
                     </button>
 
-                    {Array.from({ length: Math.min(7, totalPages) }, (_, i) => {
-                      const pageNum = totalPages <= 7
-                        ? i + 1
-                        : currentPage <= 4
-                          ? i + 1
-                          : currentPage >= totalPages - 3
-                            ? totalPages - 6 + i
-                            : currentPage - 3 + i;
+                    {(() => {
+                      if (totalPages <= 7) {
+                        return Array.from({ length: totalPages }, (_, i) => i + 1).map(pageNum => (
+                          <button
+                            key={pageNum}
+                            onClick={() => setCurrentPage(pageNum)}
+                            disabled={loading}
+                            className={`hidden sm:flex w-14 h-14 rounded-2xl font-bold text-lg transition-all shadow-lg items-center justify-center ${currentPage === pageNum
+                              ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-purple-500/50 scale-110 ring-4 ring-purple-500/30'
+                              : loading
+                                ? 'bg-gray-700/50 text-gray-400 cursor-not-allowed'
+                                : 'bg-white/10 hover:bg-white/20 text-purple-200 hover:text-white hover:shadow-xl hover:scale-105'
+                              }`}
+                          >
+                            {pageNum}
+                          </button>
+                        ));
+                      }
 
-                      if (pageNum < 1 || pageNum > totalPages) return null;
+                      const pages = [];
+                      if (currentPage <= 4) {
+                        for (let i = 1; i <= 5; i++) pages.push(i);
+                        pages.push('...');
+                        pages.push(totalPages);
+                      } else if (currentPage >= totalPages - 3) {
+                        pages.push(1);
+                        pages.push('...');
+                        for (let i = totalPages - 4; i <= totalPages; i++) pages.push(i);
+                      } else {
+                        pages.push(1);
+                        pages.push('...');
+                        pages.push(currentPage - 1);
+                        pages.push(currentPage);
+                        pages.push(currentPage + 1);
+                        pages.push('...');
+                        pages.push(totalPages);
+                      }
 
-                      return (
-                        <button
-                          key={pageNum}
-                          onClick={() => setCurrentPage(pageNum)}
-                          disabled={loading}
-                          className={`hidden sm:flex w-14 h-14 rounded-2xl font-bold text-lg transition-all shadow-lg items-center justify-center ${currentPage === pageNum
-                            ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-purple-500/50 scale-110 ring-4 ring-purple-500/30'
-                            : loading
-                              ? 'bg-gray-700/50 text-gray-400 cursor-not-allowed'
-                              : 'bg-white/10 hover:bg-white/20 text-purple-200 hover:text-white hover:shadow-xl hover:scale-105'
-                            }`}
-                        >
-                          {pageNum}
-                        </button>
-                      );
-                    })}
+                      return pages.map((item, index) => {
+                        if (item === '...') {
+                          return (
+                            <span key={`ellipsis-${index}`} className="hidden sm:flex w-14 h-14 items-center justify-center font-bold text-gray-400 text-2xl">
+                              ...
+                            </span>
+                          );
+                        }
+                        return (
+                          <button
+                            key={item}
+                            onClick={() => setCurrentPage(item)}
+                            disabled={loading}
+                            className={`hidden sm:flex w-14 h-14 rounded-2xl font-bold text-lg transition-all shadow-lg items-center justify-center ${currentPage === item
+                              ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-purple-500/50 scale-110 ring-4 ring-purple-500/30'
+                              : loading
+                                ? 'bg-gray-700/50 text-gray-400 cursor-not-allowed'
+                                : 'bg-white/10 hover:bg-white/20 text-purple-200 hover:text-white hover:shadow-xl hover:scale-105'
+                              }`}
+                          >
+                            {item}
+                          </button>
+                        );
+                      });
+                    })()}
 
                     <button
                       onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
