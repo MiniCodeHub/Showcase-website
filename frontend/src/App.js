@@ -67,6 +67,9 @@ function Navbar({ filter, setFilter, search, setSearch, stats, scrollDirection, 
           <button onClick={() => setFilter('cpp')} className={`flex-1 md:flex-none px-2 ${isScrolled ? 'md:px-2 md:py-1' : 'md:px-4 md:py-3'} py-2 rounded-xl font-bold text-[10px] md:text-xs flex items-center justify-center gap-1 transition-all whitespace-nowrap ${filter === 'cpp' ? 'bg-gradient-to-r from-blue-500 to-indigo-600 text-white shadow-blue-500/50' : 'text-blue-300 hover:text-blue-100 hover:bg-blue-500/20 hover:shadow-md'}`}>
             C++ <span className="text-[9px] md:text-xs bg-black/50 px-1 py-0.5 rounded min-w-[1.5rem] font-bold">{stats.cpp}</span>
           </button>
+          <button onClick={() => setFilter('python')} className={`flex-1 md:flex-none px-2 ${isScrolled ? 'md:px-2 md:py-1' : 'md:px-4 md:py-3'} py-2 rounded-xl font-bold text-[10px] md:text-xs flex items-center justify-center gap-1 transition-all whitespace-nowrap ${filter === 'python' ? 'bg-gradient-to-r from-yellow-500 to-amber-600 text-white shadow-yellow-500/50' : 'text-yellow-300 hover:text-yellow-100 hover:bg-yellow-500/20 hover:shadow-md'}`}>
+            Python <span className="text-[9px] md:text-xs bg-black/50 px-1 py-0.5 rounded min-w-[1.5rem] font-bold">{stats.python}</span>
+          </button>
         </div>
       </div>
     </header>
@@ -137,7 +140,7 @@ function Home() {
   const [search, setSearch] = useState('');
   const [filter, setFilter] = useState('all');
   const [loading, setLoading] = useState(true);
-  const [stats, setStats] = useState({ total: 0, html: 0, react: 0, cpp: 0 });
+  const [stats, setStats] = useState({ total: 0, html: 0, react: 0, cpp: 0, python: 0 });
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const [scrollY, setScrollY] = useState(0);
@@ -184,7 +187,8 @@ function Home() {
         total: statsData.total || 0,
         html: statsData.html || 0,
         react: statsData.react || 0,
-        cpp: statsData.cpp || 0
+        cpp: statsData.cpp || 0,
+        python: statsData.python || 0
       });
     } catch (error) {
       console.error('❌ API Error:', error);
@@ -244,7 +248,8 @@ function Home() {
             }`}>
             <div className={`w-6 h-6 rounded-full shadow-lg ${filter === 'html' ? 'bg-orange-400' :
               filter === 'reactjs' ? 'bg-emerald-400' :
-                filter === 'cpp' ? 'bg-blue-400' : 'bg-purple-400'
+                filter === 'cpp' ? 'bg-blue-400' :
+                  filter === 'python' ? 'bg-yellow-400' : 'bg-purple-400'
               }`} />
             <span>{filter === 'all' ? 'ALL' : filter.toUpperCase()} TUTORIALS</span>
             <span className="text-purple-300">({videos.length})</span>
@@ -380,7 +385,8 @@ function Home() {
                         <span className={`absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider shadow-lg ${video.codeLang === 'html' ? 'bg-orange-500/95 text-white' :
                           video.codeLang === 'reactjs' ? 'bg-emerald-500/95 text-white' :
                             video.codeLang === 'cpp' ? 'bg-blue-500/95 text-white' :
-                              'bg-purple-500/95 text-white'
+                              video.codeLang === 'python' ? 'bg-yellow-500/95 text-black' :
+                                'bg-purple-500/95 text-white'
                           }`}>
                           {video.codeLang?.toUpperCase()}
                         </span>
@@ -512,6 +518,8 @@ const VideoDetail = () => {
   const navigate = useNavigate();
   const [video, setVideo] = useState(null);
   const [error, setError] = useState(null);
+  const [pyodideLoaded, setPyodideLoaded] = useState(false);
+  const [pyodideLoading, setPyodideLoading] = useState(false);
   const socketRef = useRef(null);
   const terminalEndRef = useRef(null);
 
@@ -530,6 +538,59 @@ const VideoDetail = () => {
         setError(err.message || "Failed to fetch video details.");
       });
   }, [id]);
+
+  const isHtml = video?.codeLang === 'html';
+  const isReact = video?.codeLang === 'reactjs';
+  const isCpp = video?.codeLang === 'cpp' || video?.codeLang === 'c++';
+  const isPython = video?.codeLang === 'python';
+
+  // Load Pyodide dynamically in the background for Python videos
+  useEffect(() => {
+    if (isPython && !window.pyodideInstance && !pyodideLoading) {
+      setPyodideLoading(true);
+      
+      const loadPyodideScript = () => {
+        return new Promise((resolve, reject) => {
+          if (window.loadPyodide) {
+            resolve();
+            return;
+          }
+          const script = document.createElement('script');
+          script.src = "https://cdn.jsdelivr.net/pyodide/v0.26.1/full/pyodide.js";
+          script.onload = resolve;
+          script.onerror = reject;
+          document.head.appendChild(script);
+        });
+      };
+
+      loadPyodideScript()
+        .then(() => {
+          return window.loadPyodide({
+            indexURL: "https://cdn.jsdelivr.net/pyodide/v0.26.1/full/",
+            stdout: (text) => {
+              if (window.activeStdout) window.activeStdout(text);
+            },
+            stderr: (text) => {
+              if (window.activeStderr) window.activeStderr(text);
+            },
+            stdin: () => {
+              return window.activeStdin ? window.activeStdin() : "";
+            }
+          });
+        })
+        .then((instance) => {
+          window.pyodideInstance = instance;
+          setPyodideLoaded(true);
+          setPyodideLoading(false);
+        })
+        .catch((err) => {
+          console.error("Pyodide loading error:", err);
+          setPyodideLoading(false);
+        });
+    } else if (isPython && window.pyodideInstance) {
+      setPyodideLoaded(true);
+    }
+  }, [isPython, pyodideLoading]);
 
   useEffect(() => {
     socketRef.current = io(API_BASE);
@@ -558,17 +619,66 @@ const VideoDetail = () => {
     };
   }, []);
 
-  const handleRun = () => {
-    if (!socketRef.current || !video) return;
-    setVideo(v => ({ ...v, isRunning: true, terminalOutput: '' }));
-    socketRef.current.emit('run-cpp', {
-      code: video.codeData?.fetchedCode || video.codeData?.code
-    });
+  const handleRun = async () => {
+    if (!video) return;
+
+    if (isPython) {
+      if (!window.pyodideInstance) return;
+      
+      setVideo(v => ({ 
+        ...v, 
+        isRunning: true, 
+        terminalOutput: 'Python Interpreter Initialized. Running script...\n\n' 
+      }));
+
+      // Bind dynamic callback delegates
+      window.activeStdout = (text) => {
+        setVideo(v => ({
+          ...v,
+          terminalOutput: (v.terminalOutput || '') + text + '\n'
+        }));
+      };
+
+      window.activeStderr = (text) => {
+        setVideo(v => ({
+          ...v,
+          terminalOutput: (v.terminalOutput || '') + text + '\n'
+        }));
+      };
+
+      window.activeStdin = () => {
+        const inputVal = prompt("Enter input for Python program:");
+        const displayVal = inputVal !== null ? inputVal : '';
+        setVideo(v => ({
+          ...v,
+          terminalOutput: (v.terminalOutput || '') + displayVal + '\n'
+        }));
+        return displayVal;
+      };
+
+      try {
+        const code = video.codeData?.fetchedCode || video.codeData?.code;
+        await window.pyodideInstance.runPythonAsync(code);
+      } catch (err) {
+        setVideo(v => ({
+          ...v,
+          terminalOutput: (v.terminalOutput || '') + `\nPython execution error:\n${err.message}\n`
+        }));
+      } finally {
+        setVideo(v => ({ ...v, isRunning: false }));
+      }
+    } else {
+      if (!socketRef.current) return;
+      setVideo(v => ({ ...v, isRunning: true, terminalOutput: '' }));
+      socketRef.current.emit('run-cpp', {
+        code: video.codeData?.fetchedCode || video.codeData?.code
+      });
+    }
   };
 
   const handleStop = () => {
     setVideo(v => ({ ...v, isRunning: false }));
-    if (socketRef.current) {
+    if (!isPython && socketRef.current) {
       socketRef.current.disconnect();
       socketRef.current.connect();
     }
@@ -577,7 +687,7 @@ const VideoDetail = () => {
   const handleTerminalInput = (e) => {
     if (e.key === 'Enter') {
       const input = e.target.value;
-      if (socketRef.current && video.isRunning) {
+      if (!isPython && socketRef.current && video.isRunning) {
         socketRef.current.emit('input', input);
         setVideo(v => ({
           ...v,
@@ -588,9 +698,52 @@ const VideoDetail = () => {
     }
   };
 
-  const isHtml = video?.codeLang === 'html';
-  const isReact = video?.codeLang === 'reactjs';
-  const isCpp = video?.codeLang === 'cpp' || video?.codeLang === 'c++';
+  const handleReplInput = async (e) => {
+    if (e.key === 'Enter') {
+      const input = e.target.value;
+      if (!input.trim()) return;
+
+      setVideo(v => ({ ...v, replBuffer: '' }));
+
+      if (!window.pyodideInstance) {
+        setVideo(v => ({
+          ...v,
+          terminalOutput: (v.terminalOutput || '') + '>>> ' + input + '\nError: Python interpreter is not loaded yet.\n'
+        }));
+        return;
+      }
+
+      // Capture stdout/stderr during REPL execution
+      let replOutput = '';
+      window.activeStdout = (text) => {
+        replOutput += text + '\n';
+      };
+      window.activeStderr = (text) => {
+        replOutput += text + '\n';
+      };
+
+      try {
+        const result = await window.pyodideInstance.runPythonAsync(input);
+        let evalResult = '';
+        if (result !== undefined) {
+          evalResult = String(result) + '\n';
+        }
+        setVideo(v => ({
+          ...v,
+          terminalOutput: (v.terminalOutput || '') + '>>> ' + input + '\n' + replOutput + evalResult
+        }));
+      } catch (err) {
+        setVideo(v => ({
+          ...v,
+          terminalOutput: (v.terminalOutput || '') + '>>> ' + input + '\n' + replOutput + err.message + '\n'
+        }));
+      } finally {
+        if (terminalEndRef.current) {
+          terminalEndRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    }
+  };
 
   const sandpackFiles = useMemo(() => {
     if (!video?.codeData) return {};
@@ -686,7 +839,9 @@ ${scrollbarStyle}
             <div className="flex gap-4 items-center">
               <span className={`px-3 py-1 rounded-lg text-xs font-bold uppercase tracking-wider ${isHtml ? 'bg-orange-500/20 text-orange-300' :
                 isReact ? 'bg-emerald-500/20 text-emerald-300' :
-                  'bg-blue-500/20 text-blue-300'
+                  isCpp ? 'bg-blue-500/20 text-blue-300' :
+                    isPython ? 'bg-yellow-500/20 text-yellow-300' :
+                      'bg-purple-500/20 text-purple-300'
                 }`}>
                 {video.codeLang}
               </span>
@@ -781,19 +936,36 @@ ${scrollbarStyle}
           </div>
         )}
 
-        {/* C++: Keep Original Grid Layout */}
-        {isCpp && (
+        {/* C++ & Python: Keep Original Grid Layout */}
+        {(isCpp || isPython) && (
           <>
             {/* Left Column: Code View */}
             <div className="h-[100vh] bg-[#1e1e1e] rounded-3xl overflow-hidden border border-white/10 shadow-xl flex flex-col">
               <div className="flex items-center justify-between px-6 py-3 bg-white/5">
                 <div className="flex items-center gap-2">
                   <Code className="w-4 h-4 text-purple-400" />
-                  <span className="font-bold text-sm text-gray-300">Source Code</span>
+                  <span className="font-bold text-sm text-gray-300">Source Code (Editable)</span>
                 </div>
               </div>
-              <div className="flex-1 overflow-auto p-4 font-mono text-xs leading-relaxed custom-scrollbar text-gray-300">
-                <pre>{video.codeData?.fetchedCode || video.codeData?.code}</pre>
+              <div className="flex-1 p-4 bg-[#1b1b1b]">
+                <textarea
+                  value={video.codeData?.fetchedCode || video.codeData?.code || ''}
+                  onChange={(e) => {
+                    const val = e.target.value;
+                    setVideo(v => {
+                      if (!v) return null;
+                      return {
+                        ...v,
+                        codeData: {
+                          ...v.codeData,
+                          fetchedCode: val
+                        }
+                      };
+                    });
+                  }}
+                  className="w-full h-full bg-transparent text-gray-300 font-mono text-xs leading-relaxed resize-none border-none outline-none focus:ring-0 custom-scrollbar p-0"
+                  placeholder="Write your code here..."
+                />
               </div>
             </div>
 
@@ -809,17 +981,25 @@ ${scrollbarStyle}
                   </div>
                   <span className="font-mono text-sm text-gray-400 ml-2">minicodehub-terminal</span>
                 </div>
-                <div className="flex gap-2">
+                <div className="flex gap-2 items-center">
+                  {isPython && (
+                    <span className="bg-[#1e1e1e] text-yellow-400 font-mono text-xs font-bold px-3 py-1.5 rounded-lg border border-yellow-500/30 select-none">
+                      Python 3 (Pyodide WASM)
+                    </span>
+                  )}
                   <button
                     onClick={handleRun}
-                    disabled={video.isRunning}
-                    className={`px-4 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-2 ${video.isRunning
-                      ? 'bg-gray-700 text-gray-500 cursor-wait'
-                      : 'bg-green-600 hover:bg-green-500 text-white shadow-lg transform hover:scale-105'
-                      }`}
+                    disabled={video.isRunning || (isPython && !pyodideLoaded)}
+                    className={`px-4 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-2 ${
+                      video.isRunning || (isPython && !pyodideLoaded)
+                        ? 'bg-gray-700 text-gray-500 cursor-wait'
+                        : 'bg-green-600 hover:bg-green-500 text-white shadow-lg transform hover:scale-105'
+                    }`}
                   >
                     <Play size={12} className={video.isRunning ? 'animate-spin' : ''} />
-                    {video.isRunning ? 'Compiling...' : 'Run Code'}
+                    {video.isRunning 
+                      ? (isCpp ? 'Compiling...' : 'Running...') 
+                      : (isPython && !pyodideLoaded ? 'Loading Interpreter...' : 'Run Code')}
                   </button>
                   {video.isRunning && (
                     <button
@@ -833,13 +1013,20 @@ ${scrollbarStyle}
               </div>
 
               <div
-                className="flex-1 bg-[#0c0c0c] p-6 font-mono text-sm overflow-auto custom-scrollbar"
-                onClick={() => document.getElementById('terminal-input')?.focus()}
+                className="flex-1 bg-[#0c0c0c] p-6 font-mono text-sm overflow-auto custom-scrollbar cursor-text"
+                onClick={() => {
+                  if (isPython) {
+                    document.getElementById('repl-input')?.focus();
+                  } else {
+                    document.getElementById('terminal-input')?.focus();
+                  }
+                }}
               >
                 <div className="flex flex-col min-h-full text-gray-300">
                   <div className="mb-4 text-gray-500 select-none">
-                    MinicodeHub v2.0.0 [C++ Execution Environment]<br />
-                    Type input below when prompted.
+                    MinicodeHub v2.0.0 [{isCpp ? 'C++' : 'Python'} Execution Environment]
+                    {isPython && <><br />💡 Python runs in-browser via Pyodide WASM. Try editing the code on the left, or type Python commands directly below!</>}
+                    {isCpp && <><br />Type input below when prompted.</>}
                   </div>
 
                   <div className="whitespace-pre-wrap break-words text-gray-300 leading-relaxed">
@@ -847,7 +1034,7 @@ ${scrollbarStyle}
                     <div ref={terminalEndRef} />
                   </div>
 
-                  {video.isRunning && (
+                  {video.isRunning && !isPython && (
                     <div className="mt-2 flex items-center gap-2 group">
                       <span className="text-green-500 font-bold">➜</span>
                       <input
@@ -860,6 +1047,22 @@ ${scrollbarStyle}
                         placeholder="Type input here..."
                         autoComplete="off"
                         autoFocus
+                      />
+                    </div>
+                  )}
+
+                  {!video.isRunning && isPython && (
+                    <div className="mt-2 flex items-center gap-2 group">
+                      <span className="text-yellow-500 font-bold">{">>>"}</span>
+                      <input
+                        id="repl-input"
+                        type="text"
+                        value={video.replBuffer || ''}
+                        onChange={(e) => setVideo(v => ({ ...v, replBuffer: e.target.value }))}
+                        onKeyDown={handleReplInput}
+                        className="flex-1 bg-transparent border-none text-white focus:ring-0 p-0 font-mono caret-yellow-500 outline-none placeholder-gray-700"
+                        placeholder="Type Python command (e.g. print('hello')) here..."
+                        autoComplete="off"
                       />
                     </div>
                   )}

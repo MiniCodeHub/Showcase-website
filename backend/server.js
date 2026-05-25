@@ -77,9 +77,74 @@ io.on('connection', (socket) => {
 
             process.on('error', (err) => {
                 socket.emit('output', `Execution Error: ${err.message}`);
+                socket.emit('done', { error: true });
                 process = null;
             });
         });
+    });
+
+    socket.on('run-python', ({ code, version = 'default' }) => {
+        if (!code) return;
+
+        const tempDir = path.join(__dirname, 'temp');
+        if (!fs.existsSync(tempDir)) fs.mkdirSync(tempDir);
+
+        const filename = `temp_${socket.id}_${Date.now()}.py`;
+        const filePath = path.join(tempDir, filename);
+
+        fs.writeFileSync(filePath, code);
+
+        let pythonCmd = 'python';
+        let pythonArgs = ['-u', filePath];
+
+        if (version !== 'default') {
+            pythonCmd = 'py';
+            pythonArgs = [`-${version}`, '-u', filePath];
+        }
+
+        const runScript = (cmd, args, isFallback = false) => {
+            if (isFallback) {
+                socket.emit('output', `\r\n⚠️ Python ${version} runtime not found on this system. Falling back to default system Python...\r\n\r\n`);
+            }
+
+            process = spawn(cmd, args, { timeout: 30000 });
+
+            let stderrBuffer = '';
+
+            process.stdout.on('data', (data) => {
+                socket.emit('output', data.toString());
+            });
+
+            process.stderr.on('data', (data) => {
+                const str = data.toString();
+                stderrBuffer += str;
+                socket.emit('output', str);
+            });
+
+            process.on('close', (code) => {
+                if (!isFallback && version !== 'default' && code !== 0 && stderrBuffer.includes('No suitable Python runtime found')) {
+                    runScript('python', ['-u', filePath], true);
+                    return;
+                }
+
+                socket.emit('done', { error: code !== 0 });
+                try { if (fs.existsSync(filePath)) fs.unlinkSync(filePath); } catch (e) { }
+                process = null;
+            });
+
+            process.on('error', (err) => {
+                if (!isFallback && version !== 'default') {
+                    runScript('python', ['-u', filePath], true);
+                    return;
+                }
+                socket.emit('output', `Execution Error: ${err.message}`);
+                socket.emit('done', { error: true });
+                try { if (fs.existsSync(filePath)) fs.unlinkSync(filePath); } catch (e) { }
+                process = null;
+            });
+        };
+
+        runScript(pythonCmd, pythonArgs);
     });
 
     socket.on('input', (data) => {
@@ -203,14 +268,15 @@ function sendPaginatedVideos(videos, search, lang, startIndex, limit, res) {
 
 app.get('/api/stats', (req, res) => {
     if (!videoCache) {
-        return res.json({ total: 0, html: 0, react: 0, cpp: 0 });
+        return res.json({ total: 0, html: 0, react: 0, cpp: 0, python: 0 });
     }
 
     const stats = {
         total: videoCache.length,
         html: videoCache.filter(v => v.codeLang === 'html').length,
         react: videoCache.filter(v => v.codeLang === 'reactjs').length,
-        cpp: videoCache.filter(v => v.codeLang === 'cpp').length
+        cpp: videoCache.filter(v => v.codeLang === 'cpp').length,
+        python: videoCache.filter(v => v.codeLang === 'python').length
     };
 
     res.json(stats);
@@ -260,7 +326,8 @@ function getLangFromTitle(title) {
     const t = title.toLowerCase();
     if (t.includes('react') || t.includes('mern') || t.includes('next')) return 'reactjs';
     if (t.includes('cpp') || t.includes('c++')) return 'cpp';
-    if (t.includes('html') || t.includes('css') || t.includes('javascript') || t.includes('js')) return 'html';
+    if (t.includes('python') || /\bpy\b/.test(t)) return 'python';
+    if (t.includes('html') || t.includes('css') || t.includes('javascript') || /\bjs\b/.test(t)) return 'html';
     return 'html'; // Default
 }
 
@@ -292,21 +359,26 @@ using namespace std;
 int main() {
     cout << "Hello C++!" << endl;
     return 0;
-}`
+}`,
+        python: `def main():
+    print("Hello from MiniCodeHub Python!")
+
+if __name__ == "__main__":
+    main()`
     };
     return snippets[lang] || '// Tutorial code';
 }
 
-// ✅ FIXED: C++ Execution Endpoint
+// ✅ FIXED: C++ & Python Execution Endpoint
 const { exec, spawn } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 
 app.post('/api/run', (req, res) => {
-    const { code, language, input = '' } = req.body;
+    const { code, language, input = '', version = 'default' } = req.body;
 
-    if (language !== 'cpp') {
-        return res.status(400).json({ error: 'Only C++ execution is supported.' });
+    if (language !== 'cpp' && language !== 'python') {
+        return res.status(400).json({ error: 'Only C++ and Python execution are supported.' });
     }
 
     const tempDir = path.join(__dirname, 'temp');
@@ -314,72 +386,147 @@ app.post('/api/run', (req, res) => {
         fs.mkdirSync(tempDir);
     }
 
-    const filename = `temp_${Date.now()}.cpp`;
-    const filePath = path.join(tempDir, filename);
-    const exePath = path.join(tempDir, filename.replace('.cpp', '.exe'));
+    if (language === 'cpp') {
+        const filename = `temp_${Date.now()}.cpp`;
+        const filePath = path.join(tempDir, filename);
+        const exePath = path.join(tempDir, filename.replace('.cpp', '.exe'));
 
-    // Write code to file
-    fs.writeFileSync(filePath, code);
+        // Write code to file
+        fs.writeFileSync(filePath, code);
 
-    // Compile
-    exec(`g++ "${filePath}" -o "${exePath}"`, (compileError, stdout, stderr) => {
-        if (compileError) {
-            // Cleanup source file (ignore errors)
-            try { if (fs.existsSync(filePath)) fs.unlinkSync(filePath); } catch (e) { }
+        // Compile
+        exec(`g++ "${filePath}" -o "${exePath}"`, (compileError, stdout, stderr) => {
+            if (compileError) {
+                // Cleanup source file (ignore errors)
+                try { if (fs.existsSync(filePath)) fs.unlinkSync(filePath); } catch (e) { }
 
-            return res.json({
-                error: true,
-                output: `Compilation Error:\n${stderr}`
+                return res.json({
+                    error: true,
+                    output: `Compilation Error:\n${stderr}`
+                });
+            }
+
+            // Execute using spawn to support stdin
+            const child = spawn(exePath, [], { timeout: 10000 }); // 10s timeout enforced by Node.js
+
+            let runStdout = '';
+            let runStderr = '';
+            let outputSent = false;
+
+            // Write input to stdin
+            if (input) {
+                child.stdin.write(input);
+            }
+            child.stdin.end();
+
+            child.stdout.on('data', (data) => {
+                runStdout += data.toString();
             });
+
+            child.stderr.on('data', (data) => {
+                runStderr += data.toString();
+            });
+
+            child.on('close', (code, signal) => {
+                if (outputSent) return;
+                outputSent = true;
+
+                // Cleanup files (ignore errors)
+                try { if (fs.existsSync(filePath)) fs.unlinkSync(filePath); } catch (e) { }
+                try { if (fs.existsSync(exePath)) fs.unlinkSync(exePath); } catch (e) { }
+
+                if (signal === 'SIGTERM' || signal === 'SIGKILL') {
+                    return res.json({ error: true, output: 'Error: Execution timed out (10s limit).' });
+                }
+
+                if (code !== 0) {
+                    return res.json({ error: true, output: `Runtime Error (Exit Code ${code}):\n${runStderr}` });
+                }
+
+                res.json({ error: false, output: runStdout });
+            });
+
+            // Safety net error handler
+            child.on('error', (err) => {
+                if (outputSent) return;
+                outputSent = true;
+                res.json({ error: true, output: `Execution Error: ${err.message}` });
+            });
+        });
+    } else if (language === 'python') {
+        const filename = `temp_${Date.now()}.py`;
+        const filePath = path.join(tempDir, filename);
+
+        // Write code to file
+        fs.writeFileSync(filePath, code);
+
+        let pythonCmd = 'python';
+        let pythonArgs = ['-u', filePath];
+
+        if (version !== 'default') {
+            pythonCmd = 'py';
+            pythonArgs = [`-${version}`, '-u', filePath];
         }
 
-        // Execute using spawn to support stdin
-        const child = spawn(exePath, [], { timeout: 10000 }); // 10s timeout enforced by Node.js
+        const runScriptHttp = (cmd, args, isFallback = false) => {
+            const child = spawn(cmd, args, { timeout: 10000 }); // 10s timeout
 
-        let runStdout = '';
-        let runStderr = '';
-        let outputSent = false;
+            let runStdout = '';
+            let runStderr = '';
+            let outputSent = false;
 
-        // Write input to stdin
-        if (input) {
-            child.stdin.write(input);
-        }
-        child.stdin.end();
-
-        child.stdout.on('data', (data) => {
-            runStdout += data.toString();
-        });
-
-        child.stderr.on('data', (data) => {
-            runStderr += data.toString();
-        });
-
-        child.on('close', (code, signal) => {
-            if (outputSent) return;
-            outputSent = true;
-
-            // Cleanup files (ignore errors)
-            try { if (fs.existsSync(filePath)) fs.unlinkSync(filePath); } catch (e) { }
-            try { if (fs.existsSync(exePath)) fs.unlinkSync(exePath); } catch (e) { }
-
-            if (signal === 'SIGTERM' || signal === 'SIGKILL') {
-                return res.json({ error: true, output: 'Error: Execution timed out (10s limit).' });
+            if (input) {
+                child.stdin.write(input);
             }
+            child.stdin.end();
 
-            if (code !== 0) {
-                return res.json({ error: true, output: `Runtime Error (Exit Code ${code}):\n${runStderr}` });
-            }
+            child.stdout.on('data', (data) => {
+                runStdout += data.toString();
+            });
 
-            res.json({ error: false, output: runStdout });
-        });
+            child.stderr.on('data', (data) => {
+                runStderr += data.toString();
+            });
 
-        // Safety net error handler
-        child.on('error', (err) => {
-            if (outputSent) return;
-            outputSent = true;
-            res.json({ error: true, output: `Execution Error: ${err.message}` });
-        });
-    });
+            child.on('close', (code, signal) => {
+                if (outputSent) return;
+
+                if (!isFallback && version !== 'default' && code !== 0 && runStderr.includes('No suitable Python runtime found')) {
+                    outputSent = true;
+                    // Run fallback
+                    runScriptHttp('python', [filePath], true);
+                    return;
+                }
+
+                outputSent = true;
+                try { if (fs.existsSync(filePath)) fs.unlinkSync(filePath); } catch (e) { }
+
+                if (signal === 'SIGTERM' || signal === 'SIGKILL') {
+                    return res.json({ error: true, output: `${isFallback ? '⚠️ Python ' + version + ' not found. Falling back to default...\n' : ''}Error: Execution timed out (10s limit).` });
+                }
+
+                if (code !== 0) {
+                    return res.json({ error: true, output: `${isFallback ? '⚠️ Python ' + version + ' not found. Falling back to default...\n' : ''}Runtime Error (Exit Code ${code}):\n${runStderr}` });
+                }
+
+                res.json({ error: false, output: `${isFallback ? '⚠️ Python ' + version + ' not found. Falling back to default...\n' : ''}${runStdout}` });
+            });
+
+            child.on('error', (err) => {
+                if (outputSent) return;
+                if (!isFallback && version !== 'default') {
+                    outputSent = true;
+                    runScriptHttp('python', ['-u', filePath], true);
+                    return;
+                }
+                outputSent = true;
+                try { if (fs.existsSync(filePath)) fs.unlinkSync(filePath); } catch (e) { }
+                res.json({ error: true, output: `Execution Error: ${err.message}` });
+            });
+        };
+
+        runScriptHttp(pythonCmd, pythonArgs);
+    }
 });
 
 server.listen(PORT, () => {
