@@ -382,14 +382,21 @@ function Home() {
                           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                           loading="lazy"
                         />
-                        <span className={`absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider shadow-lg ${video.codeLang === 'html' ? 'bg-orange-500/95 text-white' :
-                          video.codeLang === 'reactjs' ? 'bg-emerald-500/95 text-white' :
-                            video.codeLang === 'cpp' ? 'bg-blue-500/95 text-white' :
-                              video.codeLang === 'python' ? 'bg-yellow-500/95 text-black' :
-                                'bg-purple-500/95 text-white'
-                          }`}>
-                          {video.codeLang?.toUpperCase()}
-                        </span>
+                        <div className="absolute top-4 left-4 flex gap-2">
+                          <span className={`px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider shadow-lg ${video.codeLang === 'html' ? 'bg-orange-500/95 text-white' :
+                            video.codeLang === 'reactjs' ? 'bg-emerald-500/95 text-white' :
+                              video.codeLang === 'cpp' ? 'bg-blue-500/95 text-white' :
+                                video.codeLang === 'python' ? 'bg-yellow-500/95 text-black' :
+                                  'bg-purple-500/95 text-white'
+                            }`}>
+                            {video.codeLang?.toUpperCase()}
+                          </span>
+                          {video.publishedAt && (
+                            <span className="px-3 py-1 rounded-full text-xs font-bold bg-black/60 backdrop-blur-md text-gray-300 shadow-lg select-none">
+                              {new Date(video.publishedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+                            </span>
+                          )}
+                        </div>
                       </div>
                       <div className="p-6 flex-1 flex flex-col justify-between">
                         <h3 className="font-bold text-lg mb-4 text-wrap break-words group-hover:text-purple-300 transition-colors leading-tight">
@@ -520,6 +527,7 @@ const VideoDetail = () => {
   const [error, setError] = useState(null);
   const [pyodideLoaded, setPyodideLoaded] = useState(false);
   const [pyodideLoading, setPyodideLoading] = useState(false);
+  const [editableCode, setEditableCode] = useState('');
   const socketRef = useRef(null);
   const terminalEndRef = useRef(null);
 
@@ -532,6 +540,7 @@ const VideoDetail = () => {
       })
       .then(data => {
         setVideo({ ...data, terminalOutput: '', isRunning: false });
+        setEditableCode('');
       })
       .catch((err) => {
         console.error("Video Fetch Error:", err);
@@ -622,6 +631,8 @@ const VideoDetail = () => {
   const handleRun = async () => {
     if (!video) return;
 
+    const codeToRun = editableCode || video.codeData?.fetchedCode || video.codeData?.code || '';
+
     if (isPython) {
       if (!window.pyodideInstance) return;
       
@@ -657,8 +668,7 @@ const VideoDetail = () => {
       };
 
       try {
-        const code = video.codeData?.fetchedCode || video.codeData?.code;
-        await window.pyodideInstance.runPythonAsync(code);
+        await window.pyodideInstance.runPythonAsync(codeToRun);
       } catch (err) {
         setVideo(v => ({
           ...v,
@@ -671,7 +681,7 @@ const VideoDetail = () => {
       if (!socketRef.current) return;
       setVideo(v => ({ ...v, isRunning: true, terminalOutput: '' }));
       socketRef.current.emit('run-cpp', {
-        code: video.codeData?.fetchedCode || video.codeData?.code
+        code: codeToRun
       });
     }
   };
@@ -681,6 +691,21 @@ const VideoDetail = () => {
     if (!isPython && socketRef.current) {
       socketRef.current.disconnect();
       socketRef.current.connect();
+    }
+  };
+
+  const handleEditorKeyDown = (e) => {
+    if (e.key === 'Tab') {
+      e.preventDefault();
+      const { selectionStart, selectionEnd, value } = e.target;
+      const tabSpace = "    ";
+      const newValue = value.substring(0, selectionStart) + tabSpace + value.substring(selectionEnd);
+      setEditableCode(newValue);
+      
+      const target = e.target;
+      setTimeout(() => {
+        target.selectionStart = target.selectionEnd = selectionStart + tabSpace.length;
+      }, 0);
     }
   };
 
@@ -699,6 +724,20 @@ const VideoDetail = () => {
   };
 
   const handleReplInput = async (e) => {
+    if (e.key === 'Tab') {
+      e.preventDefault();
+      const { selectionStart, selectionEnd, value } = e.target;
+      const tabSpace = "    ";
+      const newValue = value.substring(0, selectionStart) + tabSpace + value.substring(selectionEnd);
+      setVideo(v => ({ ...v, replBuffer: newValue }));
+      
+      const target = e.target;
+      setTimeout(() => {
+        target.selectionStart = target.selectionEnd = selectionStart + tabSpace.length;
+      }, 0);
+      return;
+    }
+
     if (e.key === 'Enter') {
       const input = e.target.value;
       if (!input.trim()) return;
@@ -845,6 +884,11 @@ ${scrollbarStyle}
                 }`}>
                 {video.codeLang}
               </span>
+              {video.publishedAt && (
+                <span className="px-3 py-1 rounded-lg text-xs font-bold bg-white/10 text-gray-300 select-none">
+                  Published: {new Date(video.publishedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+                </span>
+              )}
             </div>
           </div>
         </div>
@@ -939,133 +983,143 @@ ${scrollbarStyle}
         {/* C++ & Python: Keep Original Grid Layout */}
         {(isCpp || isPython) && (
           <>
-            {/* Left Column: Code View */}
+            {/* Left Column: Read-Only Reference Code View */}
             <div className="h-[100vh] bg-[#1e1e1e] rounded-3xl overflow-hidden border border-white/10 shadow-xl flex flex-col">
               <div className="flex items-center justify-between px-6 py-3 bg-white/5">
                 <div className="flex items-center gap-2">
                   <Code className="w-4 h-4 text-purple-400" />
-                  <span className="font-bold text-sm text-gray-300">Source Code (Editable)</span>
+                  <span className="font-bold text-sm text-gray-300">Reference Source Code (Read-Only)</span>
                 </div>
               </div>
               <div className="flex-1 p-4 bg-[#1b1b1b]">
                 <textarea
                   value={video.codeData?.fetchedCode || video.codeData?.code || ''}
-                  onChange={(e) => {
-                    const val = e.target.value;
-                    setVideo(v => {
-                      if (!v) return null;
-                      return {
-                        ...v,
-                        codeData: {
-                          ...v.codeData,
-                          fetchedCode: val
-                        }
-                      };
-                    });
-                  }}
+                  readOnly={true}
                   className="w-full h-full bg-transparent text-gray-300 font-mono text-xs leading-relaxed resize-none border-none outline-none focus:ring-0 custom-scrollbar p-0"
-                  placeholder="Write your code here..."
+                  placeholder="Fetching code..."
                 />
               </div>
             </div>
 
-            {/* Right Column: Execution */}
+            {/* Right Column: Interactive Editor & Execution Terminal */}
             <div className="col-span-1 h-[100vh] bg-[#1e1e1e] rounded-3xl overflow-hidden shadow-2xl border border-white/10 flex flex-col">
-              <div className="flex items-center justify-between px-6 py-4 bg-[#2d2d2d] border-b border-black/20 shrink-0">
-                {/* ... terminal header ... */}
-                <div className="flex items-center gap-3">
-                  <div className="flex gap-2">
-                    <div className="w-3 h-3 rounded-full bg-red-500/80"></div>
-                    <div className="w-3 h-3 rounded-full bg-yellow-500/80"></div>
-                    <div className="w-3 h-3 rounded-full bg-green-500/80"></div>
+              
+              {/* Top Half: Editable Code Editor */}
+              <div className="flex-1 flex flex-col min-h-0 border-b border-white/10 bg-[#1b1b1b]">
+                <div className="flex items-center justify-between px-6 py-3 bg-white/5 shrink-0">
+                  <div className="flex items-center gap-2">
+                    <Code className="w-4 h-4 text-green-400" />
+                    <span className="font-bold text-sm text-gray-300">Interactive Editor (Write Code Here)</span>
                   </div>
-                  <span className="font-mono text-sm text-gray-400 ml-2">minicodehub-terminal</span>
                 </div>
-                <div className="flex gap-2 items-center">
-                  {isPython && (
-                    <span className="bg-[#1e1e1e] text-yellow-400 font-mono text-xs font-bold px-3 py-1.5 rounded-lg border border-yellow-500/30 select-none">
-                      Python 3 (Pyodide WASM)
-                    </span>
-                  )}
-                  <button
-                    onClick={handleRun}
-                    disabled={video.isRunning || (isPython && !pyodideLoaded)}
-                    className={`px-4 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-2 ${
-                      video.isRunning || (isPython && !pyodideLoaded)
-                        ? 'bg-gray-700 text-gray-500 cursor-wait'
-                        : 'bg-green-600 hover:bg-green-500 text-white shadow-lg transform hover:scale-105'
-                    }`}
-                  >
-                    <Play size={12} className={video.isRunning ? 'animate-spin' : ''} />
-                    {video.isRunning 
-                      ? (isCpp ? 'Compiling...' : 'Running...') 
-                      : (isPython && !pyodideLoaded ? 'Loading Interpreter...' : 'Run Code')}
-                  </button>
-                  {video.isRunning && (
-                    <button
-                      onClick={handleStop}
-                      className="px-4 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider bg-red-600 hover:bg-red-500 text-white shadow-lg flex items-center gap-2"
-                    >
-                      <Square size={12} fill="currentColor" /> Stop
-                    </button>
-                  )}
+                <div className="flex-1 p-4 overflow-hidden">
+                  <textarea
+                    value={editableCode}
+                    onChange={(e) => setEditableCode(e.target.value)}
+                    onKeyDown={handleEditorKeyDown}
+                    className="w-full h-full bg-transparent text-gray-300 font-mono text-xs leading-relaxed resize-none border-none outline-none focus:ring-0 custom-scrollbar p-0"
+                    placeholder="Write or edit your code here..."
+                  />
                 </div>
               </div>
 
-              <div
-                className="flex-1 bg-[#0c0c0c] p-6 font-mono text-sm overflow-auto custom-scrollbar cursor-text"
-                onClick={() => {
-                  if (isPython) {
-                    document.getElementById('repl-input')?.focus();
-                  } else {
-                    document.getElementById('terminal-input')?.focus();
-                  }
-                }}
-              >
-                <div className="flex flex-col min-h-full text-gray-300">
-                  <div className="mb-4 text-gray-500 select-none">
-                    MinicodeHub v2.0.0 [{isCpp ? 'C++' : 'Python'} Execution Environment]
-                    {isPython && <><br />💡 Python runs in-browser via Pyodide WASM. Try editing the code on the left, or type Python commands directly below!</>}
-                    {isCpp && <><br />Type input below when prompted.</>}
-                  </div>
-
-                  <div className="whitespace-pre-wrap break-words text-gray-300 leading-relaxed">
-                    {video.terminalOutput}
-                    <div ref={terminalEndRef} />
-                  </div>
-
-                  {video.isRunning && !isPython && (
-                    <div className="mt-2 flex items-center gap-2 group">
-                      <span className="text-green-500 font-bold">➜</span>
-                      <input
-                        id="terminal-input"
-                        type="text"
-                        value={video.inputBuffer || ''}
-                        onChange={(e) => setVideo(v => ({ ...v, inputBuffer: e.target.value }))}
-                        onKeyDown={handleTerminalInput}
-                        className="flex-1 bg-transparent border-none text-white focus:ring-0 p-0 font-mono caret-green-500 outline-none placeholder-gray-700"
-                        placeholder="Type input here..."
-                        autoComplete="off"
-                        autoFocus
-                      />
+              {/* Bottom Half: Execution Terminal */}
+              <div className="flex-1 flex flex-col min-h-0 bg-[#0c0c0c]">
+                <div className="flex items-center justify-between px-6 py-4 bg-[#2d2d2d] border-b border-black/20 shrink-0">
+                  <div className="flex items-center gap-3">
+                    <div className="flex gap-2">
+                      <div className="w-3 h-3 rounded-full bg-red-500/80"></div>
+                      <div className="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+                      <div className="w-3 h-3 rounded-full bg-green-500/80"></div>
                     </div>
-                  )}
+                    <span className="font-mono text-sm text-gray-400 ml-2">minicodehub-terminal</span>
+                  </div>
+                  <div className="flex gap-2 items-center">
+                    {isPython && (
+                      <span className="bg-[#1e1e1e] text-yellow-400 font-mono text-xs font-bold px-3 py-1.5 rounded-lg border border-yellow-500/30 select-none">
+                        Python 3 (Pyodide WASM)
+                      </span>
+                    )}
+                    <button
+                      onClick={handleRun}
+                      disabled={video.isRunning || (isPython && !pyodideLoaded)}
+                      className={`px-4 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-2 ${
+                        video.isRunning || (isPython && !pyodideLoaded)
+                          ? 'bg-gray-700 text-gray-500 cursor-wait'
+                          : 'bg-green-600 hover:bg-green-500 text-white shadow-lg transform hover:scale-105'
+                      }`}
+                    >
+                      <Play size={12} className={video.isRunning ? 'animate-spin' : ''} />
+                      {video.isRunning 
+                        ? (isCpp ? 'Compiling...' : 'Running...') 
+                        : (isPython && !pyodideLoaded ? 'Loading Interpreter...' : 'Run Code')}
+                    </button>
+                    {video.isRunning && (
+                      <button
+                        onClick={handleStop}
+                        className="px-4 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider bg-red-600 hover:bg-red-500 text-white shadow-lg flex items-center gap-2"
+                      >
+                        <Square size={12} fill="currentColor" /> Stop
+                      </button>
+                    )}
+                  </div>
+                </div>
 
-                  {!video.isRunning && isPython && (
-                    <div className="mt-2 flex items-center gap-2 group">
-                      <span className="text-yellow-500 font-bold">{">>>"}</span>
-                      <input
-                        id="repl-input"
-                        type="text"
-                        value={video.replBuffer || ''}
-                        onChange={(e) => setVideo(v => ({ ...v, replBuffer: e.target.value }))}
-                        onKeyDown={handleReplInput}
-                        className="flex-1 bg-transparent border-none text-white focus:ring-0 p-0 font-mono caret-yellow-500 outline-none placeholder-gray-700"
-                        placeholder="Type Python command (e.g. print('hello')) here..."
-                        autoComplete="off"
-                      />
+                <div
+                  className="flex-1 bg-[#0c0c0c] p-6 font-mono text-sm overflow-auto custom-scrollbar cursor-text"
+                  onClick={() => {
+                    if (isPython) {
+                      document.getElementById('repl-input')?.focus();
+                    } else {
+                      document.getElementById('terminal-input')?.focus();
+                    }
+                  }}
+                >
+                  <div className="flex flex-col min-h-full text-gray-300">
+                    <div className="mb-4 text-gray-500 select-none">
+                      MinicodeHub v2.0.0 [{isCpp ? 'C++' : 'Python'} Execution Environment]
+                      {isPython && <><br />💡 Python runs in-browser via Pyodide WASM. Edit the code above and click Run Code, or type live commands directly in the REPL below!</>}
+                      {isCpp && <><br />Edit the code above and click Run Code. Type input below when prompted.</>}
                     </div>
-                  )}
+
+                    <div className="whitespace-pre-wrap break-words text-gray-300 leading-relaxed">
+                      {video.terminalOutput}
+                      <div ref={terminalEndRef} />
+                    </div>
+
+                    {video.isRunning && !isPython && (
+                      <div className="mt-2 flex items-center gap-2 group">
+                        <span className="text-green-500 font-bold">➜</span>
+                        <input
+                          id="terminal-input"
+                          type="text"
+                          value={video.inputBuffer || ''}
+                          onChange={(e) => setVideo(v => ({ ...v, inputBuffer: e.target.value }))}
+                          onKeyDown={handleTerminalInput}
+                          className="flex-1 bg-transparent border-none text-white focus:ring-0 p-0 font-mono caret-green-500 outline-none placeholder-gray-700"
+                          placeholder="Type input here..."
+                          autoComplete="off"
+                          autoFocus
+                        />
+                      </div>
+                    )}
+
+                    {!video.isRunning && isPython && (
+                      <div className="mt-2 flex items-center gap-2 group">
+                        <span className="text-yellow-500 font-bold">{">>>"}</span>
+                        <input
+                          id="repl-input"
+                          type="text"
+                          value={video.replBuffer || ''}
+                          onChange={(e) => setVideo(v => ({ ...v, replBuffer: e.target.value }))}
+                          onKeyDown={handleReplInput}
+                          className="flex-1 bg-transparent border-none text-white focus:ring-0 p-0 font-mono caret-yellow-500 outline-none placeholder-gray-700"
+                          placeholder="Type Python command (e.g. print('hello')) here..."
+                          autoComplete="off"
+                        />
+                      </div>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>

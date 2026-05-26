@@ -27,9 +27,29 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static('public'));
 
-let videoCache = null;
-let videoCacheTime = null;
-const CACHE_DURATION = 30 * 60 * 1000; // 30 minutes
+const fs = require('fs');
+const path = require('path');
+
+const CACHE_FILE = path.join(__dirname, 'videos.json');
+let videoCache = [];
+
+function loadCacheFromFile() {
+    try {
+        if (fs.existsSync(CACHE_FILE)) {
+            videoCache = JSON.parse(fs.readFileSync(CACHE_FILE, 'utf8'));
+            console.log(`📦 Loaded ${videoCache.length} videos from local cache file.`);
+        } else {
+            console.log('⚠️ Local cache file not found. Initializing empty.');
+            videoCache = [];
+        }
+    } catch (e) {
+        console.error('⚠️ Failed to load local cache file:', e.message);
+        videoCache = [];
+    }
+}
+
+// Load cache immediately on startup
+loadCacheFromFile();
 
 // Socket.IO Logic
 io.on('connection', (socket) => {
@@ -161,50 +181,61 @@ io.on('connection', (socket) => {
     });
 });
 
-async function fetchVideosFromYouTube() {
-    console.log('📡 Fetching FRESH videos from YouTube...');
-    let allVideos = [];
-    let nextPageToken = '';
+async function syncVideosWithYouTube() {
+    console.log('CNTL: [Sync] Attempting to fetch fresh videos from YouTube...');
+    try {
+        let allVideos = [];
+        let nextPageToken = '';
 
-    do {
-        const response = await axios.get('https://www.googleapis.com/youtube/v3/playlistItems', {
-            params: {
-                part: 'snippet,contentDetails',
-                playlistId: UPLOADS_PLAYLIST_ID,
-                maxResults: 50,
-                pageToken: nextPageToken,
-                key: YOUTUBE_API_KEY
-            }
-        });
+        do {
+            const response = await axios.get('https://www.googleapis.com/youtube/v3/playlistItems', {
+                params: {
+                    part: 'snippet,contentDetails',
+                    playlistId: UPLOADS_PLAYLIST_ID,
+                    maxResults: 50,
+                    pageToken: nextPageToken,
+                    key: YOUTUBE_API_KEY
+                }
+            });
 
-        const videos = response.data.items.map(item => ({
-            id: item.contentDetails.videoId,
-            title: item.snippet.title,
-            thumbnail: item.snippet.thumbnails.high?.url || item.snippet.thumbnails.medium?.url,
-            codeLang: getLangFromTitle(item.snippet.title),
-            videoId: item.contentDetails.videoId,
-            videoUrl: `https://youtube.com/watch?v=${item.contentDetails.videoId}`,
-            publishedAt: item.snippet.publishedAt,
-            description: item.snippet.description,
-            codeData: {
-                code: generateCodeSnippet(getLangFromTitle(item.snippet.title)),
-                language: getLangFromTitle(item.snippet.title)
-            }
-        }));
+            const videos = response.data.items.map(item => ({
+                id: item.contentDetails.videoId,
+                title: item.snippet.title,
+                thumbnail: item.snippet.thumbnails.high?.url || item.snippet.thumbnails.medium?.url,
+                codeLang: getLangFromTitle(item.snippet.title),
+                videoId: item.contentDetails.videoId,
+                videoUrl: `https://youtube.com/watch?v=${item.contentDetails.videoId}`,
+                publishedAt: item.snippet.publishedAt,
+                description: item.snippet.description,
+                codeData: {
+                    code: generateCodeSnippet(getLangFromTitle(item.snippet.title)),
+                    language: getLangFromTitle(item.snippet.title)
+                }
+            }));
 
-        allVideos = allVideos.concat(videos);
-        nextPageToken = response.data.nextPageToken;
-    } while (nextPageToken);
+            allVideos = allVideos.concat(videos);
+            nextPageToken = response.data.nextPageToken;
+        } while (nextPageToken);
 
-    videoCache = allVideos;
-    videoCacheTime = Date.now();
+        // Update memory cache on success
+        videoCache = allVideos;
 
-    console.log(`✅ Fetched ${allVideos.length} total videos`);
-    return allVideos;
+        // Persist to local JSON file
+        fs.writeFileSync(CACHE_FILE, JSON.stringify(allVideos, null, 2), 'utf8');
+        console.log(`💾 [Sync] Success! Saved ${allVideos.length} videos to local file.`);
+    } catch (error) {
+        console.error('❌ [Sync] YouTube API update failed (e.g., Quota Exceeded). Keeping existing cache.', error.message);
+    }
 }
 
-// ✅ FIXED: Server-side pagination + filtering
-app.get('/api/videos', async (req, res) => {
+// Schedule background sync
+// 1. Run 5 seconds after startup
+setTimeout(syncVideosWithYouTube, 5000);
+// 2. Run every 24 hours
+setInterval(syncVideosWithYouTube, 24 * 60 * 60 * 1000);
+
+// ✅ FIXED: Server-side pagination + filtering directly from local cache
+app.get('/api/videos', (req, res) => {
     const { search = '', lang = 'all', filter = 'all', page = '1', limit = '20' } = req.query;
 
     const actualLang = lang !== 'all' ? lang : filter !== 'all' ? filter : 'all';
@@ -212,26 +243,9 @@ app.get('/api/videos', async (req, res) => {
     const limitNum = parseInt(limit);
     const startIndex = (pageNum - 1) * limitNum;
 
-    console.log(`🔍 Query: search="${search}", lang="${actualLang}", page=${pageNum}, limit=${limitNum}`);
+    console.log(`🔍 Serving from Cache: search="${search}", lang="${actualLang}", page=${pageNum}, limit=${limitNum}`);
 
-    // Check cache first
-    if (videoCache && (Date.now() - videoCacheTime < CACHE_DURATION)) {
-        console.log('✅ Using cache for pagination');
-        return sendPaginatedVideos(videoCache, search, actualLang, startIndex, limitNum, res);
-    }
-
-    // Fetch fresh from YouTube
-    try {
-        const allVideos = await fetchVideosFromYouTube();
-        sendPaginatedVideos(allVideos, search, actualLang, startIndex, limitNum, res);
-    } catch (error) {
-        console.error('❌ YouTube API Error:', error.message);
-        if (videoCache) {
-            console.log('📦 Using stale cache');
-            return sendPaginatedVideos(videoCache, search, actualLang, startIndex, limitNum, res);
-        }
-        res.status(500).json({ error: 'Failed to fetch videos' });
-    }
+    sendPaginatedVideos(videoCache, search, actualLang, startIndex, limitNum, res);
 });
 
 // ✅ FIXED PAGINATION FUNCTION - Server-side slicing
@@ -283,16 +297,7 @@ app.get('/api/stats', (req, res) => {
 });
 
 app.get('/api/video/:id', async (req, res) => {
-    if (!videoCache) {
-        console.log('⚠️ Cache not loaded for direct hit, fetching...');
-        try {
-            await fetchVideosFromYouTube();
-        } catch (error) {
-            return res.status(500).json({ error: "Failed to load cache" });
-        }
-    }
-
-    const video = videoCache.find(v => v.videoId === req.params.id);
+    const video = videoCache.find(v => v.videoId === req.params.id || v.id === req.params.id);
     if (!video) return res.status(404).json({ error: "Video not found" });
 
     // ✅ CHECK FOR GITHUB LINK
@@ -371,8 +376,7 @@ if __name__ == "__main__":
 
 // ✅ FIXED: C++ & Python Execution Endpoint
 const { exec, spawn } = require('child_process');
-const fs = require('fs');
-const path = require('path');
+
 
 app.post('/api/run', (req, res) => {
     const { code, language, input = '', version = 'default' } = req.body;
