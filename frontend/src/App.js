@@ -827,7 +827,8 @@ ${scrollbarStyle}
     }
     if (isHtml) {
       return {
-        "index.html": `<style>${scrollbarStyle}</style>\n` + code
+        "preview.html": `<style>${scrollbarStyle}</style>\n` + code,
+        "index.html": code
       };
     }
     return {};
@@ -915,6 +916,13 @@ ${scrollbarStyle}
                 template="static"
                 theme={draculaTheme}
                 files={sandpackFiles}
+                customSetup={{
+                  entry: "preview.html"
+                }}
+                options={{
+                  visibleFiles: ["index.html"],
+                  activeFile: "index.html"
+                }}
               >
                 <div className="flex flex-col lg:flex-row h-fit w-full gap-6 md:gap-8">
                   <div className="flex-1 w-full h-1/2 lg:h-full overflow-hidden order-2 lg:order-1 rounded-3xl border border-white/10 shadow-xl bg-[#1e1e1e]">
