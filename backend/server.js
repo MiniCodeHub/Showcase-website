@@ -36,7 +36,26 @@ let videoCache = [];
 function loadCacheFromFile() {
     try {
         if (fs.existsSync(CACHE_FILE)) {
-            videoCache = JSON.parse(fs.readFileSync(CACHE_FILE, 'utf8'));
+            const loaded = JSON.parse(fs.readFileSync(CACHE_FILE, 'utf8'));
+            let updated = false;
+            videoCache = loaded.map(video => {
+                const description = video.description || '';
+                const githubUrl = extractGithubUrl(description);
+                
+                // Migrate from old format (code/language properties) to githubUrl format
+                if (video.codeData && (video.codeData.code !== undefined || video.codeData.language !== undefined)) {
+                    video.codeData = {
+                        githubUrl: githubUrl
+                    };
+                    updated = true;
+                }
+                return video;
+            });
+            
+            if (updated) {
+                fs.writeFileSync(CACHE_FILE, JSON.stringify(videoCache, null, 2), 'utf8');
+                console.log(`💾 Normalized cache format and updated ${CACHE_FILE}`);
+            }
             console.log(`📦 Loaded ${videoCache.length} videos from local cache file.`);
         } else {
             console.log('⚠️ Local cache file not found. Initializing empty.');
@@ -198,20 +217,23 @@ async function syncVideosWithYouTube() {
                 }
             });
 
-            const videos = response.data.items.map(item => ({
-                id: item.contentDetails.videoId,
-                title: item.snippet.title,
-                thumbnail: item.snippet.thumbnails.high?.url || item.snippet.thumbnails.medium?.url,
-                codeLang: getLangFromTitle(item.snippet.title),
-                videoId: item.contentDetails.videoId,
-                videoUrl: `https://youtube.com/watch?v=${item.contentDetails.videoId}`,
-                publishedAt: item.snippet.publishedAt,
-                description: item.snippet.description,
-                codeData: {
-                    code: generateCodeSnippet(getLangFromTitle(item.snippet.title)),
-                    language: getLangFromTitle(item.snippet.title)
-                }
-            }));
+            const videos = response.data.items.map(item => {
+                const description = item.snippet.description || '';
+                const githubUrl = extractGithubUrl(description);
+                return {
+                    id: item.contentDetails.videoId,
+                    title: item.snippet.title,
+                    thumbnail: item.snippet.thumbnails.high?.url || item.snippet.thumbnails.medium?.url,
+                    codeLang: getLangFromTitle(item.snippet.title),
+                    videoId: item.contentDetails.videoId,
+                    videoUrl: `https://youtube.com/watch?v=${item.contentDetails.videoId}`,
+                    publishedAt: item.snippet.publishedAt,
+                    description: description,
+                    codeData: {
+                        githubUrl: githubUrl
+                    }
+                };
+            });
 
             allVideos = allVideos.concat(videos);
             nextPageToken = response.data.nextPageToken;
@@ -302,9 +324,11 @@ app.get('/api/video/:id', async (req, res) => {
 
     // ✅ CHECK FOR GITHUB LINK
     if (!video.codeData.fetchedCode) {
-        const githubMatch = video.description.match(/https:\/\/github\.com\/[^\s]+/);
-        if (githubMatch) {
-            let rawUrl = githubMatch[0]
+        const githubUrl = video.codeData.githubUrl || extractGithubUrl(video.description);
+        if (githubUrl) {
+            let rawUrl = githubUrl
+                .replace('http://', 'https://')
+                .replace('www.', '')
                 .replace('github.com', 'raw.githubusercontent.com')
                 .replace('/blob/', '/'); // Raw URLs don't have /blob/
 
@@ -326,6 +350,18 @@ app.get('/api/video/:id', async (req, res) => {
 
     res.json(video);
 });
+
+function extractGithubUrl(description) {
+    if (!description) return null;
+    // 1. Look specifically for "source code: <url>"
+    const sourceCodeMatch = description.match(/source\s+code:\s*(https?:\/\/(?:www\.)?github\.com\/[^\s]+)/i);
+    if (sourceCodeMatch) {
+        return sourceCodeMatch[1];
+    }
+    // 2. Fallback to any github link in description
+    const fallbackMatch = description.match(/https?:\/\/(?:www\.)?github\.com\/[^\s]+/);
+    return fallbackMatch ? fallbackMatch[0] : null;
+}
 
 function getLangFromTitle(title) {
     const t = title.toLowerCase();

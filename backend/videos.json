@@ -1,5 +1,70 @@
 [
   {
+    "id": "jteHBktgWTE",
+    "title": "C++ N-Queens Problem | Backtracking #CPP #Algorithms #Backtracking #Coding #MiniCodeHub",
+    "thumbnail": "https://i.ytimg.com/vi/jteHBktgWTE/hqdefault.jpg",
+    "codeLang": "cpp",
+    "videoId": "jteHBktgWTE",
+    "videoUrl": "https://youtube.com/watch?v=jteHBktgWTE",
+    "publishedAt": "2026-05-30T18:30:22Z",
+    "description": "Solve the N-Queens problem using recursive backtracking 🚀💻\nLearn board traversal & constraint-based recursion ⚡\n#CPP #Algorithms #Backtracking #Coding #minicodehub \nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/NQueensProblemBacktracking.cpp\n\nFollow for more 1-minute coding projects!\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds | @NoCopyrightSounds",
+    "codeData": {
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/NQueensProblemBacktracking.cpp"
+    }
+  },
+  {
+    "id": "sQKe0w9Y_t4",
+    "title": "React Currency Converter | Live UI #ReactJS #TailwindCSS #WebDev #Frontend #MiniCodeHub",
+    "thumbnail": "https://i.ytimg.com/vi/sQKe0w9Y_t4/hqdefault.jpg",
+    "codeLang": "reactjs",
+    "videoId": "sQKe0w9Y_t4",
+    "videoUrl": "https://youtube.com/watch?v=sQKe0w9Y_t4",
+    "publishedAt": "2026-05-29T18:30:20Z",
+    "description": "Build a live currency converter UI with interactive inputs 🚀💻\nClean responsive design using React & Tailwind CSS ⚡\n#ReactJS #TailwindCSS #WebDev #Frontend #minicodehub \nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Live%20Currency%20Converter%20UI.tsx\n\nFollow for more 1-minute coding projects!\n\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds | @NoCopyrightSounds",
+    "codeData": {
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Live%20Currency%20Converter%20UI.tsx"
+    }
+  },
+  {
+    "id": "LuhX3IEP6MQ",
+    "title": "CSS Masonry Layout | No JavaScript #HTML #CSS #WebDev #Frontend #minicodehub",
+    "thumbnail": "https://i.ytimg.com/vi/LuhX3IEP6MQ/hqdefault.jpg",
+    "codeLang": "html",
+    "videoId": "LuhX3IEP6MQ",
+    "videoUrl": "https://youtube.com/watch?v=LuhX3IEP6MQ",
+    "publishedAt": "2026-05-28T18:30:31Z",
+    "description": "Create a responsive masonry layout using only CSS 🚀💻\nModern gallery-style design with zero JavaScript ⚡\n#HTML #CSS #WebDev #Frontend #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/CSS%20Masonry%20Layout%20(No%20JS).html\n\nFollow for more 1-minute coding projects!\n\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
+    "codeData": {
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/CSS%20Masonry%20Layout%20(No%20JS).html"
+    }
+  },
+  {
+    "id": "AaYl2H53Cqc",
+    "title": "C++ Sudoku Solver | Backtracking #CPP #Algorithms #Backtracking #Coding #minicodehub",
+    "thumbnail": "https://i.ytimg.com/vi/AaYl2H53Cqc/hqdefault.jpg",
+    "codeLang": "cpp",
+    "videoId": "AaYl2H53Cqc",
+    "videoUrl": "https://youtube.com/watch?v=AaYl2H53Cqc",
+    "publishedAt": "2026-05-27T18:30:23Z",
+    "description": "Build a Sudoku Solver using recursive backtracking 🚀💻\nLearn constraint solving & recursion techniques ⚡\n#CPP #Algorithms #Backtracking #Coding #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/SudokuSolverBacktracking.cpp\n\nFollow for more 1-minute coding projects!\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
+    "codeData": {
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/SudokuSolverBacktracking.cpp"
+    }
+  },
+  {
+    "id": "G1HhlUYF7Qo",
+    "title": "React Onboarding Flow | Animated Steps #ReactJS #TailwindCSS #WebDev #Frontend #MiniCodeHub",
+    "thumbnail": "https://i.ytimg.com/vi/G1HhlUYF7Qo/hqdefault.jpg",
+    "codeLang": "reactjs",
+    "videoId": "G1HhlUYF7Qo",
+    "videoUrl": "https://youtube.com/watch?v=G1HhlUYF7Qo",
+    "publishedAt": "2026-05-26T18:30:09Z",
+    "description": "Build a 3-step animated onboarding flow with smooth transitions 🚀💻\nModern UI using React & Tailwind CSS ⚡\n#ReactJS #TailwindCSS #WebDev #Frontend #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Animated%20Onboarding%20Flow%203-Step%20Intro.tsx\n\nFollow for more 1-minute coding projects!\n\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
+    "codeData": {
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Animated%20Onboarding%20Flow%203-Step%20Intro.tsx"
+    }
+  },
+  {
     "id": "LWHuYs6HPKc",
     "title": "Tooltip Component | Auto Position UI #HTML #CSS #JavaScript #WebDev #MiniCodeHub",
     "thumbnail": "https://i.ytimg.com/vi/LWHuYs6HPKc/hqdefault.jpg",
@@ -9,8 +74,7 @@
     "publishedAt": "2026-05-25T18:30:31Z",
     "description": "Create a tooltip component with 4-direction auto-positioning 🚀💻\nSmooth responsive UI using HTML CSS JS ⚡\n#HTML #CSS #JavaScript #WebDev #minicodehub \n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Tooltip%20Component%204-Direction%20Auto-Position.html\n\nFollow for more 1-minute coding projects!\n\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds | @NoCopyrightSounds",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Tooltip%20Component%204-Direction%20Auto-Position.html"
     }
   },
   {
@@ -23,8 +87,7 @@
     "publishedAt": "2026-05-24T18:30:42Z",
     "description": "Implement a Fenwick Tree for fast prefix sum queries & updates 🚀💻\nLearn efficient range query optimization ⚡\n#CPP #DataStructures #FenwickTree #Coding #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/FenwickTreeBinaryIndexedTree.cpp\n\nFollow for more 1-minute coding projects!\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/FenwickTreeBinaryIndexedTree.cpp"
     }
   },
   {
@@ -37,8 +100,7 @@
     "publishedAt": "2026-05-23T18:30:33Z",
     "description": "Build a user profile card with editable fields & toggle mode 🚀💻\nClean component UI using React & Tailwind CSS ⚡\n#ReactJS #TailwindCSS #WebDev #Frontend #minicodehub \n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/User%20Profile%20Card%20with%20Edit%20Mode%20Toggle.tsx\n\nFollow for more 1-minute coding projects!\n\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds | @NoCopyrightSounds",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/User%20Profile%20Card%20with%20Edit%20Mode%20Toggle.tsx"
     }
   },
   {
@@ -51,8 +113,7 @@
     "publishedAt": "2026-05-22T18:30:39Z",
     "description": "Create animated number counters triggered on scroll 🚀💻\nSmooth UI interactions using HTML CSS JS ⚡\n#HTML #CSS #JavaScript #WebDev #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Animated%20Number%20Counter%20on%20Scroll.html\n\nFollow for more 1-minute coding projects!\n\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Animated%20Number%20Counter%20on%20Scroll.html"
     }
   },
   {
@@ -65,8 +126,7 @@
     "publishedAt": "2026-05-21T18:30:36Z",
     "description": "Implement the KMP String Search Algorithm for efficient pattern matching 🚀💻\nLearn prefix tables & optimized searching step-by-step ⚡\n#CPP #Algorithms #StringMatching #Coding #MiniCodeHub\n\nsource code:https://github.com/MiniCodeHub/Cplusplus/blob/main/KMPStringSearchAlgorithm.cpp\n\nFollow for more 1-minute coding projects!\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/KMPStringSearchAlgorithm.cpp"
     }
   },
   {
@@ -79,8 +139,7 @@
     "publishedAt": "2026-05-20T18:30:20Z",
     "description": "Build a file tree explorer with collapsible folders & nested structure 🚀💻\nClean developer-style UI using React & Tailwind CSS ⚡\n#ReactJS #TailwindCSS #WebDev #Frontend #minicodehub \n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/File%20Tree%20Explorer%20Collapsible%20Folders.tsx\n\nFollow for more 1-minute coding projects!\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds | @NoCopyrightSounds",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/File%20Tree%20Explorer%20Collapsible%20Folders.tsx"
     }
   },
   {
@@ -93,8 +152,7 @@
     "publishedAt": "2026-05-19T18:30:21Z",
     "description": "Create smooth liquid/blob animations using pure CSS 🚀💻\nModern animated UI effects for websites ⚡\n#HTML #CSS #JavaScript #WebDev #MiniCodeHub\n\nsource code: http://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Liquid%20Blob%20CSS%20Animation.html\n\nFollow for more 1-minute coding projects!\n\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "http://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Liquid%20Blob%20CSS%20Animation.html"
     }
   },
   {
@@ -107,8 +165,7 @@
     "publishedAt": "2026-05-18T18:30:55Z",
     "description": "Solve the Coin Change problem using dynamic programming 🚀💻\nLearn optimal substructure & efficient DP solutions ⚡\n#CPP #DynamicProgramming #Algorithms #Coding #MiniCodeHub\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/CoinChangeProblemDynamicProgramming.cpp\n\nFollow for more 1-minute coding projects!\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/CoinChangeProblemDynamicProgramming.cpp"
     }
   },
   {
@@ -121,8 +178,7 @@
     "publishedAt": "2026-05-17T18:30:57Z",
     "description": "Build a multi-level nested dropdown menu with smooth interactions 🚀💻\nReusable navigation UI using React & Tailwind CSS ⚡\n#ReactJS #TailwindCSS #WebDev #Frontend #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Nested%20Dropdown%20Menu%20Multi-Level.tsx\n\nFollow for more 1-minute coding projects!\n\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Nested%20Dropdown%20Menu%20Multi-Level.tsx"
     }
   },
   {
@@ -135,8 +191,7 @@
     "publishedAt": "2026-05-16T18:30:20Z",
     "description": "Create a draggable floating widget with smooth mouse interactions 🚀💻\nInteractive UI using HTML CSS JS ⚡\n#HTML #CSS #JavaScript #WebDev #MiniCodeHub\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Draggable%20Floating%20Widget%20Mouse%20Events.html\n\nFollow for more 1-minute coding projects!\n\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Draggable%20Floating%20Widget%20Mouse%20Events.html"
     }
   },
   {
@@ -149,8 +204,7 @@
     "publishedAt": "2026-05-15T18:30:01Z",
     "description": "Solve Matrix Chain Multiplication using dynamic programming 🚀💻\nOptimize matrix operations with efficient DP logic ⚡\n#CPP #DynamicProgramming #Algorithms #Coding #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/MatrixChainMultiplicationDynamicProgramming.cpp\n\nFollow for more 1-minute coding projects!\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/MatrixChainMultiplicationDynamicProgramming.cpp"
     }
   },
   {
@@ -163,8 +217,7 @@
     "publishedAt": "2026-05-14T18:30:11Z",
     "description": "Build a rich text editor with bold, italic & list formatting — no libraries 🚀💻\nClean editing UI using React & Tailwind CSS ⚡\n#ReactJS #TailwindCSS #WebDev #Frontend #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Rich%20Text%20Editor%20Bold%20Italic%20Lists%20No%20Library.tsx\n\nFollow for more 1-minute coding projects!\n\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Rich%20Text%20Editor%20Bold%20Italic%20Lists%20No%20Library.tsx"
     }
   },
   {
@@ -177,8 +230,7 @@
     "publishedAt": "2026-05-13T18:30:12Z",
     "description": "Welcome back to minicodehub! On Day 7, we’re moving beyond simple coding to high-speed data manipulation. Learn how to use Python operations and replication to handle bulk data with just a few keystrokes.\n\nWhat you’ll learn today:\n\nAdvanced Replication: Multiplying Lists and Strings for fast data generation.\n\nComplex Operations: Using arithmetic and logical operators to transform data.\n\nPractical Workflow: Joining and repeating data to build dynamic outputs.\n\nMaster the art of data manipulation with minicodehub!\n\n#python \nNotes: https://github.com/MiniCodeHub/Python_notes\nAlternative: https://drive.google.com/drive/folders/1DZVm8XfHNiNVXpn_e4f0IOH0Sftr3lrI?usp=sharing",
     "codeData": {
-      "code": "def main():\n    print(\"Hello from MiniCodeHub Python!\")\n\nif __name__ == \"__main__\":\n    main()",
-      "language": "python"
+      "githubUrl": "https://github.com/MiniCodeHub/Python_notes"
     }
   },
   {
@@ -191,8 +243,7 @@
     "publishedAt": "2026-05-13T18:30:04Z",
     "description": "Create an animated SVG gauge/speedometer with smooth value transitions 🚀💻\nModern dashboard-style UI using HTML CSS JS ⚡\n#HTML #CSS #JavaScript #WebDev #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Animated%20SVG%20Gauge%20Speedometer.html\n\nFollow for more 1-minute coding projects!\n\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Animated%20SVG%20Gauge%20Speedometer.html"
     }
   },
   {
@@ -205,8 +256,7 @@
     "publishedAt": "2026-05-12T18:31:07Z",
     "description": "Implement Bellman-Ford for shortest path with negative edge weights 🚀💻\nLearn graph relaxation & negative cycle detection ⚡\n#CPP #Algorithms #Graphs #Coding #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/BellmanFordShortestPathNegativeWeights.cpp\n\nFollow for more 1-minute coding projects!\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/BellmanFordShortestPathNegativeWeights.cpp"
     }
   },
   {
@@ -219,8 +269,7 @@
     "publishedAt": "2026-05-11T18:31:14Z",
     "description": "Build a stepper/progress tracker component with smooth step transitions 🚀💻\nClean multi-step UI using React & Tailwind CSS ⚡\n#ReactJS #TailwindCSS #WebDev #Frontend #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Stepper%20Progress%20Tracker%20Component.tsx\n\nFollow for more 1-minute coding projects!\n\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Stepper%20Progress%20Tracker%20Component.tsx"
     }
   },
   {
@@ -233,8 +282,7 @@
     "publishedAt": "2026-05-09T18:31:19Z",
     "description": "Implement Huffman Encoding for efficient data compression 🚀💻\nLearn greedy algorithms, trees & optimal encoding logic ⚡\n#CPP #Algorithms #Greedy #Coding #MiniCodeHub\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/HuffmanEncodingGreedyAlgorithm.cpp\n\nFollow for more 1-minute coding projects!\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/HuffmanEncodingGreedyAlgorithm.cpp"
     }
   },
   {
@@ -247,8 +295,7 @@
     "publishedAt": "2026-05-08T18:31:02Z",
     "description": "Create a notification center with read/unread state management 🚀💻\nModern UI using React & Tailwind CSS with interactive updates ⚡\n#ReactJS #TailwindCSS #WebDev #Frontend #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Notification%20Center%20with%20Read%20Unread%20States.tsx\n\nFollow for more 1-minute coding projects!\n\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Notification%20Center%20with%20Read%20Unread%20States.tsx"
     }
   },
   {
@@ -261,8 +308,7 @@
     "publishedAt": "2026-05-07T18:31:00Z",
     "description": "Build a theme toggle with localStorage persistence & smooth transitions 🚀💻\nClean UI with dynamic dark/light switching using HTML CSS JS ⚡\n#HTML #CSS #JavaScript #WebDev #MiniCodeHub\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Dark%20Light%20Mode%20Toggle%20with%20localStorage.html\n\nFollow for more 1-minute coding projects!\n\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Dark%20Light%20Mode%20Toggle%20with%20localStorage.html"
     }
   },
   {
@@ -275,8 +321,7 @@
     "publishedAt": "2026-05-06T18:30:26Z",
     "description": "How do you join data together to make readable sentences or combined lists? In Day 6, minicodehub moves beyond simple variables and shows you the power of Concatenation. We’ll look at the right way (and the wrong way!) to combine Strings, Lists, and Dictionaries.\n\nPractical exercises today:\n\nCombining user input to create personalized messages\n\nTroubleshooting concatenation errors (the \"TypeError\" pitfall)\n\nIntroduction to basic f-strings (for dynamic output)\n\nNotes: https://github.com/MiniCodeHub/Python_notes\nAlternative: https://drive.google.com/drive/folders/1DZVm8XfHNiNVXpn_e4f0IOH0Sftr3lrI?usp=sharing\n\n\nMaster these practical skills with minicodehub to generate dynamic application outputs!",
     "codeData": {
-      "code": "def main():\n    print(\"Hello from MiniCodeHub Python!\")\n\nif __name__ == \"__main__\":\n    main()",
-      "language": "python"
+      "githubUrl": "https://github.com/MiniCodeHub/Python_notes"
     }
   },
   {
@@ -289,8 +334,7 @@
     "publishedAt": "2026-05-06T18:30:07Z",
     "description": "Implement Quick Sort using random pivot selection 🚀💻\nImprove sorting efficiency & avoid worst-case scenarios ⚡\n#CPP #Algorithms #QuickSort #Coding #MiniCodeHub\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/QuickSortwithRandomPivot.cpp\n\nFollow for more 1-minute coding projects!\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/QuickSortwithRandomPivot.cpp"
     }
   },
   {
@@ -303,8 +347,7 @@
     "publishedAt": "2026-05-05T18:30:59Z",
     "description": "Build a Kanban board with column-level card count tracking 🚀💻\nOrganized drag-and-drop UI using React & Tailwind CSS ⚡\n#ReactJS #TailwindCSS #WebDev #Frontend #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Kanban%20Board%20with%20Column-Level%20Card%20Coun.tsx\n\nFollow for more 1-minute coding projects!\n\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Kanban%20Board%20with%20Column-Level%20Card%20Coun.tsx"
     }
   },
   {
@@ -317,8 +360,7 @@
     "publishedAt": "2026-05-04T18:30:21Z",
     "description": "Create a multi-select dropdown with checkboxes & smooth interactions 🚀💻\nModern form UI using HTML CSS JS ⚡\n#HTML #CSS #JavaScript #WebDev #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Multi-Select%20Dropdown%20with%20Checkboxes.html\n\nFollow for more 1-minute coding projects!\n\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Multi-Select%20Dropdown%20with%20Checkboxes.html"
     }
   },
   {
@@ -331,8 +373,7 @@
     "publishedAt": "2026-05-03T18:30:17Z",
     "description": "Implement a Red-Black Tree with insertion & balancing rotations 🚀💻\nLearn advanced self-balancing BST concepts ⚡\n#CPP #DataStructures #RedBlackTree #Coding #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/Red-Black_Tree_Insert-Rotation.cpp\n\nFollow for more 1-minute coding projects!\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/Red-Black_Tree_Insert-Rotation.cpp"
     }
   },
   {
@@ -345,8 +386,7 @@
     "publishedAt": "2026-05-02T18:30:08Z",
     "description": "Build a Spotlight-style command palette with keyboard navigation 🚀💻\nClean search UI using React & Tailwind CSS ⚡\n#ReactJS #TailwindCSS #WebDev #Frontend #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/React%20TW%20Command%20Palette%20(Spotlight%20Search%20UI).tsx\n\nFollow for more 1-minute coding projects!\n\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/React%20TW%20Command%20Palette%20(Spotlight%20Search%20UI).tsx"
     }
   },
   {
@@ -359,8 +399,7 @@
     "publishedAt": "2026-05-02T14:05:14Z",
     "description": "Create a glowing neon button with smooth hover animations 🚀💻\nModern UI effects using HTML CSS JS ⚡\n#HTML #CSS #JavaScript #WebDev #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Neon%20Button.html\n\nFollow for more 1-minute coding projects!\n\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Neon%20Button.html"
     }
   },
   {
@@ -373,8 +412,7 @@
     "publishedAt": "2026-04-30T18:31:22Z",
     "description": "Implement an AVL Tree with rotations & self-balancing logic 🚀💻\nMaster balanced BST operations step-by-step ⚡\n#CPP #DataStructures #AVLTree #Coding #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/AVL_Tree_Self-Balancing-BST.cpp\n\nFollow for more 1-minute coding projects!\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/AVL_Tree_Self-Balancing-BST.cpp"
     }
   },
   {
@@ -387,8 +425,7 @@
     "publishedAt": "2026-04-29T18:30:05Z",
     "description": "Build an avatar group with overflow count & clean UI layout 🚀💻\nReusable component using React & Tailwind CSS ⚡\n#ReactJS #TailwindCSS #WebDev #Frontend #MiniCodeHub\n\nsource  code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Avatar%20group.tsx\n\nFollow for more 1-minute coding projects!\n\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Avatar%20group.tsx"
     }
   },
   {
@@ -401,8 +438,7 @@
     "publishedAt": "2026-04-29T18:30:01Z",
     "description": "Today on minicodehub, we unlock the power of Mutable data! Unlike strings and tuples, Lists and Dictionaries can be changed, updated, and expanded on the fly. This is the secret to managing real-world data in Python.\n\nPractical exercises today:\n\nLists: Adding, removing, and modifying elements\n\nDictionaries: Storing data in Key-Value pairs\n\nUnderstanding \"Pass-by-Object-Reference\"\n\nMemory Management: Why mutability can be dangerous\n\nNotes: https://github.com/MiniCodeHub/Python_notes\nAlternative: https://drive.google.com/drive/folders/1DZVm8XfHNiNVXpn_e4f0IOH0Sftr3lrI?usp=sharing\n\nLevel up your coding skills with minicodehub as we move into dynamic programming!",
     "codeData": {
-      "code": "def main():\n    print(\"Hello from MiniCodeHub Python!\")\n\nif __name__ == \"__main__\":\n    main()",
-      "language": "python"
+      "githubUrl": "https://github.com/MiniCodeHub/Python_notes"
     }
   },
   {
@@ -415,8 +451,7 @@
     "publishedAt": "2026-04-28T18:30:33Z",
     "description": "Create a glassmorphism card gallery with smooth hover effects 🚀💻\nModern UI design using HTML CSS JS ⚡\n#HTML #CSS #JavaScript #WebDev #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Glassmorphism.html\n\nFollow for more 1-minute coding projects!\n\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Glassmorphism.html"
     }
   },
   {
@@ -429,8 +464,7 @@
     "publishedAt": "2026-04-27T18:30:02Z",
     "description": "Implement Rabin-Karp for efficient string pattern matching 🚀💻\nLearn hashing-based search algorithm ⚡\n#CPP #Algorithms #StringMatching #Coding #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/rabin_karp.cpp\n\nFollow for more 1-minute coding projects!\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/rabin_karp.cpp"
     }
   },
   {
@@ -443,8 +477,7 @@
     "publishedAt": "2026-04-26T18:31:07Z",
     "description": "Build a timeline/activity feed component with clean layout 🚀💻\nPerfect for tracking events using React & Tailwind CSS ⚡\n#ReactJS #TailwindCSS #WebDev #Frontend #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Timeline%20feed.tsx\n\nFollow for more 1-minute coding projects!\n\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds\n\nApr 28 – Rabin-Karp (C++)\n\nTitle:\nC++ Rabin-Karp | String Matching\n\nDescription:\nImplement Rabin-Karp for efficient string pattern matching 🚀💻\nLearn hashing-based search algorithm ⚡\n#CPP #Algorithms #StringMatching #Coding #MiniCodeHub\n\nFollow for more 1-minute coding projects!\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Timeline%20feed.tsx"
     }
   },
   {
@@ -457,8 +490,7 @@
     "publishedAt": "2026-04-25T18:30:13Z",
     "description": "Create floating label input fields for modern form design 🚀💻\nSmooth focus animations using HTML CSS JS ⚡\n#HTML #CSS #JavaScript #WebDev #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Floating%20labels.html\n\nFollow for more 1-minute coding projects!\n\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Floating%20labels.html"
     }
   },
   {
@@ -471,8 +503,7 @@
     "publishedAt": "2026-04-24T18:30:27Z",
     "description": "Solve the Knapsack problem using dynamic programming 🚀💻\nOptimize value selection with efficient DP logic ⚡\n#CPP #Algorithms #DynamicProgramming #Coding #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/Knapsack.cpp\n\nFollow for more 1-minute coding projects!\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/Knapsack.cpp"
     }
   },
   {
@@ -485,8 +516,7 @@
     "publishedAt": "2026-04-23T18:31:02Z",
     "description": "Build a resizable split pane layout with draggable divider 🚀💻\nClean UI using React & Tailwind CSS ⚡\n#ReactJS #TailwindCSS #WebDev #Frontend #MiniCodeHub\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Split%20Pane.tsx\n\nFollow for more 1-minute coding projects!\n\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Split%20Pane.tsx"
     }
   },
   {
@@ -499,8 +529,7 @@
     "publishedAt": "2026-04-22T18:31:22Z",
     "description": "Have you ever tried to change a piece of data and got a \"TypeError\"? Today, minicodehub explains the concept of Immutability. We’ll look at Strings, Tuples, and Integers to see how Python handles data in memory.\n\nPractical exercises today:\n\nProving strings can't be changed in place\n\nIntroduction to Tuples vs. Lists\n\nUsing the id() function to see memory addresses\n\nCommon \"Immutable\" pitfalls to avoid\n\nNotes: https://github.com/MiniCodeHub/Python_notes\nAlternative: https://drive.google.com/drive/folders/1DZVm8XfHNiNVXpn_e4f0IOH0Sftr3lrI?usp=sharing\nMaster these rules with minicodehub to write cleaner, bug-free code!",
     "codeData": {
-      "code": "def main():\n    print(\"Hello from MiniCodeHub Python!\")\n\nif __name__ == \"__main__\":\n    main()",
-      "language": "python"
+      "githubUrl": "https://github.com/MiniCodeHub/Python_notes"
     }
   },
   {
@@ -513,8 +542,7 @@
     "publishedAt": "2026-04-22T18:30:53Z",
     "description": "Create an interactive star rating with half-star precision 🚀💻\nSmooth hover & click interactions using HTML CSS JS ⚡\n#HTML #CSS #JavaScript #WebDev #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Star%20Rating.html\n\nFollow for more 1-minute coding projects!\n\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Star%20Rating.html"
     }
   },
   {
@@ -527,8 +555,7 @@
     "publishedAt": "2026-04-21T18:30:21Z",
     "description": "Build a Deque in C++ with insert/delete from both ends 🚀💻\nMaster flexible queue operations with efficient logic ⚡\n#CPP #DataStructures #Deque #Coding #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/Deque.cpp\n\nFollow for more 1-minute coding projects!\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/Deque.cpp"
     }
   },
   {
@@ -541,8 +568,7 @@
     "publishedAt": "2026-04-20T18:30:17Z",
     "description": "Generate color palettes with one click & copy hex values instantly 🚀💻\nClean UI using React & Tailwind CSS ⚡\n#ReactJS #TailwindCSS #WebDev #Frontend #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Color%20Palette%20Generator.tsx\n\nFollow for more 1-minute coding projects!\n\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Color%20Palette%20Generator.tsx"
     }
   },
   {
@@ -555,8 +581,7 @@
     "publishedAt": "2026-04-19T18:30:05Z",
     "description": "Create a custom context menu on right click with smooth UI interactions 🚀💻\nEnhance UX using HTML, CSS & JavaScript ⚡\n#HTML #CSS #JavaScript #WebDev #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Context%20Menu.html\n\nFollow for more 1-minute coding projects!\n\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Context%20Menu.html"
     }
   },
   {
@@ -569,8 +594,7 @@
     "publishedAt": "2026-04-18T18:30:51Z",
     "description": "Implement Topological Sort using DFS for directed graphs 🚀💻\nUnderstand ordering in DAGs step-by-step ⚡\n#CPP #Algorithms #Graphs #Coding #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/Topological_Sort.cpp\n\nFollow for more 1-minute coding projects!\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/Topological_Sort.cpp"
     }
   },
   {
@@ -583,8 +607,7 @@
     "publishedAt": "2026-04-17T18:30:49Z",
     "description": "Build a tag input with chip-style UI & delete functionality 🚀💻\nClean component design using React & Tailwind CSS ⚡\n#ReactJS #TailwindCSS #WebDev #Frontend #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Tag%20Input.tsx\n\nFollow for more 1-minute coding projects!\n\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Tag%20Input.tsx"
     }
   },
   {
@@ -597,8 +620,7 @@
     "publishedAt": "2026-04-16T18:30:42Z",
     "description": "Create a split-panel image comparator with smooth before/after slider 🚀💻\nInteractive UI using HTML, CSS & JavaScript ⚡\n#HTML #CSS #JavaScript #WebDev #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Before%20After%20Comparator.html\n\nFollow for more 1-minute coding projects!\n\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Before%20After%20Comparator.html"
     }
   },
   {
@@ -611,8 +633,7 @@
     "publishedAt": "2026-04-15T18:31:06Z",
     "description": "What exactly is data? In Day 3 of our series, minicodehub dives into the core theory of Python Data Types. Understanding these is like learning the alphabet before you write a book—it’s the most important step to becoming a real programmer.\n\nIn this video, we cover:\n\nThe difference between Integers and Floats\n\nMastering Strings and text manipulation\n\nBoolean logic (True vs. False)\n\nWhy \"Type\" matters in Python\n\nNotes: https://github.com/MiniCodeHub/Python_notes\nalternative: https://drive.google.com/drive/folders/1DZVm8XfHNiNVXpn_e4f0IOH0Sftr3lrI?usp=sharing\n\nJoin minicodehub as we simplify the theory so you can start coding with confidence!",
     "codeData": {
-      "code": "def main():\n    print(\"Hello from MiniCodeHub Python!\")\n\nif __name__ == \"__main__\":\n    main()",
-      "language": "python"
+      "githubUrl": "https://github.com/MiniCodeHub/Python_notes"
     }
   },
   {
@@ -625,8 +646,7 @@
     "publishedAt": "2026-04-15T18:30:24Z",
     "description": "Implement a Segment Tree for efficient range sum queries 🚀💻\nOptimize queries with advanced data structures ⚡\n#CPP #DataStructures #SegmentTree #Coding #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/Segment_Tree.cpp\n\nFollow for more 1-minute coding projects!\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/Segment_Tree.cpp"
     }
   },
   {
@@ -639,8 +659,7 @@
     "publishedAt": "2026-04-14T18:30:24Z",
     "description": "Build an infinite scroll feed with smooth loading & skeleton placeholders 🚀💻\nSeamless UX using React & Tailwind CSS ⚡\n#ReactJS #TailwindCSS #WebDev #Frontend #MiniCodeHub\nsource code:https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Infinite%20Scroll.tsx\n\nFollow for more 1-minute coding projects!\n\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Infinite%20Scroll.tsx"
     }
   },
   {
@@ -653,8 +672,7 @@
     "publishedAt": "2026-04-13T18:30:32Z",
     "description": "Create multiple animated loaders & spinners using pure CSS 🚀💻\nPerfect for modern UI loading states ⚡\n#HTML #CSS #WebDev #Frontend #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/CSS%20Loaders.html\n\nFollow for more 1-minute coding projects!\n\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/CSS%20Loaders.html"
     }
   },
   {
@@ -667,8 +685,7 @@
     "publishedAt": "2026-04-12T18:30:06Z",
     "description": "Implement Floyd-Warshall for all-pairs shortest path 🚀💻\nUnderstand dynamic programming on graphs ⚡\n#CPP #Algorithms #Graphs #Coding #MiniCodeHub\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/Floyd-Warshall.cpp\n\nFollow for more 1-minute coding projects!\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/Floyd-Warshall.cpp"
     }
   },
   {
@@ -681,8 +698,7 @@
     "publishedAt": "2026-04-11T18:31:15Z",
     "description": "Build a data dashboard with KPI cards & bar chart (SVG) 🚀💻\nClean UI using React & Tailwind CSS ⚡\n#ReactJS #TailwindCSS #WebDev #Frontend #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Data%20Dashboard.tsx\n\nFollow for more 1-minute coding projects!\n\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Data%20Dashboard.tsx"
     }
   },
   {
@@ -695,8 +711,7 @@
     "publishedAt": "2026-04-10T18:30:13Z",
     "description": "Create scroll-triggered fade-in animations for modern UI effects 🚀💻\nSmooth interactions using HTML, CSS & JS ⚡\n#HTML #CSS #JavaScript #WebDev #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Scroll%20Animations.html\nFollow for more 1-minute coding projects!\n\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Scroll%20Animations.html"
     }
   },
   {
@@ -709,8 +724,7 @@
     "publishedAt": "2026-04-09T18:30:03Z",
     "description": "Implement Huffman Encoding using greedy approach for data compression 🚀💻\nLearn trees & optimal encoding logic ⚡\n#CPP #Algorithms #Greedy #Coding #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/huffman.cpp\n\nFollow for more 1-minute coding projects!\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/huffman.cpp"
     }
   },
   {
@@ -723,8 +737,7 @@
     "publishedAt": "2026-04-08T18:31:06Z",
     "description": "Stop watching and start doing! In Day 2 of our series, minicodehub walks you through the perfect Python setup for 2026. We cover everything from the official Python installation to setting up your IDE so you can write your first line of code without errors.\n\nNotes: https://github.com/MiniCodeHub/Python_notes\n\nIn this video:\n\nDownloading Python 3.x (Latest 2026 Version)\n\nSetting up Path variables (No more \"command not found\"!)\n\nInstalling VS Code & Essential Extensions\n\nRunning your first \"Hello World\"\n\nStick around with @MiniCodeHub  to ensure your environment is professional-grade!",
     "codeData": {
-      "code": "def main():\n    print(\"Hello from MiniCodeHub Python!\")\n\nif __name__ == \"__main__\":\n    main()",
-      "language": "python"
+      "githubUrl": "https://github.com/MiniCodeHub/Python_notes"
     }
   },
   {
@@ -737,8 +750,7 @@
     "publishedAt": "2026-04-08T18:30:10Z",
     "description": "Create a notification center with read/unread state management 🚀💻\nClean UI using React & Tailwind CSS ⚡\n#ReactJS #TailwindCSS #WebDev #Frontend #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Notification%20Center.tsx\nFollow for more 1-minute coding projects!\n\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Notification%20Center.tsx"
     }
   },
   {
@@ -751,8 +763,7 @@
     "publishedAt": "2026-04-07T18:30:01Z",
     "description": "Build a theme toggle with localStorage persistence & smooth transitions 🚀💻\nClean UI with dynamic theme switching ⚡\n#HTML #CSS #JavaScript #WebDev #MiniCodeHub\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/DarkLight%20Toggle.html\n\nFollow for more 1-minute coding projects!\n\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/DarkLight%20Toggle.html"
     }
   },
   {
@@ -765,8 +776,7 @@
     "publishedAt": "2026-04-07T11:36:34Z",
     "description": "Implement a Hash Map in C++ using chaining for collision handling 🚀💻\nLearn hashing, buckets & efficient key-value storage ⚡ Beginner-friendly DSA project.\n#CPP #DataStructures #HashMap #Coding #MiniCodeHub\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/HashMap.cpp\n\nFollow for more 1-minute coding projects!\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/HashMap.cpp"
     }
   },
   {
@@ -779,8 +789,7 @@
     "publishedAt": "2026-04-05T18:30:16Z",
     "description": "Build a collapsible sidebar with active link highlighting & smooth UI 🚀💻\nResponsive layout using React & Tailwind CSS ⚡ Beginner-friendly project.\n#ReactJS #TailwindCSS #WebDev #Frontend #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Collapsible%20Sidebar.tsx\n\nFollow for more 1-minute coding projects!\n\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Collapsible%20Sidebar.tsx"
     }
   },
   {
@@ -793,8 +802,7 @@
     "publishedAt": "2026-04-04T18:30:30Z",
     "description": "Create a smooth scroll progress indicator that tracks page position 🚀💻\nClean UI feedback using HTML, CSS & JavaScript ⚡ Beginner-friendly project.\n#HTML #CSS #JavaScript #WebDev #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Scroll%20Progress.html\nFollow for more 1-minute coding projects!\n\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Scroll%20Progress.html"
     }
   },
   {
@@ -807,8 +815,7 @@
     "publishedAt": "2026-04-03T18:31:00Z",
     "description": "Implement a Hash Map in C++ using chaining for collision handling 🚀💻\nLearn hashing, buckets & efficient key-value storage ⚡ Beginner-friendly DSA project.\n#CPP #DataStructures #HashMap #Coding #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/Min_Heap.cpp\n\nFollow for more 1-minute coding projects!\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/Min_Heap.cpp"
     }
   },
   {
@@ -821,8 +828,7 @@
     "publishedAt": "2026-04-02T18:31:08Z",
     "description": "Build a multi-step checkout form with validation & smooth step navigation 🚀💻\nIncludes form state handling & clean UI with Tailwind CSS ⚡ Beginner-friendly React project.\n#ReactJS #TailwindCSS #WebDev #Frontend #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Checkout%20Form.tsx\n\nFollow for more 1-minute coding projects!\n\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Checkout%20Form.tsx"
     }
   },
   {
@@ -835,8 +841,7 @@
     "publishedAt": "2026-04-01T18:30:53Z",
     "description": "The tech landscape is changing, but Python remains the king of languages. Join minicodehub for a deep dive into Python fundamentals. We don't just show you \"how\" to code; we explain \"why\" these concepts matter in the current job market.\n#python\n\nNotes:\nhttps://github.com/MiniCodeHub/Python_notes.git",
     "codeData": {
-      "code": "def main():\n    print(\"Hello from MiniCodeHub Python!\")\n\nif __name__ == \"__main__\":\n    main()",
-      "language": "python"
+      "githubUrl": "https://github.com/MiniCodeHub/Python_notes.git"
     }
   },
   {
@@ -849,8 +854,7 @@
     "publishedAt": "2026-04-01T18:30:45Z",
     "description": "Create a typewriter effect with smooth typing animation & blinking cursor 🚀💻\nClean UI animation using pure HTML, CSS & JavaScript ⚡ Beginner-friendly project.\n#HTML #CSS #JavaScript #WebDev #MiniCodeHub\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Typewriter.html\n\nFollow for more 1-minute coding projects!\n\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Typewriter.html"
     }
   },
   {
@@ -863,8 +867,7 @@
     "publishedAt": "2026-03-31T18:30:00Z",
     "description": "Implement a Trie in C++ with efficient insert & search operations 🚀💻\nPerfect for prefix-based searching and fast lookups ⚡ Beginner-friendly DSA project.\n#CPP #DataStructures #Trie #Coding #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/Trie.cpp\nFollow for more 1-minute coding projects!\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/Trie.cpp"
     }
   },
   {
@@ -877,8 +880,7 @@
     "publishedAt": "2026-03-30T18:30:23Z",
     "description": "Build a voting system with candidate/voter registration, poll lifecycle & vote validation 🚀💻\nIncludes ranked tally, ASCII charts, winner detection & turnout stats ⚡ Beginner-friendly project.\n#CPP #DataStructures #Algorithms #Coding #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/voting_system.cpp\n\nFollow for more 1-minute coding projects!\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/voting_system.cpp"
     }
   },
   {
@@ -891,8 +893,7 @@
     "publishedAt": "2026-03-29T18:30:00Z",
     "description": "Build a drawing pad with pen, shapes, fill, eraser & text tools using canvas 🚀💻\nIncludes color picker, undo/redo (40), touch support & PNG save ⚡ Beginner-friendly HTML CSS JS project.\n#HTML #CSS #JavaScript #WebDev #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Drawing%20Pad.html\n\nFollow for more 1-minute coding projects!\n\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Drawing%20Pad.html"
     }
   },
   {
@@ -905,8 +906,7 @@
     "publishedAt": "2026-03-28T18:30:31Z",
     "description": "Build a React i18n system with 6 languages (EN/ES/FR/DE/JA/AR) & RTL support for Arabic 🚀💻\nIncludes context-based translation, dropdown switcher & full-page UI (nav, hero, stats, features, footer) ⚡ Beginner-friendly project.\n#ReactJS #i18n #WebDev #Frontend #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/i18n%20Switcher.tsx\n\nFollow for more 1-minute coding projects!\n\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/i18n%20Switcher.tsx"
     }
   },
   {
@@ -919,8 +919,7 @@
     "publishedAt": "2026-03-27T18:30:49Z",
     "description": "Create 4 confetti styles (Celebrate, Rain, Firework, Gold Shower) using canvas physics 🚀💻\nCustom velocity, gravity, drag & ripple button effects for a dynamic UI ⚡ Beginner-friendly HTML CSS JS project.\n#HTML #CSS #JavaScript #WebDev #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Confetti.html\n\nFollow for more 1-minute coding projects!\n\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Confetti.html"
     }
   },
   {
@@ -933,8 +932,7 @@
     "publishedAt": "2026-03-26T18:30:56Z",
     "description": "Build a file-backed inventory system in C++ with full CRUD, search & CSV persistence 🚀💻\nIncludes low-stock alerts, restocking, price updates & category summary report ⚡ Beginner-friendly project.\n#CPP #FileHandling #DataStructures #Coding #MiniCodeHub\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/Inventory_System.cpp\n\nFollow for more 1-minute coding projects!\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/Inventory_System.cpp"
     }
   },
   {
@@ -947,8 +945,7 @@
     "publishedAt": "2026-03-25T18:31:01Z",
     "description": "Build a Pomodoro timer with SVG ring countdown, work/break modes & auto progression 🚀💻\nIncludes task tracking, pomo counters & session stats with a configurable UI ⚡ Beginner-friendly React project.\n#ReactJS #WebDev #Frontend #JavaScript #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Pomodoro%20Timer.tsx\n\nFollow for more 1-minute coding projects!\n\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Pomodoro%20Timer.tsx"
     }
   },
   {
@@ -961,8 +958,7 @@
     "publishedAt": "2026-03-24T18:30:19Z",
     "description": "Build two-column kanban-style lists with HTML5 drag-and-drop & touch support 🚀💻\nIncludes shuffle/reset controls & live order display for real-time updates ⚡ Beginner-friendly HTML CSS JS project.\n#HTML #CSS #JavaScript #WebDev #MiniCodeHub\n\nSource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Drag%20to%20Reorder.html\n\nFollow for more 1-minute coding projects!\n\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Drag%20to%20Reorder.html"
     }
   },
   {
@@ -975,8 +971,7 @@
     "publishedAt": "2026-03-23T18:30:41Z",
     "description": "Build an 8-field React form with live validation, password strength meter & confirm password check 🚀💻\nIncludes progress bar, show/hide toggle & success screen with Tailwind CSS ⚡ Beginner-friendly React project.\n#ReactJS #TailwindCSS #WebDev #Frontend #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Form%20Validator.tsx\n\nFollow for more 1-minute coding projects!\n\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Form%20Validator.tsx"
     }
   },
   {
@@ -989,8 +984,7 @@
     "publishedAt": "2026-03-22T18:30:32Z",
     "description": "Build 3 tab styles (underline ink bar, pill tabs, vertical sidebar) + FAQ accordion 🚀💻\nSmooth JS animations with zero libraries for a clean interactive UI ⚡ Beginner-friendly HTML CSS JS project.\n#HTML #CSS #JavaScript #WebDev #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Tab%20Switcher.html\n\nFollow for more 1-minute coding projects!\n\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Tab%20Switcher.html"
     }
   },
   {
@@ -1003,8 +997,7 @@
     "publishedAt": "2026-03-21T18:31:15Z",
     "description": "Implement a Circular Linked List in C++ with insert/delete at front, back & position 🚀💻\nIncludes traversal, split using slow/fast pointers, search & Josephus simulation ⚡ Beginner-friendly DSA project.\n#CPP #DataStructures #LinkedList #Coding #MiniCodeHub\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/Circular_Linked_List.cpp\n\nFollow for more 1-minute coding projects!\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/Circular_Linked_List.cpp"
     }
   },
   {
@@ -1017,8 +1010,7 @@
     "publishedAt": "2026-03-20T18:31:24Z",
     "description": "Build an expense tracker with add/delete, categories, amount, date & form validation 🚀💻\nIncludes live donut chart (SVG), bar breakdown, filters & summary cards ⚡ Beginner-friendly React project.\n#ReactJS #WebDev #Frontend #JavaScript #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Expense%20Tracker.tsx\n\nFollow for more 1-minute coding projects!\n\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Expense%20Tracker.tsx"
     }
   },
   {
@@ -1031,8 +1023,7 @@
     "publishedAt": "2026-03-19T18:31:13Z",
     "description": "Build a hamburger menu with 3-bar to × morph, circular clip-path expansion & staggered nav animations 🚀💻\nIncludes Escape key close & smooth interactive transitions ⚡ Beginner-friendly HTML CSS JS project.\n#HTML #CSS #JavaScript #WebDev #MiniCodeHub\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Hamburger%20Menu.html\n\nFollow for more 1-minute coding projects!\n\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Hamburger%20Menu.html"
     }
   },
   {
@@ -1045,8 +1036,7 @@
     "publishedAt": "2026-03-18T18:31:35Z",
     "description": "Build a generic graph (adjacency list) in C++ with BFS, DFS & shortest path reconstruction 🚀💻\nIncludes connected components, cycle detection & Kahn’s topological sort ⚡ Beginner-friendly DSA project.\n#CPP #DataStructures #Graph #Algorithms #MiniCodeHub\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/graph.cpp\n\nFollow for more 1-minute coding projects!\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/graph.cpp"
     }
   },
   {
@@ -1059,8 +1049,7 @@
     "publishedAt": "2026-03-17T18:31:31Z",
     "description": "Build a 12-photo gallery with category filters, fullscreen lightbox & thumbnail strip 🚀💻\nIncludes zoom (1×–4×), click-drag pan & keyboard navigation (←/→/Esc) using Tailwind CSS ⚡ Beginner-friendly React UI project.\n#ReactJS #TailwindCSS #WebDev #Frontend #MiniCodeHub\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Lightbox%20Gallery.tsx\n\nFollow for more 1-minute coding projects!\n\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Lightbox%20Gallery.tsx"
     }
   },
   {
@@ -1073,8 +1062,7 @@
     "publishedAt": "2026-03-16T18:31:07Z",
     "description": "Build a dynamic table with multi-column sorting, search & filtering using HTML, CSS & JS 🚀💻\nClean UI with interactive controls for better data handling ⚡ Beginner-friendly web project.\n#HTML #CSS #JavaScript #WebDev #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Flip%20Cards.html\n\nFollow for more 1-minute coding projects!\n\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Flip%20Cards.html"
     }
   },
   {
@@ -1087,8 +1075,7 @@
     "publishedAt": "2026-03-15T18:30:38Z",
     "description": "Build a dynamic employee table with multi-column sorting, full-text search & department filter 🚀💻\nIncludes configurable page size & smart pagination with ellipsis using Tailwind CSS ⚡ Beginner-friendly React UI project.\n#ReactJS #TailwindCSS #WebDev #Frontend #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Dynamic%20Table.tsx\n\nFollow for more 1-minute coding projects!\n\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Dynamic%20Table.tsx"
     }
   },
   {
@@ -1101,8 +1088,7 @@
     "publishedAt": "2026-03-14T18:30:17Z",
     "description": "Build 3 custom sliders (Volume, Temperature, Budget) with styled tracks, animated thumb & floating tooltip 🚀💻\nIncludes live summary panel updates with smooth UI interactions ⚡ Beginner-friendly HTML CSS JS project.\n#HTML #CSS #JavaScript #WebDev #MiniCodeHub\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Range%20Slider.html\n\nFollow for more 1-minute coding projects!\n\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Range%20Slider.html"
     }
   },
   {
@@ -1115,8 +1101,7 @@
     "publishedAt": "2026-03-13T18:30:16Z",
     "description": "Implement Merge Sort & Quick Sort in C++ with median-of-three pivot and edge case tests 🚀💻\nIncludes live benchmark (1K/10K/100K) and complexity comparison table ⚡ Beginner-friendly DSA project.\n#CPP #Algorithms #Sorting #Coding #MiniCodeHub\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/Merge-Sort_Quick-Sort.cpp\n\nFollow for more 1-minute coding projects!\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/Merge-Sort_Quick-Sort.cpp"
     }
   },
   {
@@ -1129,8 +1114,7 @@
     "publishedAt": "2026-03-12T18:30:37Z",
     "description": "Build a React analytics dashboard with sidebar layout, stat cards & switchable Line/Bar charts using Recharts 🚀💻\nIncludes donut pie chart for traffic sources & a live activity feed with Tailwind CSS ⚡ Beginner-friendly React UI project.\n#ReactJS #TailwindCSS #WebDev #Frontend #MiniCodeHub\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Analytics%20Dashboard.tsx\n\nFollow for more 1-minute coding projects!\n\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Analytics%20Dashboard.tsx"
     }
   },
   {
@@ -1143,8 +1127,7 @@
     "publishedAt": "2026-03-11T18:31:07Z",
     "description": "Build a 5-column Kanban board with drag-and-drop cards and a clean productivity UI 🚀💻\nIncludes card creation modal, per-column add buttons, hover delete & color-coded tags ⚡ Beginner-friendly project.\n#HTML #CSS #WebDev #Frontend #MiniCodeHub\n\nsource doe: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Kanban%20Board.html\n\nFollow for more 1-minute coding projects!\n\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Kanban%20Board.html"
     }
   },
   {
@@ -1157,8 +1140,7 @@
     "publishedAt": "2026-03-10T18:30:04Z",
     "description": "Implement a Doubly Linked List in C++ with insert/delete at front, back & position 🚀💻\nIncludes forward/backward traversal, in-place reverse & value search ⚡ Beginner-friendly DSA project.\n#cpptutorial  #DataStructures #LinkedList #Coding #MiniCodeHub\n\nsource code:\n https://github.com/MiniCodeHub/Cplusplus/blob/main/Doubly_Linked_List.cpp\n\nFollow for more 1-minute coding projects!\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/Doubly_Linked_List.cpp"
     }
   },
   {
@@ -1171,8 +1153,7 @@
     "publishedAt": "2026-03-09T18:30:48Z",
     "description": "Build a 5-step form (Personal → Address → Account → Preferences → Review) with per-step validation & error messages 🚀💻\nIncludes step indicator, smooth navigation & final success screen using Tailwind CSS ⚡ Beginner-friendly React UI project.\n#ReactJS #TailwindCSS #WebDev #Frontend #MiniCodeHub\n\nsource code:\nhttps://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Multi-Step%20Form.tsx\n\nFollow for more 1-minute coding projects!\n\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Multi-Step%20Form.tsx"
     }
   },
   {
@@ -1185,8 +1166,7 @@
     "publishedAt": "2026-03-08T18:30:55Z",
     "description": "Create a Dark/Light theme toggle using CSS variables with smooth 400ms transitions 🚀💻\nIncludes localStorage persistence & system preference detection via prefers-color-scheme ⚡ Beginner-friendly UI project.\n#HTML #CSS #WebDev #Frontend #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Dark%20Light%20Toggle.html\n\nFollow for more 1-minute coding projects!\n\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Dark%20Light%20Toggle.html"
     }
   },
   {
@@ -1199,8 +1179,7 @@
     "publishedAt": "2026-03-07T18:30:23Z",
     "description": "Implement a Queue in C++ with enqueue, dequeue, peek front/rear & clear operations 🚀💻\nBonus: Print Queue Simulator that models real job processing using queue logic ⚡ Beginner-friendly DSA project.\n#CPP #DataStructures #Queue #Coding #MiniCodeHub\n\nSource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/Queue.cpp\n\nFollow for more 1-minute coding projects!\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/Queue.cpp"
     }
   },
   {
@@ -1213,8 +1192,7 @@
     "publishedAt": "2026-03-06T18:31:01Z",
     "description": "Build a Stack in C++ with push, pop, peek, display & clear using exception handling 🚀💻\nBonus: Balanced parentheses checker, string reversal & decimal-to-binary converter ⚡ Beginner-friendly DSA project.\n#CPP #DataStructures #Stack #Coding #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/Stack.cpp\n\nFollow for more 1-minute coding projects!\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/Stack.cpp"
     }
   },
   {
@@ -1227,8 +1205,7 @@
     "publishedAt": "2026-03-05T18:31:19Z",
     "description": "Build a React product grid with category filters, search, price/rating sort & price range slider 🚀💻\nAdd-to-cart toggle per card + clean empty state using Tailwind CSS ⚡ Beginner-friendly UI logic project.\n#ReactJS #TailwindCSS #WebDev #Frontend #MiniCodeHub\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Product%20Grid.tsx\n\nFollow for more 1-minute coding projects!\n\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Product%20Grid.tsx"
     }
   },
   {
@@ -1241,8 +1218,7 @@
     "publishedAt": "2026-03-04T18:30:42Z",
     "description": "Build a full landing page with a shrinking sticky header, scroll-progress bar & active nav highlighting 🚀💻\nSmooth scroll + clean UI interactions — open in browser to see it live ⚡ Beginner-friendly HTML CSS JS project.\n#HTML #CSS #JavaScript #WebDev #MiniCodeHub\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Sticky%20Header.html\n\nFollow for more 1-minute coding projects!\n\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Sticky%20Header.html"
     }
   },
   {
@@ -1255,8 +1231,7 @@
     "publishedAt": "2026-03-03T18:30:52Z",
     "description": "Implement a Binary Search Tree in C++ with Insert & Inorder Traversal 🚀💻\nUnderstand recursion, tree structure & sorted traversal logic step-by-step ⚡ Beginner-friendly DSA project.\n#CPP #DataStructures #BinarySearchTree #Coding #MiniCodeHub\n\nFollow for more 1-minute coding projects!\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/Binary_Search_Tree_Insert-Inorder.cpp\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/Binary_Search_Tree_Insert-Inorder.cpp"
     }
   },
   {
@@ -1269,8 +1244,7 @@
     "publishedAt": "2026-03-02T18:30:55Z",
     "description": "Build a collapsible sidebar with tooltips, mobile hamburger + overlay & active page highlighting 🚀💻\nClean dashboard layout with smooth interactions and responsive behavior ⚡ Beginner-friendly UI project.\n#reactjs #tailwindcss  #react  #WebDesign #MiniCodeHub\n\nsource  code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Sidebar.tsx\n\nFollow for more 1-minute coding projects!\n\nMusic: Elektronomia – Vision [NCS Fanmade]\n| Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Sidebar.tsx"
     }
   },
   {
@@ -1283,8 +1257,7 @@
     "publishedAt": "2026-03-01T18:30:10Z",
     "description": "Build a dark-themed Countdown Timer with minutes/seconds input, animated progress bar & warning color at ≤10s 🚀💻\nSmooth UI effects + pulse animation on zero for a clean interactive finish ⚡ Beginner-friendly JS project.\n#HTML #CSS #JavaScript #WebDev #MiniCodeHub\n\nFollow for more 1-minute coding projects!\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Countdown%20Timer.html\n\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Countdown%20Timer.html"
     }
   },
   {
@@ -1297,8 +1270,7 @@
     "publishedAt": "2026-02-28T18:30:48Z",
     "description": "Master Linked List implementation in C++ with Insert, Delete & Display operations 🚀💻\nClean logic, pointer handling, and step-by-step structure building ⚡ Beginner-friendly data structures practice.\n#CPP #DataStructures #LinkedList #Coding #MiniCodeHub\n\nFollow for more 1-minute coding projects!\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/Linked_List_Implementation-Insert-Delete-Display.cpp\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/Linked_List_Implementation-Insert-Delete-Display.cpp"
     }
   },
   {
@@ -1311,8 +1283,7 @@
     "publishedAt": "2026-02-27T18:30:05Z",
     "description": "Build a smooth Accordion / Collapsible FAQ using React + Tailwind 🚀\nClick to expand, animate height transitions, and control single/multiple open sections 💻⚡\nPerfect for mastering conditional rendering and clean UI logic.\n\n#ReactJS #TailwindCSS #FrontendDev #WebDevelopment #CodingShorts\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Accordion%20Collapsible%20FAQ.tsx\n\nMusic: Elektronomia – Vision [NCS Fanmade]\n\nFollow for more 1-minute coding projects! 🚀",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Accordion%20Collapsible%20FAQ.tsx"
     }
   },
   {
@@ -1325,8 +1296,7 @@
     "publishedAt": "2026-02-26T18:30:18Z",
     "description": "In this Short, we create a dynamic 5-star rating system where users can hover to preview their rating before clicking to select it. The component also supports half-star ratings, allowing decimal values for more precise feedback.\n\nThis project is perfect for learning controlled components and mastering state-driven UI updates in React while building a real-world feature commonly used in products and review systems.\n\nConcepts covered:\nControlled components with useState\nHover state management\nConditional rendering for full and half stars\nDynamic styling with Tailwind CSS\nReusable component design\n\nA clean, practical UI component that enhances any modern web application.\n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Star%20Rating%20Component.tsx\n\n#React #TailwindCSS #WebDevelopment #Frontend #UIComponents #JavaScript #Coding #MiniCodeHub",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Star%20Rating%20Component.tsx"
     }
   },
   {
@@ -1339,8 +1309,7 @@
     "publishedAt": "2026-02-25T18:31:08Z",
     "description": "In this Short, we create a multi-step progress indicator that fills and animates as the user clicks the Next button. Each step updates visually with smooth transitions, making the flow feel interactive and dynamic.\n\nThis project is perfect for checkout flows, form wizards, onboarding screens, or tutorial progress indicators. It clearly demonstrates how state changes can control UI animations in a clean and structured way.\n\nConcepts covered:\nState tracking with JavaScript\nDOM manipulation\nCSS transitions and animations\nDynamic class updates\nStep-based UI logic\n\nA practical and highly reusable component for modern web applications.\n\nSource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Animated%20Progress%20Steps%20Timeline.html\n\n#HTML #CSS #JavaScript #WebDevelopment #Frontend #UIAnimation #Coding #MiniCodeHub\n\nMusic: Jim Yosef – Arrow\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Animated%20Progress%20Steps%20Timeline.html"
     }
   },
   {
@@ -1353,8 +1322,7 @@
     "publishedAt": "2026-02-24T18:31:29Z",
     "description": "In this Short, we create a split-screen layout where users type Markdown on the left and instantly see the formatted preview on the right. The content updates in real time as you type, making the experience smooth and interactive.\n\nThe preview supports bold text, italic formatting, headings, and lists, demonstrating how raw strings can be parsed and rendered dynamically inside a React component.\n\nConcepts covered:\nControlled components with useState\nReal-time rendering\nString parsing and Markdown processing\nConditional formatting\nResponsive split-screen layout with Tailwind\n\nA clean and practical project that showcases core React patterns and modern UI design.\n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Live%20Markdown%20Previewer.tsx\n\n#React #TailwindCSS #WebDevelopment #Frontend #Markdown #JavaScript #Coding #MiniCodeHub",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Live%20Markdown%20Previewer.tsx"
     }
   },
   {
@@ -1367,8 +1335,7 @@
     "publishedAt": "2026-02-23T18:30:06Z",
     "description": "In this Short, we create a visual task board where users can drag cards between To Do, In Progress, and Done columns. The cards move smoothly with clear visual feedback, making the interaction satisfying and intuitive.\n\nYou can implement it using React DnD or the HTML5 Drag and Drop API, while managing state updates to keep everything in sync.\n\nConcepts covered:\nDrag and drop logic\nState management for dynamic lists\nConditional styling during drag states\nComponent re-rendering patterns\nClean responsive layout with Tailwind\n\nA highly visual project that looks impressive and demonstrates real-world frontend skills.\n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Draggable%20Kanban%20Board.tsx\n\n#React #TailwindCSS #WebDevelopment #Frontend #DragAndDrop #JavaScript #Coding #MiniCodeHub \nMusic: Jim Yosef – Arrow\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds\n\n@NoCopyrightSounds",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Draggable%20Kanban%20Board.tsx"
     }
   },
   {
@@ -1381,8 +1348,7 @@
     "publishedAt": "2026-02-22T18:30:32Z",
     "description": "In this Short, we create a fully functional toast system that supports multiple types such as success, error, warning, and info. Each toast slides in smoothly from the corner, auto-dismisses with a timer, and stacks neatly when multiple notifications are triggered.\n\nThis project is perfect for demonstrating clean state management and side effects in React while building a highly practical UI component used in real-world applications.\n\nConcepts covered:\nuseState for managing toast data\nuseEffect for timers and auto-dismiss logic\nDynamic component rendering\nConditional styling with Tailwind\nStacking and animation patterns\n\nA production-ready UI pattern that instantly upgrades any modern web app.\n\nSource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Animated%20Toast%20Notification%20System.tsx\n\n#React #TailwindCSS #WebDevelopment #Frontend #UIComponents #JavaScript #Coding #MiniCodeHub\nMusic: Jim Yosef – Arrow\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds\n\n@NoCopyrightSounds",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Animated%20Toast%20Notification%20System.tsx"
     }
   },
   {
@@ -1395,8 +1361,7 @@
     "publishedAt": "2026-02-21T18:31:09Z",
     "description": "In this Short, we build a Material Design-style ripple animation that expands from the exact point where the user clicks. The ripple circle grows smoothly and fades out, creating a satisfying interactive effect.\n\nThis project demonstrates how to calculate click coordinates, dynamically position elements, and combine JavaScript with CSS animations for polished UI interactions.\n\nConcepts covered:\nClick event handling\nMouse coordinate calculation\nDynamic element creation\nCSS animations and transitions\nInteractive UI feedback\n\nA super visual and satisfying micro-interaction perfect for modern web interfaces.\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Ripple%20Click%20Effect%20Button.html\n\n#HTML #CSS #JavaScript #WebDevelopment #Frontend #UIAnimation #Coding #MiniCodeHub\n\nMusic: Jim Yosef – Arrow\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds\n\n@NoCopyrightSounds",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Ripple%20Click%20Effect%20Button.html"
     }
   },
   {
@@ -1409,8 +1374,7 @@
     "publishedAt": "2026-02-20T18:30:26Z",
     "description": "In this Short, we create a simple terminal-based program that can encrypt and decrypt messages using a custom shift key. The tool takes user input, applies character shifting logic, and displays the before-and-after output directly in the terminal.\n\nThis project is perfect for understanding basic encryption concepts while practicing clean and structured C++ logic.\n\nConcepts covered:\nLoops and conditional statements\nCharacter manipulation\nASCII value shifting\nUser input handling\nBasic cryptography fundamentals\n\nSimple, practical, and perfect for short-form coding content.\n\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/Caesar_Cipher_Encryption_Tool.cpp\n\n#CPlusPlus #CPP #Encryption #CaesarCipher #Programming #Coding #MiniCodeHub\n\nMusic: Rival – Throne\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds\n\n@NoCopyrightSounds",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/Caesar_Cipher_Encryption_Tool.cpp"
     }
   },
   {
@@ -1423,8 +1387,7 @@
     "publishedAt": "2026-02-19T18:30:29Z",
     "description": "In this Short, we build a visually engaging parallax layout where the background moves slower than the foreground, creating a realistic depth effect. Multiple layered sections respond to scroll position, demonstrating how transform and scroll event handling work together to produce smooth animations.\n\nConcepts covered:\nScroll event handling in JavaScript\nUsing transform for motion effects\nLayered layout structure for depth\nSmooth animation timing\nPerformance optimization for scroll-based effects\n\nA great project to enhance landing pages, hero sections, and modern web UI designs.\n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Parallax%20Scrolling%20Effect.html\n\n#HTML #CSS #JavaScript #WebDevelopment #Frontend #ParallaxEffect #Coding #MiniCodeHub\n\nMusic: Jim Yosef – Arrow\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds\n\n@NoCopyrightSounds",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Parallax%20Scrolling%20Effect.html"
     }
   },
   {
@@ -1437,8 +1400,7 @@
     "publishedAt": "2026-02-18T18:30:31Z",
     "description": "In this Short, we create an interactive tool where users can enter any text or URL and instantly generate a QR code with live preview. The QR updates in real time as you type, demonstrating dynamic rendering and state management in Next.js. Users can also download the generated QR code as an image with a single click.\n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/QR%20Code%20Generator.tsx\n\nConcepts covered:\nClient-side rendering in Next.js\nState management and live updates\nUsing external QR code libraries\nDynamic component rendering\nExporting generated content as an image\nA practical project perfect for portfolios and real-world utility apps.\nMusic: Elektronomia – Vision\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds\n@NoCopyrightSounds",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/QR%20Code%20Generator.tsx"
     }
   },
   {
@@ -1451,8 +1413,7 @@
     "publishedAt": "2026-02-17T18:31:08Z",
     "description": "In this Short, we create a responsive grid of glass-style cards featuring backdrop blur, soft transparency, and subtle borders for a clean premium look. Each card smoothly lifts and glows on hover, adding depth and interactivity without using any JavaScript.\n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Glassmorphism%20Card%20Hover%20Gallery.tsx\n\nConcepts covered:\nResponsive grid layout\nGlassmorphism design principles\nBackdrop blur and transparency\nHover transitions and smooth animations\nModern UI spacing and visual hierarchy\n\nPerfect for portfolios, landing pages, and UI showcases.\n\nMusic: Jim Yosef – Arrow\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds\n\n@NoCopyrightSounds",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Glassmorphism%20Card%20Hover%20Gallery.tsx"
     }
   },
   {
@@ -1465,8 +1426,7 @@
     "publishedAt": "2026-02-16T18:30:20Z",
     "description": "Build an animated tab switcher with smooth transitions between sections.\nLearn event handling, active state logic, and clean CSS animations.\nLevel: Beginner → Intermediate\n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Animated%20Tab%20Switcher.html\n\n#html #css #javascript #webdev #frontend\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds \n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Animated%20Tab%20Switcher.html"
     }
   },
   {
@@ -1479,8 +1439,7 @@
     "publishedAt": "2026-02-15T18:30:38Z",
     "description": "Build a maze generator and solver using algorithmic logic.\nLearn recursion/backtracking, grid traversal, and problem-solving techniques.\nLevel: Advanced\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/Maze_Generator-Solver.cpp\n#cpp #programming #algorithms #datastructures #coding\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds | @NoCopyrightSounds\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/Maze_Generator-Solver.cpp"
     }
   },
   {
@@ -1493,8 +1452,7 @@
     "publishedAt": "2026-02-14T18:31:24Z",
     "description": "Build a keyboard shortcut detector that listens for key combinations in real time.\nLearn keyboard events, key codes, and dynamic DOM updates.\nLevel: Beginner → Intermediate\n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Keyboard%20Shortcut%20Detector.html\n\n#html #css #javascript #webdev #frontend\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds | @NoCopyrightSounds\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Keyboard%20Shortcut%20Detector.html"
     }
   },
   {
@@ -1507,8 +1465,7 @@
     "publishedAt": "2026-02-13T18:30:35Z",
     "description": "Build a clean responsive pricing cards layout using reusable components.\nLearn CSS grid, component reuse, and modern UI structuring with Tailwind.\nLevel: Beginner → Intermediate\n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Responsive%20Pricing%20Cards%20UI.tsx\n\n#nextjs #react #tailwindcss #webdev #frontend\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Responsive%20Pricing%20Cards%20UI.tsx"
     }
   },
   {
@@ -1521,8 +1478,7 @@
     "publishedAt": "2026-02-12T18:31:26Z",
     "description": "Build a smooth scroll-to-top button that appears based on scroll position.\nLearn scroll detection and smooth scrolling behavior for better UX.\nLevel: Beginner\n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Scroll-to-Top%20Button.html\n\n#html #css #javascript #webdev #frontend\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds \n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Scroll-to-Top%20Button.html"
     }
   },
   {
@@ -1535,8 +1491,7 @@
     "publishedAt": "2026-02-11T18:30:03Z",
     "description": "Build a password validator that checks rules like length, digits, and special characters.\nLearn string handling and validation logic in a practical console project.\nLevel: Beginner → Intermediate\n\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/Password_Validator_Rules-Based.cpp\n\n#cpp #programming #coding #projects #stringhandling\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds \n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/Password_Validator_Rules-Based.cpp"
     }
   },
   {
@@ -1549,8 +1504,7 @@
     "publishedAt": "2026-02-10T18:30:22Z",
     "description": "Build an animated progress bar driven by props with dynamic states.\nLearn props usage, conditional Tailwind classes, and clean component design.\nLevel: Beginner → Intermediate\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/AnimatedProgress.tsx\n\n#nextjs #react #tailwindcss #webdev #frontend\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds | @NoCopyrightSounds\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/AnimatedProgress.tsx"
     }
   },
   {
@@ -1563,8 +1517,7 @@
     "publishedAt": "2026-02-09T18:31:13Z",
     "description": "Build a live search filter that updates results as you type.\nLearn array filtering and input events for responsive UI behavior.\nLevel: Beginner\n\nsource code:  https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Live%20Search%20Filter%20(No%20Highlight).html\n\n#html #css #javascript #webdev #frontend\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds \n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Live%20Search%20Filter%20(No%20Highlight).html"
     }
   },
   {
@@ -1577,8 +1530,7 @@
     "publishedAt": "2026-02-08T18:31:02Z",
     "description": "Build a file-based to-do list that saves tasks and loads them on restart.\nLearn file I/O and menu loops for practical console applications.\nLevel: Beginner → Intermediate\n\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/Simple_File-Based_To-Do_List.cpp\n\n#cpp #programming #coding #projects #filehandling\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds \n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/Simple_File-Based_To-Do_List.cpp"
     }
   },
   {
@@ -1591,8 +1543,7 @@
     "publishedAt": "2026-02-07T18:30:29Z",
     "description": "Build a click-to-copy button that copies text instantly to the clipboard.\nLearn the Clipboard API and simple UI feedback for better user experience.\nLevel: Beginner\n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Click-to-Copy%20Text%20Button.html\n\n#html #css #javascript \nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Click-to-Copy%20Text%20Button.html"
     }
   },
   {
@@ -1605,8 +1556,7 @@
     "publishedAt": "2026-02-06T18:31:27Z",
     "description": "Build a scalable button system with variants, sizes, and reusable styles.\nLearn props-driven components, conditional classes, and clean UI patterns.\nLevel: Beginner → Intermediate\n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Reusable%20Button%20Component%20System.tsx\n\n#nextjs #react #tailwindcss #webdev #frontend\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Reusable%20Button%20Component%20System.tsx"
     }
   },
   {
@@ -1619,8 +1569,7 @@
     "publishedAt": "2026-02-05T18:30:51Z",
     "description": "Build a clean modal popup with overlay, ESC key close, and smooth transitions.\nLearn event handling, keyboard events, and accessible UI patterns.\nLevel: Beginner\n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Modal%20Popup%20with%20Overlay%20%26%20ESC%20close.html\n\n#html #css #javascript #webdev #frontend\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds \n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Modal%20Popup%20with%20Overlay%20%26%20ESC%20close.html"
     }
   },
   {
@@ -1633,8 +1582,7 @@
     "publishedAt": "2026-02-04T18:30:04Z",
     "description": "Build a console notes app that saves and views notes using files.\nLearn file handling, user input, and menu-driven program flow.\nLevel: Beginner → Intermediate\n\nsource code:https://github.com/MiniCodeHub/Cplusplus/blob/main/File-Based_Notes_App.cpp\n\n#cpp #programming #coding #projects #filehandling\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n@NoCopyrightSounds",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/File-Based_Notes_App.cpp"
     }
   },
   {
@@ -1647,8 +1595,7 @@
     "publishedAt": "2026-02-03T18:30:29Z",
     "description": "Build a responsive navigation bar with a mobile-friendly toggle menu.\nLearn component state, conditional rendering, and responsive layouts with Tailwind.\nLevel: Beginner\n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Responsive%20Navbar%20with%20Mobile%20Menu.tsx\n\n#nextjs #react #tailwindcss #webdev #frontend\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds \n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Responsive%20Navbar%20with%20Mobile%20Menu.tsx"
     }
   },
   {
@@ -1661,8 +1608,7 @@
     "publishedAt": "2026-02-02T18:31:31Z",
     "description": "Build a real-time digital clock with a toggle between 12-hour and 24-hour formats.\nLearn Date object usage, setInterval, and dynamic DOM updates.\nLevel: Beginner\n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Live%20Digital%20Clock%2012%2024%20toggle.html\n\n#html #css #javascript #webdev #frontend\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Live%20Digital%20Clock%2012%2024%20toggle.html"
     }
   },
   {
@@ -1675,8 +1621,7 @@
     "publishedAt": "2026-02-01T18:30:14Z",
     "description": "Build a console-based ATM system with menu options like balance check, deposit, and withdraw.\nLearn menu-driven logic, conditions, and clean input/output handling.\nLevel: Beginner\n\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/Simple_ATM_Menu_System.cpp\n\n#cpp #programming #coding #basics #projects\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/Simple_ATM_Menu_System.cpp"
     }
   },
   {
@@ -1689,8 +1634,7 @@
     "publishedAt": "2026-01-31T18:30:56Z",
     "description": "Build a click counter that updates instantly with smooth button animations.\nLearn event handling, DOM updates, and simple UI feedback effects.\nLevel: Beginner\n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Button%20Click%20Counter.html\n\n#html #css #javascript #webdev #frontend\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds \n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Button%20Click%20Counter.html"
     }
   },
   {
@@ -1703,8 +1647,7 @@
     "publishedAt": "2026-01-30T18:30:47Z",
     "description": "Build a task board where items move smoothly between columns.\nLearn the Drag and Drop API, event listeners, and basic state syncing.\nLevel: Intermediate\n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Drag%20%26%20Drop%20Task%20Board.html\n\n#html #css #javascript #webdev #frontend\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Drag%20%26%20Drop%20Task%20Board.html"
     }
   },
   {
@@ -1717,8 +1660,7 @@
     "publishedAt": "2026-01-30T12:05:10Z",
     "description": "Build a CLI address book to add, search, and delete contacts with persistent storage.\nLearn file handling, structs, and menu-driven program design.\nLevel: Beginner → Intermediate\n\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/Mini_Command-Line_Address_Book.cpp\n\n#cpp #programming #coding #projects #datastructures\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/Mini_Command-Line_Address_Book.cpp"
     }
   },
   {
@@ -1731,8 +1673,7 @@
     "publishedAt": "2026-01-28T18:30:25Z",
     "description": "Build a smooth image slider with Next / Prev controls and sliding animations.\nLearn arrays, index tracking, and DOM transforms for interactive UI.\nLevel: Beginner\n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Image%20Slider%20Carousel.html\n\n#htmlcsswebsite  #css #javascript #webdev #frontend\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds \n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Image%20Slider%20Carousel.html"
     }
   },
   {
@@ -1745,8 +1686,7 @@
     "publishedAt": "2026-01-27T18:31:17Z",
     "description": "Build a simple grade calculator that converts marks into grades (A/B/C/F).\nLearn user input handling, conditions, and basic program flow.\nLevel: Beginner\n\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/Student_Grade_Calculator.cpp\n\n#cpp #programming #coding #basics #projects\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds \n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/Student_Grade_Calculator.cpp"
     }
   },
   {
@@ -1759,8 +1699,7 @@
     "publishedAt": "2026-01-26T18:30:29Z",
     "description": "Build a real-time password strength checker with Weak, Medium, and Strong indicators.\nLearn regex basics, input events, and conditional UI feedback.\nLevel: Beginner\n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Password%20strength%20checker.html\n\n#html #css #javascript #webdev #frontend\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds \n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Password%20strength%20checker.html"
     }
   },
   {
@@ -1773,8 +1712,7 @@
     "publishedAt": "2026-01-25T18:30:49Z",
     "description": "Build an interactive number guessing game that tracks user attempts.\nLearn random number generation, loops, conditions, and clean input handling.\nLevel: Beginner\n\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/Number_Guess.cpp\n\n#cpp #programming #coding #basics #projects\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds \n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/Number_Guess.cpp"
     }
   },
   {
@@ -1787,8 +1725,7 @@
     "publishedAt": "2026-01-24T18:30:40Z",
     "description": "Build a background color generator that changes colors on button click.\nLearn Math randomization, DOM style updates, and event handling.\nLevel: Beginner\n\nsource code:https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Random%20Background%20Color%20Generator.html\n\n#html #css #javascript #webdev #frontend\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds \n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Random%20Background%20Color%20Generator.html"
     }
   },
   {
@@ -1801,8 +1738,7 @@
     "publishedAt": "2026-01-24T06:39:48Z",
     "description": "Build a role-based UI that shows different views for different users.\nLearn conditional rendering, role-based logic, and real-world app behavior.\nLevel: Intermediate\n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Role-Based%20UI%20Rendering.tsx\n\n#nextjs #react #tailwindcss #webdev #frontend\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Role-Based%20UI%20Rendering.tsx"
     }
   },
   {
@@ -1815,8 +1751,7 @@
     "publishedAt": "2026-01-22T18:30:12Z",
     "description": "Build smooth scroll-based animations using the Intersection Observer API.\nLearn lazy animations and performance optimization without scroll listeners.\nLevel: Intermediate\n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Intersection%20Observer%20Animations.html\n\n#html #css #javascript #webdev #frontend\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Intersection%20Observer%20Animations.html"
     }
   },
   {
@@ -1829,8 +1764,7 @@
     "publishedAt": "2026-01-21T18:30:12Z",
     "description": "Build an expression evaluator that converts infix expressions to postfix and evaluates them.\nLearn stack data structures, operator precedence, and parsing logic.\nLevel: Intermediate → Advanced\n\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/Expression_Evaluator_Infix-Postfix.cpp\n\n#cpp #programming #datastructures #algorithms #coding\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n @NoCopyrightSounds \n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/Expression_Evaluator_Infix-Postfix.cpp"
     }
   },
   {
@@ -1843,8 +1777,7 @@
     "publishedAt": "2026-01-20T18:30:15Z",
     "description": "Build a reusable card component using props for flexible UI layouts.\nLearn component reuse, props, and clean design with Tailwind utilities.\nLevel: Beginner\n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Reusable%20Card%20Component.tsx\n\n#nextjs #react #tailwindcss #webdev #frontend\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n | @NoCopyrightSounds\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Reusable%20Card%20Component.tsx"
     }
   },
   {
@@ -1857,8 +1790,7 @@
     "publishedAt": "2026-01-19T18:30:48Z",
     "description": "Build a clean accordion FAQ UI with smooth expand and collapse behavior.\nLearn toggle logic, event handling, and CSS transitions for interactive layouts.\nLevel: Beginner\n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Accordion%20FAQ%20Component.html\n#html #css #javascript #webdev #frontend\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds @NoCopyrightSounds \n👉 Follow @MiniCodeHub  for more 1-minute coding projects!",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Accordion%20FAQ%20Component.html"
     }
   },
   {
@@ -1871,8 +1803,7 @@
     "publishedAt": "2026-01-18T18:30:33Z",
     "description": "Build a menu-driven calculator using functions and user input.\nLearn switch statements, loops, and clean input/output handling.\nLevel: Beginner\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/Menu-Driven_Calculator.cpp\n\n#cpp #programming #coding #basics #projects\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n @NoCopyrightSounds \n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/Menu-Driven_Calculator.cpp"
     }
   },
   {
@@ -1885,8 +1816,7 @@
     "publishedAt": "2026-01-17T18:30:37Z",
     "description": "Build a real-time digital clock that updates every second in the browser.\nLearn the Date() object, setInterval(), and smooth DOM updates.\nLevel: Beginner\n\nsource code:https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Live%20Digital%20Clock.html\n\n#html #css #javascript #webdev #frontend\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n@NoCopyrightSounds \n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Live%20Digital%20Clock.html"
     }
   },
   {
@@ -1899,8 +1829,7 @@
     "publishedAt": "2026-01-16T18:30:40Z",
     "description": "Build a command history system that stores and navigates previous commands.\nLearn vectors/stacks, index tracking, and real terminal-style behavior.\nLevel: Intermediate → Advanced\n\nsource code : https://github.com/MiniCodeHub/Cplusplus/blob/main/Command_History_System_Like-Terminal.cpp\n\n#cpp #programming #datastructures #systemdesign #coding\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n @NoCopyrightSounds \n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/Command_History_System_Like-Terminal.cpp"
     }
   },
   {
@@ -1913,8 +1842,7 @@
     "publishedAt": "2026-01-15T18:30:03Z",
     "description": "Build a multi-step form flow with step validation and Next / Back navigation.\nLearn state-driven UI, conditional rendering, and real-world form patterns.\nLevel: Advanced\n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Multi-Step%20Form%20(Stepper).tsx\n\n#nextjs #react #tailwindcss #webdev #frontend\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n@NoCopyrightSounds \n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Multi-Step%20Form%20(Stepper).tsx"
     }
   },
   {
@@ -1927,8 +1855,7 @@
     "publishedAt": "2026-01-14T18:31:21Z",
     "description": "Build a fixed-size LRU cache that inserts, accesses, and evicts least recently used items.\nLearn data structures, cache eviction logic, and real-world system design concepts.\nLevel: Advanced\n\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/LRU_Cache_Simulation.cpp\n\n#cpp #programming #datastructures #systemdesign #coding\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds\n @NoCopyrightSounds \n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/LRU_Cache_Simulation.cpp"
     }
   },
   {
@@ -1941,8 +1868,7 @@
     "publishedAt": "2026-01-13T18:30:32Z",
     "description": "Music: Elektronomia – Vision\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds\n@NoCopyrightSounds \n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-\nTailwindcss/blob/main/src/pages/Search%20Filter%20Component.tsx\n\n\nBuild a search + filter component with combined logic for real apps \nLearn derived state, controlled inputs, and conditional rendering\nLevel: Intermediate → Advanced\n\n#nextjs #react #tailwindcss #webdev #frontend\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-"
     }
   },
   {
@@ -1955,8 +1881,7 @@
     "publishedAt": "2026-01-12T18:30:21Z",
     "description": "Music: Jim Yosef – Arrow\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds\n@NoCopyrightSounds \n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Virtual%20Keyboard%20(On-Screen%20Keyboard).html\n\nBuild a fully clickable virtual keyboard with Caps Lock & Backspace logic \nLearn event delegation, state handling, and real-world UI behavior\nLevel: Advanced\n\n#javascript #webdev #frontend #uidesign #coding\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Virtual%20Keyboard%20(On-Screen%20Keyboard).html"
     }
   },
   {
@@ -1969,8 +1894,7 @@
     "publishedAt": "2026-01-11T18:30:06Z",
     "description": "Music: Rival – Throne\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds\n@NoCopyrightSounds \n\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/Undo-Redo_System_using_Stack.cpp\n\nBuild an undo/redo system like real editors using stacks 🚀💻\nLearn stack data structures, push/pop logic, and state history management ⚡\nLevel: Intermediate → Advanced\n\n#cpp #programming #coding #datastructures #projects\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/Undo-Redo_System_using_Stack.cpp"
     }
   },
   {
@@ -1983,8 +1907,7 @@
     "publishedAt": "2026-01-10T18:30:49Z",
     "description": "Music: Elektronomia – Vision\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds\n@NoCopyrightSounds \n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Client-Side%20Pagination%20Component.tsx\n\nBuild a client-side pagination component with instant page updates 🚀💻\nLearn state-driven UI, derived data, and reusable components with Tailwind ⚡\nLevel: Advanced\n\n#nextjs #react #tailwindcss #webdev #frontend\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Client-Side%20Pagination%20Component.tsx"
     }
   },
   {
@@ -1997,8 +1920,7 @@
     "publishedAt": "2026-01-09T18:30:27Z",
     "description": "Music: Jim Yosef – Arrow\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds\n@NoCopyrightSounds \n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Infinite%20Scroll%20List%20(No%20Library).html\n\nBuild an infinite scroll list from scratch without any library 🚀💻\nLearn scroll event handling, viewport logic, and performance-aware state management ⚡\nLevel: Advanced\n\n#javascript #webdev #frontend #performance #coding\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Infinite%20Scroll%20List%20(No%20Library).html"
     }
   },
   {
@@ -2011,8 +1933,7 @@
     "publishedAt": "2026-01-08T18:30:49Z",
     "description": "Music: Rival – Throne\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds\n@NoCopyrightSounds \n\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/File-based_task_history_logger.cpp\n\nBuild a task history logger that records actions with timestamps 🚀💻\nLearn file append/read, system time, and struct-based logging like real systems ⚡\nLevel: Advanced\n\n#cpp #programming #coding #logging #projects\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/File-based_task_history_logger.cpp"
     }
   },
   {
@@ -2025,8 +1946,7 @@
     "publishedAt": "2026-01-07T18:31:35Z",
     "description": "Music: Elektronomia – Vision\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds\n@NoCopyrightSounds \n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Toast%20Notification%20System.tsx\n\nBuild a smooth toast notification system with success & error states 🚀💻\nLearn component-based UI, useState, timers, and clean animations ⚡\nLevel: Intermediate\n\n#nextjs #react #tailwindcss #webdev #frontend\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Toast%20Notification%20System.tsx"
     }
   },
   {
@@ -2039,8 +1959,7 @@
     "publishedAt": "2026-01-06T18:31:27Z",
     "description": "Music: Jim Yosef – Arrow\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds\n@NoCopyrightSounds \n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Theme%20Switcher%20with%20Local%20Storage.html\n\nBuild a light / dark theme switcher that remembers user preference \nLearn DOM class toggling and localStorage setItem / getItem for real UX \nLevel: Intermediate\n\n#javascript #webdev #frontend #uidesign #coding\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Theme%20Switcher%20with%20Local%20Storage.html"
     }
   },
   {
@@ -2053,8 +1972,7 @@
     "publishedAt": "2026-01-05T18:31:39Z",
     "description": "Music: Elektronomia – Vision\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds\n@NoCopyrightSounds \n\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/Mini-Task-Scheduler-Priority-Based.cpp\n\nBuild a task scheduler that runs jobs based on High / Medium / Low priority \nLearn structs/classes, sorting logic, and priority handling with real-world system thinking \nLevel: Advanced\n\n#cpp #programming #coding #datastructures #projects\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/Mini-Task-Scheduler-Priority-Based.cpp"
     }
   },
   {
@@ -2067,8 +1985,7 @@
     "publishedAt": "2026-01-04T18:31:02Z",
     "description": "Music: Elektronomia – Vision\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds\n@NoCopyrightSounds \n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Protected%20Route%20with%20Auth%20State.tsx\n\nBuild a protected dashboard route using fake auth state in Next.js \nLearn useState, useEffect, useRouter redirects, and conditional rendering\nLevel: Advanced\n\n#nextjs #react #tailwindcss #authentication #webdev\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Protected%20Route%20with%20Auth%20State.tsx"
     }
   },
   {
@@ -2081,8 +1998,7 @@
     "publishedAt": "2026-01-03T18:30:54Z",
     "description": "Music: Jim Yosef – Arrow\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds\n @NoCopyrightSounds \n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Debounced%20Search%20Input%20.html\n\nBuild a debounced search input that waits for typing to stop before searching \nLearn debouncing, setTimeout / clearTimeout, and performance optimization \nLevel: Intermediate → Advanced\n\n#javascript #webdev #frontend #performance #coding\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Debounced%20Search%20Input%20.html"
     }
   },
   {
@@ -2095,8 +2011,7 @@
     "publishedAt": "2026-01-02T18:30:55Z",
     "description": "Music: Elektronomia – Sky High\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds\n@NoCopyrightSounds \n\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/File-Based_User_Authentication_System.cpp\n\nBuild a login & registration system in C++ using file storage 🚀💻\nLearn fstream, string comparison, and conditional logic, plus a quick intro to password hashing ⚡\nLevel: Intermediate → Advanced\n#cpp #programming #coding #authentication #projects\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/File-Based_User_Authentication_System.cpp"
     }
   },
   {
@@ -2109,8 +2024,7 @@
     "publishedAt": "2026-01-01T18:30:15Z",
     "description": "Music: Jim Yosef – Eclipse\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds\n@NoCopyrightSounds \n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Skeleton%20Loader%20for%20API%20Data%20.tsx\n\nBuild a smooth skeleton loader UI while data loads from an API 🚀💻\nLearn useState, useEffect, conditional rendering, and animate-pulse for real UX ⚡\nLevel: Intermediate\n\n#nextjs #tailwindcss #react #webdev #frontend\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Skeleton%20Loader%20for%20API%20Data%20.tsx"
     }
   },
   {
@@ -2123,8 +2037,7 @@
     "publishedAt": "2025-12-31T18:32:09Z",
     "description": "Music: Elektronomia – Vision\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds\n@NoCopyrightSounds \n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/new%20year%20special/Portfoilo.tsx\n\nBuild a modern developer portfolio website with Next.js 🚀💻\nLearn components, routing, and responsive UI with Tailwind ⚡\nLevel: Beginner–Intermediate\n#nextjs #tailwindcss #webdev #portfolio #frontend\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/new%20year%20special/Portfoilo.tsx"
     }
   },
   {
@@ -2137,8 +2050,7 @@
     "publishedAt": "2025-12-31T18:32:09Z",
     "description": "Music: Jim Yosef – Arrow\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds\n@NoCopyrightSounds \n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/New_year_special/Music%20Player%20UI.html\n\nBuild a clean music player UI using the JavaScript Audio API 🚀💻\nLearn play, pause, seek, and UI sync in a visual project ⚡\nLevel: Beginner\n#javascript #webdev #frontend #musicplayer #coding\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/New_year_special/Music%20Player%20UI.html"
     }
   },
   {
@@ -2151,8 +2063,7 @@
     "publishedAt": "2025-12-31T18:32:08Z",
     "description": "Music: Jim Yosef – Arrow\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds\n@NoCopyrightSounds \n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/New_year_special/To_do_list.html\n\nInteractive To-Do App (HTML + CSS + JS)\n\nBuild a fully interactive To-Do app with filters and localStorage 🚀💻\nLearn DOM manipulation and real-world JavaScript logic in minutes ⚡\nLevel: Beginner\n#javascript #webdev #html #css #frontend\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/New_year_special/To_do_list.html"
     }
   },
   {
@@ -2165,8 +2076,7 @@
     "publishedAt": "2025-12-31T18:31:56Z",
     "description": "Music: Jim Yosef – Link\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds\n@NoCopyrightSounds \n\nSource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/New_Year_Special/Bank_Management_system.cpp\n\nBuild a Bank Management System with real-world logic in C++ 🚀💻\nPractice conditions, loops, and feature-based programming ⚡\nLevel: Intermediate\n#cpp #programming #coding #projects #software\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/New_Year_Special/Bank_Management_system.cpp"
     }
   },
   {
@@ -2179,8 +2089,7 @@
     "publishedAt": "2025-12-31T18:31:48Z",
     "description": "Music: Jim Yosef – Arrow\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds\n@NoCopyrightSounds \n\nsourde code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/New_year_special/Custom%20Form%20Validation%20System.html\n\nCustom Form Validation System (JS)\n\nCreate a custom form validation system with real-time error handling 🚀💻\nUnderstand validation rules, UX, and clean JS logic step by step ⚡\nLevel: Beginner–Intermediate\n#javascript #webdev #forms #frontend #coding\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/New_year_special/Custom%20Form%20Validation%20System.html"
     }
   },
   {
@@ -2193,8 +2102,7 @@
     "publishedAt": "2025-12-31T18:31:16Z",
     "description": "Music: Elektronomia – Vision\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds\n@NoCopyrightSounds \n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/new%20year%20special/Habit%20Tracker%20Web%20App.tsx\n\nCreate a habit tracker app with progress tracking 🚀💻\nLearn state management and real-world UI logic ⚡\nLevel: Intermediate\n#nextjs #react #webdev #projects #frontend\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/new%20year%20special/Habit%20Tracker%20Web%20App.tsx"
     }
   },
   {
@@ -2207,8 +2115,7 @@
     "publishedAt": "2025-12-31T18:30:32Z",
     "description": "Music: Different Heaven – Nekozilla\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds\n@NoCopyrightSounds \n\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/New_Year_Special/Student_Management_System.cpp\n\nCreate a Student Management System using core C++ concepts 🚀💻\nLearn menus, data handling, and program flow in a real project ⚡\nLevel: Beginner–Intermediate\n#cpp #programming #coding #projects #beginners\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/New_Year_Special/Student_Management_System.cpp"
     }
   },
   {
@@ -2221,8 +2128,7 @@
     "publishedAt": "2025-12-31T18:30:00Z",
     "description": "Music: Jim Yosef – Link\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds\n@NoCopyrightSounds \n\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/New_Year_Special/Quiz_game_scoreboard.cpp\n\nCreate a fun quiz game with scoring and replay logic 🚀💻\nLearn game loops and decision-making in C++ ⚡\nLevel: Beginner\n#cpp #coding #programming #games #beginners\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/New_Year_Special/Quiz_game_scoreboard.cpp"
     }
   },
   {
@@ -2235,8 +2141,7 @@
     "publishedAt": "2025-12-31T18:30:00Z",
     "description": "Music: Elektronomia – Vision\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds\n@NoCopyrightSounds \n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/new%20year%20special/Notes%20App.tsx\n\nBuild a notes app with categories using Next.js 🚀💻\nPractice CRUD operations and clean component logic ⚡\nLevel: Intermediate\n#nextjs #react #webdev #coding #frontend\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/new%20year%20special/Notes%20App.tsx"
     }
   },
   {
@@ -2249,8 +2154,7 @@
     "publishedAt": "2025-12-30T18:30:30Z",
     "description": "Music: Jim Yosef – Link\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds\n@NoCopyrightSounds \n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Dark%20Light%20Mode%20Toggle.tsx\n\nBuild a smooth theme switcher using useState and Tailwind CSS classes \nLearn state management with instant UI updates and clean transitions \nLevel: Beginner\n#nextjs #react #javascript #tailwindcss #frontend\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Dark%20Light%20Mode%20Toggle.tsx"
     }
   },
   {
@@ -2263,8 +2167,7 @@
     "publishedAt": "2025-12-29T18:31:23Z",
     "description": "Music: Elektronomia – Vision\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds\n@NoCopyrightSounds \n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Animated%20Pricing%20Cards.html\n\nAnimated Pricing Cards with Tailwind CSS\n\nBuild 3 animated pricing cards with hover glow and a Most Popular badge \nPerfect for showcasing Tailwind layouts, gradients, and hover effects\nLevel: Beginner\n\n#tailwindcss #frontend #webdesign #html #uidesign\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Animated%20Pricing%20Cards.html"
     }
   },
   {
@@ -2277,8 +2180,7 @@
     "publishedAt": "2025-12-28T18:31:22Z",
     "description": "Music: Jim Yosef – Arrow\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds\n@NoCopyrightSounds \n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Live%20Character%20Counter.html\n\nBuild a **real-time character & word counter** that updates as you type 🚀💻\nLearn DOM events live UI updates, and limit warnings with smooth animations ⚡\nLevel: Beginner\n\n#html #css #javascript #webdev #frontend\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Live%20Character%20Counter.html"
     }
   },
   {
@@ -2291,8 +2193,7 @@
     "publishedAt": "2025-12-27T18:31:21Z",
     "description": "Music: Different Heaven – Nekozilla\n Provided by NoCopyrightSounds (NCS)\n https://www.youtube.com/c/NoCopyrightSounds\n@NoCopyrightSounds \n\nsource code:https://github.com/MiniCodeHub/Cplusplus/blob/main/Number_Guess.cpp\n\nBuild an interactive C++ number guessing game with Too High / Too Low hints \nLearn random numbers, loops, and conditionals in a fun CLI project\nLevel: Beginner\n\n#cpp #coding #programming #cli #beginners\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/Number_Guess.cpp"
     }
   },
   {
@@ -2305,8 +2206,7 @@
     "publishedAt": "2025-12-26T18:31:19Z",
     "description": "Music: Elektronomia – Sky High\nProvided by NoCopyrightSounds (NCS)\nhttps://www.youtube.com/c/NoCopyrightSounds\n@NoCopyrightSounds   \n\nsource code:https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Interactive%20Color%20Picker.html\n\nBuild a fun color picker where clicking a color instantly copies its HEX/RGB code 🚀💻\nLearn DOM events, copy-to-clipboard, and smooth UI feedback with animations ⚡\nLevel: Beginner\n\n#html #css #javascript #webdev #frontend\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Interactive%20Color%20Picker.html"
     }
   },
   {
@@ -2319,8 +2219,7 @@
     "publishedAt": "2025-12-25T18:30:09Z",
     "description": "Music: Jim Yosef – Eclipse\nProvided by: NoCopyrightSounds (NCS)\n@NoCopyrightSounds \n\nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Random%20Quote%20Generator.tsx\n\nBuild a random quote generator using Next.js + JavaScript with smooth UI updates 🚀💻\nLearn useState, component rendering, and clean transitions for modern apps ⚡\nLevel: Beginner\n\n#nextjs #javascript #webdev #react #frontend\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>React Tutorial</h1>\n    </div>\n  );\n}\n\nexport default App;",
-      "language": "reactjs"
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Random%20Quote%20Generator.tsx"
     }
   },
   {
@@ -2333,8 +2232,7 @@
     "publishedAt": "2025-12-24T18:30:02Z",
     "description": "Music: Tobu – Good Times [NCS Release]  \nProvided by NoCopyrightSounds  \nWatch: https://www.youtube.com/c/NoCopyrightSounds\n@NoCopyrightSounds \n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Responsive_Emoji_Rating_Bar.html\n\nCreate a 5-point emoji rating bar where icons animate and scale on click 🚀💻\nLearn DOM events, simple logic, and responsive UI animations with JavaScript ⚡\nLevel: Beginner\n\n#html #css #javascript #webdev #frontend\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Responsive_Emoji_Rating_Bar.html"
     }
   },
   {
@@ -2347,8 +2245,7 @@
     "publishedAt": "2025-12-23T18:30:03Z",
     "description": "source code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Glassmorphism_Login_UI.html\n\nGlassmorphism Login UI with Tailwind CSS\n\nBuild a modern frosted-glass login & signup UI using Tailwind CSS backdrop filters 🚀💻\nPerfect for learning clean layouts, blur effects, and modern UI design ⚡\nLevel: Beginner\n\n#tailwindcss #html #uiux #frontend #webdesign\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Glassmorphism_Login_UI.html"
     }
   },
   {
@@ -2361,8 +2258,7 @@
     "publishedAt": "2025-12-22T18:30:40Z",
     "description": "source code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Typing_Text_Animation.html\n\nCreate a smooth self-typing & deleting text animation cycling words like Coder, Developer, Techie 🚀💻\nLearn JavaScript intervals with clean CSS animations for dynamic UI effects ⚡\nLevel: Beginner\n\n#html #css #javascript #webdev #frontend\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Typing_Text_Animation.html"
     }
   },
   {
@@ -2375,8 +2271,7 @@
     "publishedAt": "2025-12-22T13:28:16Z",
     "description": "Source Code:\nhttps://github.com/MiniCodeHub/Cplusplus/blob/main/C%2B%2B_Digital%20_Dice%20Roller_(CLI%20Project)%20.cpp\n\nwant daily dose of C++ join: https://whatsapp.com/channel/0029VbBimyzDeONDMbiNQF3s\n\nBuild a fun C++ dice roller that generates random numbers (1–6) with clean ASCII graphics on every key press 🚀💻\nPerfect for learning rand(), loops, and conditionals in a simple CLI project ⚡\nLevel: Beginner\n\n#cpp #coding #programming #cli #beginners\n👉 Follow MiniCodeHub for more 1-minute coding projects!",
     "codeData": {
-      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello C++!\" << endl;\n    return 0;\n}",
-      "language": "cpp"
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/C%2B%2B_Digital%20_Dice%20Roller_(CLI%20Project)%20.cpp"
     }
   },
   {
@@ -2389,8 +2284,7 @@
     "publishedAt": "2025-12-20T18:30:41Z",
     "description": "Source Code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Simple%20popup.html",
     "codeData": {
-      "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Tutorial</title>\n</head>\n<body>\n    <h1>Hello MiniCodeHub!</h1>\n</body>\n</html>",
-      "language": "html"
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Simple%20popup.html"
     }
   }
 ]
