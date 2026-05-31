@@ -94,24 +94,44 @@ function AboutMe() {
 
               <div className="flex flex-wrap items-center justify-center md:justify-start gap-2 sm:gap-4">
                 <a href="https://youtube.com/@MiniCodeHub" target="_blank" rel="noopener noreferrer"
-                  className="p-2 sm:p-3 bg-white/5 rounded-xl hover:bg-white/20 hover:scale-110 transition-all text-red-500 hover:text-red-400 border border-white/10">
+                  className="relative group/social p-2 sm:p-3 bg-white/5 rounded-xl hover:bg-white/20 hover:scale-110 transition-all text-red-500 hover:text-red-400 border border-white/10">
                   <Youtube className="w-5 h-5 sm:w-6 sm:h-6" />
+                  <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5 px-2.5 py-1 bg-slate-900/95 backdrop-blur-md border border-white/15 text-[11px] text-gray-200 rounded-lg opacity-0 scale-75 pointer-events-none transition-all duration-200 group-hover/social:opacity-100 group-hover/social:scale-100 group-hover/social:-translate-y-1 whitespace-nowrap z-50 shadow-2xl font-medium tracking-wide">
+                    youtube.com/@MiniCodeHub
+                    <span className="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0 border-l-4 border-l-transparent border-r-4 border-r-transparent border-t-4 border-t-slate-900/95"></span>
+                  </span>
                 </a>
                 <a href="https://github.com/satchitkamat" target="_blank" rel="noopener noreferrer"
-                  className="p-2 sm:p-3 bg-white/5 rounded-xl hover:bg-white/20 hover:scale-110 transition-all text-gray-300 hover:text-white border border-white/10" title="Personal GitHub">
+                  className="relative group/social p-2 sm:p-3 bg-white/5 rounded-xl hover:bg-white/20 hover:scale-110 transition-all text-gray-300 hover:text-white border border-white/10">
                   <Github className="w-5 h-5 sm:w-6 sm:h-6" />
+                  <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5 px-2.5 py-1 bg-slate-900/95 backdrop-blur-md border border-white/15 text-[11px] text-gray-200 rounded-lg opacity-0 scale-75 pointer-events-none transition-all duration-200 group-hover/social:opacity-100 group-hover/social:scale-100 group-hover/social:-translate-y-1 whitespace-nowrap z-50 shadow-2xl font-medium tracking-wide">
+                    github.com/satchitkamat
+                    <span className="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0 border-l-4 border-l-transparent border-r-4 border-r-transparent border-t-4 border-t-slate-900/95"></span>
+                  </span>
                 </a>
                 <a href="https://github.com/MiniCodeHub" target="_blank" rel="noopener noreferrer"
-                  className="p-2 sm:p-3 bg-white/5 rounded-xl hover:bg-white/20 hover:scale-110 transition-all text-gray-300 hover:text-white border border-white/10" title="MiniCodeHub GitHub">
+                  className="relative group/social p-2 sm:p-3 bg-white/5 rounded-xl hover:bg-white/20 hover:scale-110 transition-all text-gray-300 hover:text-white border border-white/10">
                   <Github className="w-5 h-5 sm:w-6 sm:h-6" />
+                  <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5 px-2.5 py-1 bg-slate-900/95 backdrop-blur-md border border-white/15 text-[11px] text-gray-200 rounded-lg opacity-0 scale-75 pointer-events-none transition-all duration-200 group-hover/social:opacity-100 group-hover/social:scale-100 group-hover/social:-translate-y-1 whitespace-nowrap z-50 shadow-2xl font-medium tracking-wide">
+                    github.com/MiniCodeHub
+                    <span className="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0 border-l-4 border-l-transparent border-r-4 border-r-transparent border-t-4 border-t-slate-900/95"></span>
+                  </span>
                 </a>
                 <a href="https://www.linkedin.com/in/satchitkamat-kamat-815256390" target="_blank" rel="noopener noreferrer"
-                  className="p-2 sm:p-3 bg-white/5 rounded-xl hover:bg-white/20 hover:scale-110 transition-all text-blue-300 hover:text-blue-400 border border-white/10">
+                  className="relative group/social p-2 sm:p-3 bg-white/5 rounded-xl hover:bg-white/20 hover:scale-110 transition-all text-blue-300 hover:text-blue-400 border border-white/10">
                   <Linkedin className="w-5 h-5 sm:w-6 sm:h-6" />
+                  <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5 px-2.5 py-1 bg-slate-900/95 backdrop-blur-md border border-white/15 text-[11px] text-gray-200 rounded-lg opacity-0 scale-75 pointer-events-none transition-all duration-200 group-hover/social:opacity-100 group-hover/social:scale-100 group-hover/social:-translate-y-1 whitespace-nowrap z-50 shadow-2xl font-medium tracking-wide">
+                    linkedin.com/in/satchitkamat
+                    <span className="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0 border-l-4 border-l-transparent border-r-4 border-r-transparent border-t-4 border-t-slate-900/95"></span>
+                  </span>
                 </a>
-                <a href="mailto:contact@minicodehub.com"
-                  className="p-2 sm:p-3 bg-white/5 rounded-xl hover:bg-white/20 hover:scale-110 transition-all text-pink-300 hover:text-pink-400 border border-white/10">
+                <a href="mailto:minicodehub@gmail.com"
+                  className="relative group/social p-2 sm:p-3 bg-white/5 rounded-xl hover:bg-white/20 hover:scale-110 transition-all text-pink-300 hover:text-pink-400 border border-white/10">
                   <Mail className="w-5 h-5 sm:w-6 sm:h-6" />
+                  <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5 px-2.5 py-1 bg-slate-900/95 backdrop-blur-md border border-white/15 text-[11px] text-gray-200 rounded-lg opacity-0 scale-75 pointer-events-none transition-all duration-200 group-hover/social:opacity-100 group-hover/social:scale-100 group-hover/social:-translate-y-1 whitespace-nowrap z-50 shadow-2xl font-medium tracking-wide">
+                    contact@minicodehub.com
+                    <span className="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0 border-l-4 border-l-transparent border-r-4 border-r-transparent border-t-4 border-t-slate-900/95"></span>
+                  </span>
                 </a>
               </div>
             </div>
