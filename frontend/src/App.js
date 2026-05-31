@@ -577,7 +577,7 @@ const VideoDetail = () => {
   useEffect(() => {
     if (isPython && !window.pyodideInstance && !pyodideLoading) {
       setPyodideLoading(true);
-      
+
       const loadPyodideScript = () => {
         return new Promise((resolve, reject) => {
           if (window.loadPyodide) {
@@ -655,11 +655,11 @@ const VideoDetail = () => {
 
     if (isPython) {
       if (!window.pyodideInstance) return;
-      
-      setVideo(v => ({ 
-        ...v, 
-        isRunning: true, 
-        terminalOutput: 'Python Interpreter Initialized. Running script...\n\n' 
+
+      setVideo(v => ({
+        ...v,
+        isRunning: true,
+        terminalOutput: 'Python Interpreter Initialized. Running script...\n\n'
       }));
 
       // Bind dynamic callback delegates
@@ -721,7 +721,7 @@ const VideoDetail = () => {
       const tabSpace = "    ";
       const newValue = value.substring(0, selectionStart) + tabSpace + value.substring(selectionEnd);
       setEditableCode(newValue);
-      
+
       const target = e.target;
       setTimeout(() => {
         target.selectionStart = target.selectionEnd = selectionStart + tabSpace.length;
@@ -750,7 +750,7 @@ const VideoDetail = () => {
       const tabSpace = "    ";
       const newValue = value.substring(0, selectionStart) + tabSpace + value.substring(selectionEnd);
       setVideo(v => ({ ...v, replBuffer: newValue }));
-      
+
       const target = e.target;
       setTimeout(() => {
         target.selectionStart = target.selectionEnd = selectionStart + tabSpace.length;
@@ -1031,7 +1031,7 @@ ${scrollbarStyle}
 
             {/* Right Column: Interactive Editor & Execution Terminal */}
             <div className="col-span-1 h-[100vh] bg-[#1e1e1e] rounded-3xl overflow-hidden shadow-2xl border border-white/10 flex flex-col">
-              
+
               {/* Top Half: Editable Code Editor */}
               <div className="flex-1 flex flex-col min-h-0 border-b border-white/10 bg-[#1b1b1b]">
                 <div className="flex items-center justify-between px-6 py-3 bg-white/5 shrink-0">
@@ -1071,15 +1071,14 @@ ${scrollbarStyle}
                     <button
                       onClick={handleRun}
                       disabled={video.isRunning || (isPython && !pyodideLoaded)}
-                      className={`px-4 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-2 ${
-                        video.isRunning || (isPython && !pyodideLoaded)
+                      className={`px-4 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-2 ${video.isRunning || (isPython && !pyodideLoaded)
                           ? 'bg-gray-700 text-gray-500 cursor-wait'
                           : 'bg-green-600 hover:bg-green-500 text-white shadow-lg transform hover:scale-105'
-                      }`}
+                        }`}
                     >
                       <Play size={12} className={video.isRunning ? 'animate-spin' : ''} />
-                      {video.isRunning 
-                        ? (isCpp ? 'Compiling...' : 'Running...') 
+                      {video.isRunning
+                        ? (isCpp ? 'Compiling...' : 'Running...')
                         : (isPython && !pyodideLoaded ? 'Loading Interpreter...' : 'Run Code')}
                     </button>
                     {video.isRunning && (
