@@ -2,7 +2,7 @@ import { SandpackProvider, SandpackCodeEditor, SandpackPreview } from '@codesand
 import { dracula as draculaTheme } from "@codesandbox/sandpack-themes";
 import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useParams, useNavigate, useLocation } from 'react-router-dom';
-import { Play, Code, Monitor, ChevronLeft, Square, Search, Filter, Github, Linkedin, Mail, Youtube } from 'lucide-react';
+import { Play, Code, Monitor, ChevronLeft, Square, Search, Filter, Github, Linkedin, Mail, Youtube, Copy, Check } from 'lucide-react';
 import io from 'socket.io-client';
 
 const API_BASE =
@@ -551,6 +551,33 @@ const VideoDetail = () => {
   const socketRef = useRef(null);
   const terminalEndRef = useRef(null);
 
+  const [copiedRef, setCopiedRef] = useState(false);
+  const [copiedEdit, setCopiedEdit] = useState(false);
+
+  const handleCopyRef = () => {
+    const code = video?.codeData?.fetchedCode || video?.codeData?.code || '';
+    if (code) {
+      navigator.clipboard.writeText(code)
+        .then(() => {
+          setCopiedRef(true);
+          setTimeout(() => setCopiedRef(false), 2000);
+        })
+        .catch(err => console.error('Failed to copy code: ', err));
+    }
+  };
+
+  const handleCopyEdit = () => {
+    const code = editableCode || video?.codeData?.fetchedCode || video?.codeData?.code || '';
+    if (code) {
+      navigator.clipboard.writeText(code)
+        .then(() => {
+          setCopiedEdit(true);
+          setTimeout(() => setCopiedEdit(false), 2000);
+        })
+        .catch(err => console.error('Failed to copy code: ', err));
+    }
+  };
+
   useEffect(() => {
     setError(null);
     fetch(`${API_BASE}/api/video/${id}`)
@@ -945,7 +972,26 @@ ${scrollbarStyle}
                 }}
               >
                 <div className="flex flex-col lg:flex-row h-fit w-full gap-6 md:gap-8">
-                  <div className="flex-1 w-full h-1/2 lg:h-full overflow-hidden order-2 lg:order-1 rounded-3xl border border-white/10 shadow-xl bg-[#1e1e1e]">
+                  <div className="relative flex-1 w-full h-1/2 lg:h-full overflow-hidden order-2 lg:order-1 rounded-3xl border border-white/10 shadow-xl bg-[#1e1e1e]">
+                    <div className="absolute top-2.5 right-2.5 z-10">
+                      <button
+                        onClick={handleCopyRef}
+                        className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-[#2d2d2d] hover:bg-[#3d3d3d] border border-white/10 transition-all hover:scale-105 active:scale-95 text-gray-300 shadow-md"
+                        title="Copy Code"
+                      >
+                        {copiedRef ? (
+                          <>
+                            <Check size={14} className="text-green-400 animate-pulse" />
+                            <span className="text-green-400">Copied!</span>
+                          </>
+                        ) : (
+                          <>
+                            <Copy size={14} />
+                            <span>Copy</span>
+                          </>
+                        )}
+                      </button>
+                    </div>
                     <SandpackCodeEditor
                       showTabs
                       showLineNumbers
@@ -984,7 +1030,26 @@ ${scrollbarStyle}
                 }}
               >
                 <div className="flex flex-col lg:flex-row h-fit w-full gap-6 md:gap-8">
-                  <div className="flex-1 h-1/2 lg:h-full overflow-hidden order-2 lg:order-1 rounded-3xl border border-white/10 shadow-xl bg-[#1e1e1e]">
+                  <div className="relative flex-1 h-1/2 lg:h-full overflow-hidden order-2 lg:order-1 rounded-3xl border border-white/10 shadow-xl bg-[#1e1e1e]">
+                    <div className="absolute top-2.5 right-2.5 z-10">
+                      <button
+                        onClick={handleCopyRef}
+                        className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-[#2d2d2d] hover:bg-[#3d3d3d] border border-white/10 transition-all hover:scale-105 active:scale-95 text-gray-300 shadow-md"
+                        title="Copy Code"
+                      >
+                        {copiedRef ? (
+                          <>
+                            <Check size={14} className="text-green-400 animate-pulse" />
+                            <span className="text-green-400">Copied!</span>
+                          </>
+                        ) : (
+                          <>
+                            <Copy size={14} />
+                            <span>Copy</span>
+                          </>
+                        )}
+                      </button>
+                    </div>
                     <SandpackCodeEditor
                       showTabs
                       showLineNumbers
@@ -1018,6 +1083,23 @@ ${scrollbarStyle}
                   <Code className="w-4 h-4 text-purple-400" />
                   <span className="font-bold text-sm text-gray-300">Reference Source Code (Read-Only)</span>
                 </div>
+                <button
+                  onClick={handleCopyRef}
+                  className="flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-semibold bg-white/5 hover:bg-white/10 hover:text-white border border-white/10 transition-all hover:scale-105 active:scale-95 text-gray-300"
+                  title="Copy Reference Code"
+                >
+                  {copiedRef ? (
+                    <>
+                      <Check size={14} className="text-green-400 animate-pulse" />
+                      <span className="text-green-400">Copied!</span>
+                    </>
+                  ) : (
+                    <>
+                      <Copy size={14} />
+                      <span>Copy</span>
+                    </>
+                  )}
+                </button>
               </div>
               <div className="flex-1 p-4 bg-[#1b1b1b]">
                 <textarea
@@ -1039,6 +1121,23 @@ ${scrollbarStyle}
                     <Code className="w-4 h-4 text-green-400" />
                     <span className="font-bold text-sm text-gray-300">Interactive Editor (Write Code Here)</span>
                   </div>
+                  <button
+                    onClick={handleCopyEdit}
+                    className="flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-semibold bg-white/5 hover:bg-white/10 hover:text-white border border-white/10 transition-all hover:scale-105 active:scale-95 text-gray-300"
+                    title="Copy Code"
+                  >
+                    {copiedEdit ? (
+                      <>
+                        <Check size={14} className="text-green-400 animate-pulse" />
+                        <span className="text-green-400">Copied!</span>
+                      </>
+                    ) : (
+                      <>
+                        <Copy size={14} />
+                        <span>Copy</span>
+                      </>
+                    )}
+                  </button>
                 </div>
                 <div className="flex-1 p-4 overflow-hidden">
                   <textarea

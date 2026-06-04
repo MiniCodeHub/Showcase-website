@@ -1,5 +1,57 @@
 [
   {
+    "id": "fjlUpmr4o7k",
+    "title": "C++ Kruskal's MST | Greedy Algorithm #CPP #Algorithms #Graphs #Coding #MiniCodeHub",
+    "thumbnail": "https://i.ytimg.com/vi/fjlUpmr4o7k/hqdefault.jpg",
+    "codeLang": "cpp",
+    "videoId": "fjlUpmr4o7k",
+    "videoUrl": "https://youtube.com/watch?v=fjlUpmr4o7k",
+    "publishedAt": "2026-06-03T10:49:54Z",
+    "description": "Implement Kruskal's Minimum Spanning Tree algorithm 🚀💻\nLearn greedy graph optimization with DSU ⚡\n#CPP #Algorithms #Graphs #Coding #MiniCodeHub\n\nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/KruskalsMinimumSpanningTree.cpp\n\nFollow for more 1-minute coding projects!\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds | @NoCopyrightSounds",
+    "codeData": {
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/KruskalsMinimumSpanningTree.cpp"
+    }
+  },
+  {
+    "id": "39zHv1MUhZA",
+    "title": "React Virtual Scrolling | Large Lists #ReactJS #TailwindCSS #WebDev #Frontend #MiniCodeHub",
+    "thumbnail": "https://i.ytimg.com/vi/39zHv1MUhZA/hqdefault.jpg",
+    "codeLang": "reactjs",
+    "videoId": "39zHv1MUhZA",
+    "videoUrl": "https://youtube.com/watch?v=39zHv1MUhZA",
+    "publishedAt": "2026-06-02T18:30:02Z",
+    "description": "Build a virtual scrolling list that handles large datasets efficiently 🚀💻\nBoost performance with React & Tailwind CSS ⚡\n#ReactJS #TailwindCSS #WebDev #Frontend #minicodehub \nsource code: https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Virtual%20Scrolling%20List%20(Large%20Dataset%2C%20No%20Library).tsx\n\nFollow for more 1-minute coding projects!\n\nMusic: Elektronomia – Vision | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds | @NoCopyrightSounds",
+    "codeData": {
+      "githubUrl": "https://github.com/MiniCodeHub/Nodejs-With-Tailwindcss/blob/main/src/pages/Virtual%20Scrolling%20List%20(Large%20Dataset%2C%20No%20Library).tsx"
+    }
+  },
+  {
+    "id": "8dtK1D43buo",
+    "title": "Swipe Card Deck | Touch Gestures #html  #CSS #JavaScript #WebDev #minicodehub",
+    "thumbnail": "https://i.ytimg.com/vi/8dtK1D43buo/hqdefault.jpg",
+    "codeLang": "html",
+    "videoId": "8dtK1D43buo",
+    "videoUrl": "https://youtube.com/watch?v=8dtK1D43buo",
+    "publishedAt": "2026-06-01T18:30:07Z",
+    "description": "Build a swipeable card deck with smooth touch interactions 🚀💻\nModern mobile-style UI using HTML CSS JS ⚡\n#html  #CSS #JavaScript #WebDev #minicodehub \n\nsource code: https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Swipe%20Gesture%20Card%20Deck%20(Touch%20Events).html\n\nFollow for more 1-minute coding projects!\n\nMusic: Jim Yosef – Arrow | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds | @NoCopyrightSounds",
+    "codeData": {
+      "githubUrl": "https://github.com/MiniCodeHub/HTML-CSS-JAVASCRIPT/blob/main/Swipe%20Gesture%20Card%20Deck%20(Touch%20Events).html"
+    }
+  },
+  {
+    "id": "gvEFBvNXGwc",
+    "title": "C++ Union-Find | Disjoint Set Union #CPP #DataStructures #DSU #Coding #MiniCodeHub",
+    "thumbnail": "https://i.ytimg.com/vi/gvEFBvNXGwc/hqdefault.jpg",
+    "codeLang": "cpp",
+    "videoId": "gvEFBvNXGwc",
+    "videoUrl": "https://youtube.com/watch?v=gvEFBvNXGwc",
+    "publishedAt": "2026-05-31T18:30:37Z",
+    "description": "Implement Disjoint Set Union with path compression & union operations 🚀💻\nLearn efficient set management for graph algorithms ⚡\n#CPP #DataStructures #DSU #Coding #minicodehub \nsource code: https://github.com/MiniCodeHub/Cplusplus/blob/main/DisjointSetUnionUnion-FindwithPathCompression.cpp\n\nFollow for more 1-minute coding projects!\n\nMusic: Rival – Throne | Provided by NoCopyrightSounds (NCS) | https://www.youtube.com/c/NoCopyrightSounds | @NoCopyrightSounds",
+    "codeData": {
+      "githubUrl": "https://github.com/MiniCodeHub/Cplusplus/blob/main/DisjointSetUnionUnion-FindwithPathCompression.cpp"
+    }
+  },
+  {
     "id": "jteHBktgWTE",
     "title": "C++ N-Queens Problem | Backtracking #CPP #Algorithms #Backtracking #Coding #MiniCodeHub",
     "thumbnail": "https://i.ytimg.com/vi/jteHBktgWTE/hqdefault.jpg",

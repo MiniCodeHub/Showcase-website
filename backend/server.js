@@ -16,12 +16,13 @@ const PORT = process.env.PORT || 3001;
 
 const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;
 const YOUR_CHANNEL_ID = process.env.YOUTUBE_CHANNEL_ID;
-const UPLOADS_PLAYLIST_ID = YOUR_CHANNEL_ID.replace('UC', 'UU');
 
 if (!YOUTUBE_API_KEY || !YOUR_CHANNEL_ID) {
-    console.log('❌ ERROR: Check .env file');
+    console.log('❌ ERROR: Check .env file. YOUTUBE_API_KEY and YOUTUBE_CHANNEL_ID must be defined.');
     process.exit(1);
 }
+
+const UPLOADS_PLAYLIST_ID = YOUR_CHANNEL_ID.replace('UC', 'UU');
 
 app.use(cors());
 app.use(express.json());
